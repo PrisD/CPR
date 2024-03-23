@@ -6,6 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { TieredMenuModule } from 'primeng/tieredmenu';
+import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
+import { MenuModule } from 'primeng/menu';
+import { DividerModule } from 'primeng/divider';
+import { SidebarModule } from 'primeng/sidebar';
+
+
 
 @NgModule({
   declarations: [
@@ -17,7 +25,13 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    TieredMenuModule,
+    ToastModule,
+    MenuModule,
+    SidebarModule,
+    DividerModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
