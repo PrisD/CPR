@@ -1,5 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/themes/soho-light/theme.css";
 @import "primeng/resources/primeng.css";
 @import 'primeflex/primeflex.css';
 @import "primeicons/primeicons.css";
+
+.p-button {
+    background-color: #919747;
+    border: 1px solid #919747;
+}
+
+.p-button:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #9197479e, 0 1px 2px 0 rgb(0, 0, 0);
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    color: #3b3b3b;
+}
