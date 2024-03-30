@@ -51,8 +51,7 @@
 
 /* FUENTES DEFINIDAS SEGÚN EL TEXTO */
 body,
-p,
-span {
+p {
     font-family: 'Rubik Regular', sans-serif;
 }
 
@@ -83,4 +82,15 @@ h4,
 h5,
 h6 {
     color: #3b3b3b;
+}
+
+/* ESTILOS BOTONES */
+.consultas-button {
+    background-color: #888c6b !important;
+    border: 1px solid #888c6b;
+}
+
+.turnos-button {
+    background-color: #a7a11c !important;
+    border: 1px solid #a7a11c;
 }
