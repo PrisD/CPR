@@ -13,6 +13,74 @@
     box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #9197479e, 0 1px 2px 0 rgb(0, 0, 0);
 }
 
-p,h1,h2,h3,h4,h5,h6 {
+/* FUENTES */
+@font-face {
+    font-family: 'Rubik Black';
+    src: url('assets/fonts/Rubik-black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Black Italic';
+    src: url('assets/fonts/Rubik-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Bold';
+    src: url('assets/fonts/Rubik-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Bold Italic';
+    src: url('assets/fonts/Rubik-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Italic';
+    src: url('assets/fonts/Rubik-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Light';
+    src: url('assets/fonts/Rubik-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Light Italic';
+    src: url('assets/fonts/Rubik-LightItalic.ttf') format('truetype');
+}
+
+/* FUENTES DEFINIDAS SEGÚN EL TEXTO */
+body,
+p,
+span {
+    font-family: 'Rubik Regular', sans-serif;
+}
+
+span {
+    font-family: 'Rubik Light', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Rubik Bold', sans-serif;
+}
+
+h3,
+h4 {
+    font-family: 'Rubik Medium', sans-serif;
+}
+
+h5,
+h6 {
+    font-family: 'Rubik Light', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #3b3b3b;
 }
