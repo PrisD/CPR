@@ -51,7 +51,8 @@
 
 /* FUENTES DEFINIDAS SEGÚN EL TEXTO */
 body,
-p {
+p,
+.p-component {
     font-family: 'Rubik Regular', sans-serif;
 }
 
