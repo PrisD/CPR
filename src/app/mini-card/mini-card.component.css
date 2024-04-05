@@ -1,5 +1,5 @@
     .article-card {
-        width: 50%;
+        width: 45%;
         height: 200px;
         border-radius: 0 40px 0 0;
         overflow: hidden;
@@ -24,7 +24,7 @@
         box-sizing: border-box;
         width: 100%;
         position: absolute;
-        padding: 30px 20px 20px 20px;
+        padding: 10px 10px 10px 10px;
         height: auto;
         bottom: 0;
         background: #919747;
@@ -49,4 +49,18 @@
 
     .fondoNaranja {
         background-color: #d78a00 !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        .article-card {
+            width: 90%;
+            height: 150px;
+        }
     }
