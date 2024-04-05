@@ -13,6 +13,7 @@ import { ToastModule } from 'primeng/toast';
 import { MenuModule } from 'primeng/menu';
 import { DividerModule } from 'primeng/divider';
 import { SidebarModule } from 'primeng/sidebar';
+import { PanelMenuModule } from 'primeng/panelmenu';
 import { MiniCardComponent } from './mini-card/mini-card.component';
 import { CardModule } from 'primeng/card';
 
@@ -28,6 +29,7 @@ import { CardModule } from 'primeng/card';
   ],
   imports: [
     BrowserModule,
+    PanelMenuModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,

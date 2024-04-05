@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit{
                     routerLink: '/radioterapia/próstata'
                 },
                 {
-                    label: 'BRAQUITERAPIA HDR GINECOLÓGICA *INTRACAVITARIA',
+                    label: 'BRAQUITERAPIA HDR GINECOLÓGICA INTRACAVITARIA',
                     routerLink: '/radioterapia/ginecológica-intracavitaria'
                 },
                 {
@@ -73,10 +73,6 @@ export class HeaderComponent implements OnInit{
         {
             label: 'TURNOS',
             routerLink: '/turnos'
-        },
-        {
-            label: 'TURNOS PACIENTES RESTO DEL PAÍS/INTERNACIONALES',
-            routerLink: '/turnos-internacionales'
         },
         {
             label: 'NUESTRO CENTRO',

@@ -1,0 +1,16 @@
+.menu {
+    background-color: black;
+}
+
+.p-sidebar .p-sidebar-content{
+    background: black;
+}
+
+.menu-button-icon{
+    font-size: 4rem;
+    color: white;
+}
+
+.white-icon {
+    color: white !important; /* Establece el color del icono como blanco */
+}

@@ -1,15 +1,19 @@
-<div>
+<div class="ml-5 mr-5 mt-5 flex justify-content-between flex-wrap">
     
     <div class="card flex">
-        <p-sidebar [(visible)]="sidebarVisible">
-            <h3>Sidebar</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+        <p-sidebar class="menu font-rubik" [(visible)]="sidebarVisible" [style]="{'width':'20%'}">
+            <div class=" flex justify-content-center">
+                <p-panelMenu  [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+            </div>         
         </p-sidebar>
-        <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+
+        <p-button (click)="sidebarVisible = true" size="large" class="menu-button" icon="pi pi-bars"  [style]="{'color':'white'}" [rounded]="true" [text]="true">
+        </p-button>
     </div>
-    
-    <p-divider></p-divider>
+
+    <div class="flex">
+        <p-button label="Turnos" [rounded]="true"></p-button>
+    </div>
 </div>
+
+<p-divider></p-divider>
