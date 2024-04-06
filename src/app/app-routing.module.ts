@@ -7,7 +7,7 @@ import { RadiotherapyComponent } from './screens/radiotherapy/radiotherapy/radio
 import { PsychologyComponent } from './screens/radiotherapy/psychology/psychology.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'radiotherapy', component: RadiotherapyComponent},
   { path: 'psychology', component: PsychologyComponent}
   // Agrega más rutas según sea necesario

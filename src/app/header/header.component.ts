@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit{
     this.items = [
         {
             label: 'HOME',
-            routerLink: '/home'
+            routerLink: '/'
         },
         {
             label: 'RADIOTERAPIA',
