@@ -19,10 +19,11 @@ export class HeaderComponent implements OnInit{
         },
         {
             label: 'RADIOTERAPIA',
+            routerLink: '/radiotherapy',
             items: [
                 {
                     label: 'BRAQUITERAPIA HDR EN PRÓSTATA',
-                    routerLink: '/radioterapia/próstata'
+                    routerLink: '/radiotherapy'
                 },
                 {
                     label: 'BRAQUITERAPIA HDR GINECOLÓGICA INTRACAVITARIA',
@@ -68,7 +69,7 @@ export class HeaderComponent implements OnInit{
         },
         {
             label: 'PSICOLOGÍA',
-            routerLink: '/psicologia'
+            routerLink: '/psychology'
         },
         {
             label: 'TURNOS',
