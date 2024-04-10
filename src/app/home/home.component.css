@@ -1,4 +1,16 @@
 .fondoVerde{
     background-color: #61663de0;
     border-top-right-radius: 2rem;
+    margin: 0 1% 0 -5%;
+}
+.texto {
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    .texto {
+        font-size: 14px;
+    }
+    .textoPregunta{
+        font-size: 14px;
+    }
 }
