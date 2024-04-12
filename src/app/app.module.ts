@@ -16,6 +16,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { MiniCardComponent } from './mini-card/mini-card.component';
 import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
 
 
 
@@ -39,7 +40,8 @@ import { CardModule } from 'primeng/card';
     SidebarModule,
     DividerModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

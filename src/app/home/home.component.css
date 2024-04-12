@@ -1,16 +1,66 @@
-.fondoVerde{
+.fondoVerde {
     background-color: #61663de0;
     border-top-right-radius: 2rem;
     margin: 0 1% 0 -5%;
 }
+
 .texto {
     font-size: 20px;
 }
+
+#roundedInput {
+    border-radius: 30px;
+    padding: 1.4%;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#roundedInput:focus,
+#roundedInput:focus-visible {
+    border-color: #919747;
+    box-shadow: 0 0 1px 1px #919747;
+    outline: #919747;
+}
+
+input#roundedInput,
+#roundedInput::placeholder {
+    font-size: medium;
+    color: #919747;
+    font-family: 'Rubik Medium', sans-serif;
+}
+.input-container {
+    position: relative;
+    width: 90%;
+}
+
+.search-button {
+    border-radius: 0 30px 30px 0 ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Resposive */
+
 @media screen and (max-width: 768px) {
     .texto {
         font-size: 14px;
     }
-    .textoPregunta{
+
+    .textoPregunta {
         font-size: 14px;
+    }
+
+    input#roundedInput,
+    #roundedInput::placeholder {
+        font-size: 0.5rem;
+    }
+
+    #roundedInput {
+        padding: 4%;
     }
 }
