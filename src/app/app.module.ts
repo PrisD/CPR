@@ -19,6 +19,7 @@ import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { TitleCardComponent } from './title-card/title-card.component';
 import { PsychologyComponent } from './psychology/psychology.component';
+import { DiagnosticImagingComponent } from './diagnostic-imaging/diagnostic-imaging.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { PsychologyComponent } from './psychology/psychology.component';
     MiniCardComponent,
     TitleCardComponent,
     PsychologyComponent,
+    DiagnosticImagingComponent
     
   ],
   imports: [

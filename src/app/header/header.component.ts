@@ -65,7 +65,7 @@ export class HeaderComponent implements OnInit{
         },
         {
             label: 'DIAGNÓSTICO POR IMÁGENES',
-            routerLink: '/diagnostico-imagenes'
+            routerLink: '/diagnostic-imaging'
         },
         {
             label: 'PSICOLOGÍA',

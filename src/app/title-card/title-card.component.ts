@@ -7,12 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TitleCardComponent implements OnInit{
   @Input() title: string = ''; 
+  @Input() titleFontSize: number = 0;
+  @Input() titleFontSizeScreen: number = 0;
   @Input() subtitle: string= '';
   @Input() imageUrl: string = '';
   @Input() color: string = '';
 
+
   ngOnInit(): void {
-    
+    document.documentElement.style.setProperty('--title-font-size', this.titleFontSize + 'px');  
+    document.documentElement.style.setProperty('--title-font-size-screen', this.titleFontSizeScreen + 'px');   
+     
   }
 
 }
