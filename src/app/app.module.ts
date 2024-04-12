@@ -17,7 +17,8 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { MiniCardComponent } from './mini-card/mini-card.component';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
-
+import { TitleCardComponent } from './title-card/title-card.component';
+import { PsychologyComponent } from './psychology/psychology.component';
 
 
 @NgModule({
@@ -25,8 +26,11 @@ import { InputTextModule } from 'primeng/inputtext';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-        FooterComponent,
-        MiniCardComponent,
+    FooterComponent,
+    MiniCardComponent,
+    TitleCardComponent,
+    PsychologyComponent,
+    
   ],
   imports: [
     BrowserModule,

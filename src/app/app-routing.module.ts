@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Importa tus componentes aquí
 import { HomeComponent } from './home/home.component';
-import { RadiotherapyComponent } from './screens/radiotherapy/radiotherapy/radiotherapy.component';
-import { PsychologyComponent } from './screens/radiotherapy/psychology/psychology.component';
+import { RadiotherapyComponent } from './radiotherapy/radiotherapy.component';
+import { PsychologyComponent } from './psychology/psychology.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
