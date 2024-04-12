@@ -1,17 +1,14 @@
 <div>
-    <div class="relative radio-image" style="margin-bottom: -10px;">
-        <div class="static" style="width: 100%; margin-bottom: 0;">
-            <img src="..\assets\images\CPR_radioterapia.jpg"/>
-            <div class="block-image">
-                <h3 class="ml-4 m-0 text-white title" style="opacity: 1;">RADIOTERAPIA</h3>
-                <p class="ml-4 text-white subtitle" style="opacity: 1;">
-                    Nuestro Centro ofrece tratamientos para diversos tipos de patologías oncológicas
-                    con equipamiento y profesionales interdisciplinarios de excelencia, que están
-                    siempre a disposición para brindar el mejor proceso de cura al paciente. 
-                </p>
-            </div>
-        </div>
-    </div>
+    <app-title-card
+        title="RADIOTERAPIA"
+        [titleFontSize]="50"
+        [titleFontSizeScreen]="20"
+        imageUrl="..\assets\images\CPR_radioterapia.jpg"
+        subtitle="Nuestro Centro ofrece tratamientos para diversos tipos de patologías oncológicas
+        con equipamiento y profesionales interdisciplinarios de excelencia, que están
+        siempre a disposición para brindar el mejor proceso de cura al paciente."
+        color= "rgba(97, 102, 61, 0.65)"
+    ></app-title-card> 
 
     
     <div style="background: linear-gradient(to bottom, #61663d 0.05%, white 10%); margin-top: -10px; padding-top: 10px;">

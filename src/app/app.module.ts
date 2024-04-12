@@ -20,7 +20,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { TitleCardComponent } from './title-card/title-card.component';
 import { PsychologyComponent } from './psychology/psychology.component';
 import { DiagnosticImagingComponent } from './diagnostic-imaging/diagnostic-imaging.component';
-
+import { RadiotherapyComponent } from './radiotherapy/radiotherapy.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { DiagnosticImagingComponent } from './diagnostic-imaging/diagnostic-imag
     MiniCardComponent,
     TitleCardComponent,
     PsychologyComponent,
-    DiagnosticImagingComponent
+    DiagnosticImagingComponent,
+    RadiotherapyComponent
     
   ],
   imports: [
