@@ -77,7 +77,7 @@ export class HeaderComponent implements OnInit{
         },
         {
             label: 'NUESTRO CENTRO',
-            routerLink: '/nuestro-centro'
+            routerLink: '/our-center'
         },
         {
             label: 'STAFF DE PROFESIONALES',

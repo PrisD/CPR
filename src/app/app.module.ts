@@ -1,12 +1,13 @@
+import { OurCenterComponent } from './screens/our-center/our-center.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './common/home/home.component';
+import { HeaderComponent } from './common/header/header.component';
+import { FooterComponent } from './common/footer/footer.component';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
@@ -18,9 +19,9 @@ import { MiniCardComponent } from './mini-card/mini-card.component';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { TitleCardComponent } from './title-card/title-card.component';
-import { PsychologyComponent } from './psychology/psychology.component';
-import { DiagnosticImagingComponent } from './diagnostic-imaging/diagnostic-imaging.component';
-import { RadiotherapyComponent } from './radiotherapy/radiotherapy.component';
+import { PsychologyComponent } from './screens/psychology/psychology.component';
+import { DiagnosticImagingComponent } from './screens/diagnostic-imaging/diagnostic-imaging.component';
+import { RadiotherapyComponent } from './screens/radiotherapy/radiotherapy.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RadiotherapyComponent } from './radiotherapy/radiotherapy.component';
     TitleCardComponent,
     PsychologyComponent,
     DiagnosticImagingComponent,
-    RadiotherapyComponent
+    RadiotherapyComponent,
+    OurCenterComponent
     
   ],
   imports: [
