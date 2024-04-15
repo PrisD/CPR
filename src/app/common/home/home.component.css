@@ -43,12 +43,15 @@ input#roundedInput,
     cursor: pointer;
     outline: none;
 }
+.logo{
+    width: 25%;
+}
 
 /* Resposive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .texto {
-        font-size: 14px;
+        font-size: 9px;
     }
 
     .textoPregunta {
@@ -62,5 +65,8 @@ input#roundedInput,
 
     #roundedInput {
         padding: 4%;
+    }
+    .logo{
+        width: 40%;
     }
 }
