@@ -1,3 +1,7 @@
+div {
+    font-family: 'Rubik Regular', sans-serif
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -7,7 +11,7 @@
     background: linear-gradient(to bottom, rgba(215, 107, 0, 0.316), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
     font-family: 'Rubik', sans-serif;
-    
+
 }
 
 .content-text {
@@ -22,7 +26,7 @@
 
 .titulo p {
     color: #919747;
- 
+
 }
 
 
@@ -53,22 +57,24 @@
 }
 
 .content-img img:first-child {
-    width: 35%; /* Establecer el ancho de la primera imagen al 35% */
+    width: 35%;
+    /* Establecer el ancho de la primera imagen al 35% */
     margin-right: 30px;
 }
 
 .content-img img:last-child {
-    width: 65%; /* Establecer el ancho de la segunda imagen al 65% */
+    width: 65%;
+    /* Establecer el ancho de la segunda imagen al 65% */
 }
 
 @media screen and (max-width: 600px) {
     .titulo {
         font-size: 12px;
     }
-    
+
     .description {
         font-size: 10px;
-    
+
     }
 
     .content-img img {
@@ -79,7 +85,8 @@
     }
 
     .content-img img:first-child {
-        width: 35%; /* Establecer el ancho de la primera imagen al 35% */
+        width: 35%;
+        /* Establecer el ancho de la primera imagen al 35% */
         margin-right: 10px;
     }
 }
