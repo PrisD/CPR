@@ -23,43 +23,43 @@ export class HeaderComponent implements OnInit{
             items: [
                 {
                     label: 'BRAQUITERAPIA HDR EN PRÓSTATA',
-                    routerLink: '/radiotherapy'
+                    routerLink: '/hdr-prostate-brachytherapy'
                 },
                 {
                     label: 'BRAQUITERAPIA HDR GINECOLÓGICA INTRACAVITARIA',
-                    routerLink: '/radioterapia/ginecológica-intracavitaria'
+                    routerLink: '/intracavitary-gynecological-hdr-brachytherapy'
                 },
                 {
                     label: 'BRAQUITERAPIA HDR GINECOLÓGICA INTERSTICIAL',
-                    routerLink: '/radioterapia/ginecológica-intersticial'
+                    routerLink: '/interstitial-gynecological-hdr-brachytherapy'
                 },
                 {
                     label: 'BRAQUITERAPIA HDR DE PIEL',
-                    routerLink: '/radioterapia/de-piel'
+                    routerLink: '/hdr-skin-brachytherapy'
                 },
                 {
                     label: 'IGRT EXACTRAC – BRAINLAB – RADIOTERAPIA GUIADA POR IMÁGENES',
-                    routerLink: '/radioterapia/igrt-exactrac'
+                    routerLink: '/igrt-exactrac-brainlab-image-guided-radiotherapy'
                 },
                 {
                     label: 'SBRT EXACTRAC – RADIOCIRUGÍA ESTEREOTÁXICA CORPORAL',
-                    routerLink: '/radioterapia/sbrt-exactrac'
+                    routerLink: '/sbrt-exactrac-body-stereotaxic-radiosurgery'
                 },
                 {
                     label: 'SRS EXACTRAC – RADIOCIRUGÍA ESTEREOTÁXICA CRANEAL',
-                    routerLink: '/radioterapia/srs-exactrac'
+                    routerLink: '/srs-exactrac-cranial-stereotaxic-radiosurgery'
                 },
                 {
                     label: 'HYBRIDARC TERAPIA DINÁMICA VOLUMÉTRICA',
-                    routerLink: '/radioterapia/hybridarc'
+                    routerLink: '/hybridarc-volumetric-dynamic-therapy'
                 },
                 {
                     label: 'IMRT – RADIOTERAPIA DE INTENSIDAD MODULADA CON MULTILÁMINAS',
-                    routerLink: '/radioterapia/imrt'
+                    routerLink: '/imrt-intensity-modulated-radiotherapy-with-multileaf'
                 },
                 {
                     label: 'R3D – RADIOTERAPIA TRIDIMENSIONAL CONFORMADA',
-                    routerLink: '/radioterapia/r3d'
+                    routerLink: '/r3-d-three-dimensional-conformal-radiotherapy'
                 }
             ]
         },

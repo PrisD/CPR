@@ -25,10 +25,12 @@
     font-weight: 800;
 }
 
+
 .block {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    
 }
 
 .block img{
@@ -37,8 +39,10 @@
     margin-right: 30px;
 }
 
-.block p {
+.block a {
     margin: 0; /* Para evitar espacios innecesarios alrededor del párrafo */
+    color: black; /* Mantener el texto en color negro */
+    text-decoration: none; /* Quitar el subrayado */
 }
 
 @media screen and (max-width: 600px) {
