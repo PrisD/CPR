@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './common/home/home.component';
 import { RadiotherapyComponent } from './screens/radiotherapy-screens/radiotherapy/radiotherapy.component';
-import { PsychologyComponent } from './screens/psychology/psychology.component';
+import { PsychologyComponent } from './screens/psychology-screens/psychology/psychology.component';
 import { DiagnosticImagingComponent } from './screens/diagnostic-imaging/diagnostic-imaging.component';
 import { OurCenterComponent } from './screens/our-center/our-center.component';
 import { HDRProstateBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/hdr-prostate-brachytherapy/hdr-prostate-brachytherapy.component';
@@ -15,6 +15,9 @@ import { IntracavitaryGynecologicalHDRBrachytherapyComponent } from './screens/r
 import { R3DThreeDimensionalConformalRadiotherapyComponent } from './screens/radiotherapy-screens/r3-d-three-dimensional-conformal-radiotherapy/r3-d-three-dimensional-conformal-radiotherapy.component';
 import { SBRTExactracBodyStereotaxicRadiosurgeryComponent } from './screens/radiotherapy-screens/sbrt-exactrac-body-stereotaxic-radiosurgery/sbrt-exactrac-body-stereotaxic-radiosurgery.component';
 import { SRSExactracCranialStereotaxicRadiosurgeryComponent } from './screens/radiotherapy-screens/srs-exactrac-cranial-stereotaxic-radiosurgery/srs-exactrac-cranial-stereotaxic-radiosurgery.component';
+import { ClinicalPsychologyComponent } from './screens/psychology-screens/clinical-psychology/clinical-psychology.component';
+import { MindfulnessWorkshopComponent } from './screens/psychology-screens/mindfulness-workshop/mindfulness-workshop.component';
+import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-oncology/psycho-oncology.component';
 
 
 const routes: Routes = [
@@ -32,7 +35,10 @@ const routes: Routes = [
   { path: 'intracavitary-gynecological-hdr-brachytherapy', component: IntracavitaryGynecologicalHDRBrachytherapyComponent },
   { path: 'r3-d-three-dimensional-conformal-radiotherapy', component: R3DThreeDimensionalConformalRadiotherapyComponent },
   { path: 'sbrt-exactrac-body-stereotaxic-radiosurgery', component: SBRTExactracBodyStereotaxicRadiosurgeryComponent },
-  { path: 'srs-exactrac-cranial-stereotaxic-radiosurgery', component: SRSExactracCranialStereotaxicRadiosurgeryComponent }
+  { path: 'srs-exactrac-cranial-stereotaxic-radiosurgery', component: SRSExactracCranialStereotaxicRadiosurgeryComponent },
+  { path: 'mindfulness-workshop', component: MindfulnessWorkshopComponent},
+  { path: 'psycho-oncology', component: PsychoOncologyComponent},
+  { path: 'clinical-psychology', component: ClinicalPsychologyComponent}
 ];
 
 @NgModule({

@@ -69,7 +69,21 @@ export class HeaderComponent implements OnInit{
         },
         {
             label: 'PSICOLOGÍA',
-            routerLink: '/psychology'
+            routerLink: '/psychology',
+            items: [
+                {
+                    label: 'PSICO-ONCOLOGÍA',
+                    routerLink: '/psycho-oncology'
+                },
+                {
+                    label: 'TALLER DE MINDFULNESS',
+                    routerLink: '/mindfulness-workshop'
+                },
+                {
+                    label: 'PSICOLOGÍA CLÍNICA',
+                    routerLink: '/clinical-psychology'
+                }
+            ]
         },
         {
             label: 'TURNOS',
