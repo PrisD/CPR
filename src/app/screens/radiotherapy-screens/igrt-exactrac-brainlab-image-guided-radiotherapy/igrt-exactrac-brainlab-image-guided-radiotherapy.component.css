@@ -31,7 +31,6 @@ div {
 
 .description p {
     font-size: 22px;
-    color: black;
 }
 
 .description span {
@@ -43,7 +42,6 @@ div {
 .description strong {
     font-weight: bold;
     font-weight: 800;
-    color: black;
 }
 
 .content-img {

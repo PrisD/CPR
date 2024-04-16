@@ -21,7 +21,6 @@
 
 .description {
     font-size: 22px;
-    color: black;
     font-weight: 800;
 }
 
@@ -41,7 +40,7 @@
 
 .block a {
     margin: 0; /* Para evitar espacios innecesarios alrededor del párrafo */
-    color: black; /* Mantener el texto en color negro */
+    color: rgba(0, 0, 0, 0.773); /* Mantener el texto en color negro */
     text-decoration: none; /* Quitar el subrayado */
 }
 
