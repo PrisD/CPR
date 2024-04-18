@@ -14,3 +14,24 @@
 .white-icon {
     color: white !important; /* Establece el color del icono como blanco */
 }
+.fondoHeaderHome {
+    background-color: #0009;
+    padding: 1%;
+    margin: -1%;
+}
+.fondoHeader{
+    background-color: #333333;
+    padding: 1%;
+    margin: -1%;
+}
+.logo {
+    width: 14%;
+}
+@media screen and (max-width: 600px) {
+.fondoHeaderHome, .fondoHeader {
+        margin: -2.3%;
+    }
+        .logo {
+            width: 30%;
+        }
+}

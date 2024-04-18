@@ -1,16 +1,37 @@
-<div class="ml-5 mr-5 mt-3 mb-4 flex justify-content-between flex-wrap">
-    
+<div *ngIf="headerNoHome" class="flex justify-content-between flex-wrap fondoHeaderHome align-items-center">
+
     <div class="card flex">
         <p-sidebar class="menu font-rubik" [(visible)]="sidebarVisible">
             <div class=" flex justify-content-center">
-                <p-panelMenu  [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
-            </div>         
+                <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+            </div>
         </p-sidebar>
 
-        <p-button (click)="sidebarVisible = true" size="large" class="menu-button" icon="pi pi-bars"  [style]="{'color':'white'}" [rounded]="true" [text]="true">
+        <p-button (click)="sidebarVisible = true" size="large" class="menu-button" icon="pi pi-bars"
+            [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
+            [text]="true">
         </p-button>
     </div>
 
+    <div class="flex">
+        <p-button label="Turnos" [rounded]="true"></p-button>
+    </div>
+
+</div>
+<div *ngIf="!headerNoHome" class="flex justify-content-between flex-wrap fondoHeader align-items-center">
+
+    <div class="card flex">
+        <p-sidebar class="menu font-rubik" [(visible)]="sidebarVisible">
+            <div class=" flex justify-content-center">
+                <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+            </div>
+        </p-sidebar>
+        <p-button (click)="sidebarVisible = true" size="large" class="menu-button" icon="pi pi-bars"
+            [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
+            [text]="true">
+        </p-button>
+    </div>
+        <img (click)="redireccionar()" class="logo cursor-pointer" src="../../assets/images/CPR_logo-apaisado.png" alt="">
     <div class="flex">
         <p-button label="Turnos" [rounded]="true"></p-button>
     </div>
