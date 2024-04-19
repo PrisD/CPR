@@ -1,1 +1,47 @@
-<p>psycho-oncology works!</p>
+<div class="conteiner">
+    <app-title-card 
+        title="PSICO-ONCOLOGÍA" 
+        subtitle="Para Pacientes y Familiares"
+        [titleFontSize]="50"
+        [titleFontSizeScreen]="20"
+        imageUrl="..\assets\images\CPR_psicologia.jpg"
+        color="rgba(167, 160, 28, 0.799)"
+    ></app-title-card>
+
+    <div class="content">
+        <div class="content-text">
+            <div class="titulo">
+                <p>Nuestro Centro ofrece atención psicológica gratuita tanto para
+                    pacientes oncológicos del Centro como para familiares. </p>
+            </div>
+
+            <div class="description">
+                <p>La <strong>estabilidad emocional y psicológica</strong> como parte del proceso de cura, es sumamente
+                    importante y necesaria, para atravesar las distintas etapas del tratamiento.</p>
+
+                <p>En nuestro Centro el paciente y sus familiares directos cuentan con atención gratuita y
+                    realizan un <strong>taller de Mindfulness</strong>, que complementa la atención psicológica.</p>
+
+
+                <div class="flex align-items-center check">
+                    <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
+                    <p>El taller de Mindfulness para pacientes y familiares se realiza dos veces por semana, los
+                        martes y viernes a las 13 hs.</p>
+                </div>
+
+                <div class="flex align-items-center check">
+                    <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
+                    <p>El Lic. Juan Pablo Montanelli, psicólogo e instructor de Mindfulness, desarrolla ambas
+                        actividades en nuestro Centro. </p>
+                </div>
+            </div>
+            
+            <div class="flex botones">
+                <p-button class="flex felx-row psy-button" label="QUÉ ES EL MINDFULNESS" (click)="goToMindfulness()" [rounded]="true"></p-button>
+                <p-button class="flex felx-row psy-button" label="TALLER DE MINDFULNESS" (click)="goToClinical()" [rounded]="true"></p-button>
+            </div>
+
+        </div>        
+    </div>
+
+</div>
