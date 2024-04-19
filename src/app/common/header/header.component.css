@@ -17,12 +17,12 @@
 .fondoHeaderHome {
     background-color: #0009;
     padding: 1%;
-    margin: -1%;
+    margin: -8px;
 }
 .fondoHeader{
     background-color: #333333;
     padding: 1%;
-    margin: -1%;
+    margin: -8px;
 }
 .logo {
     width: 14%;
