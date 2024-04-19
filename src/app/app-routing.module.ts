@@ -18,7 +18,7 @@ import { SRSExactracCranialStereotaxicRadiosurgeryComponent } from './screens/ra
 import { ClinicalPsychologyComponent } from './screens/psychology-screens/clinical-psychology/clinical-psychology.component';
 import { MindfulnessWorkshopComponent } from './screens/psychology-screens/mindfulness-workshop/mindfulness-workshop.component';
 import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-oncology/psycho-oncology.component';
-
+import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is-mindfulness/what-is-mindfulness.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -38,7 +38,9 @@ const routes: Routes = [
   { path: 'srs-exactrac-cranial-stereotaxic-radiosurgery', component: SRSExactracCranialStereotaxicRadiosurgeryComponent },
   { path: 'mindfulness-workshop', component: MindfulnessWorkshopComponent},
   { path: 'psycho-oncology', component: PsychoOncologyComponent},
-  { path: 'clinical-psychology', component: ClinicalPsychologyComponent}
+  { path: 'clinical-psychology', component: ClinicalPsychologyComponent},
+  { path: 'what-is-mindfulness', component: WhatIsMindfulnessComponent}
+
 ];
 
 @NgModule({

@@ -14,8 +14,8 @@ export class PsychoOncologyComponent {
     this.router.navigate(['\mindfulness-workshop']);
   }
 
-  goToClinical(){
-    this.router.navigate(['\clinical-psychology']);
+  goToWhatIsMindfulness(){
+    this.router.navigate(['\what-is-mindfulness']);
   }
 
 }

@@ -35,6 +35,7 @@ import { SRSExactracCranialStereotaxicRadiosurgeryComponent } from './screens/ra
 import { ClinicalPsychologyComponent } from './screens/psychology-screens/clinical-psychology/clinical-psychology.component';
 import { MindfulnessWorkshopComponent } from './screens/psychology-screens/mindfulness-workshop/mindfulness-workshop.component';
 import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-oncology/psycho-oncology.component';
+import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is-mindfulness/what-is-mindfulness.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-onc
     SRSExactracCranialStereotaxicRadiosurgeryComponent,
     ClinicalPsychologyComponent,
     MindfulnessWorkshopComponent,
-    PsychoOncologyComponent    
+    PsychoOncologyComponent,
+    WhatIsMindfulnessComponent    
   ],
   imports: [
     BrowserModule,
