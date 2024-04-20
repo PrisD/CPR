@@ -1,13 +1,13 @@
 <div *ngIf="headerNoHome" class="flex justify-content-between flex-wrap fondoHeaderHome align-items-center">
 
     <div class="card flex">
-        <p-sidebar class="menu font-rubik" [(visible)]="sidebarVisible">
+        <p-sidebar class="font-rubik" [(visible)]="sidebarVisible" position="top" styleClass="h-auto">
             <div class=" flex justify-content-center">
                 <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
             </div>
         </p-sidebar>
 
-        <p-button (click)="sidebarVisible = true" size="large" class="menu-button" icon="pi pi-bars"
+        <p-button (click)="sidebarVisible = true" size="large" icon="pi pi-bars"
             [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
             [text]="true">
         </p-button>
@@ -21,12 +21,12 @@
 <div *ngIf="!headerNoHome" class="flex justify-content-between flex-wrap fondoHeader align-items-center">
 
     <div class="card flex">
-        <p-sidebar class="menu font-rubik" [(visible)]="sidebarVisible">
+        <p-sidebar class="font-rubik" [(visible)]="sidebarVisible" position="top"  styleClass="h-auto">
             <div class=" flex justify-content-center">
                 <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
             </div>
         </p-sidebar>
-        <p-button (click)="sidebarVisible = true" size="large" class="menu-button" icon="pi pi-bars"
+        <p-button (click)="sidebarVisible = true" size="large" icon="pi pi-bars"
             [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
             [text]="true">
         </p-button>
