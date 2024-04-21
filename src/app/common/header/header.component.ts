@@ -23,8 +23,11 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'RADIOTERAPIA',
-                routerLink: '/radiotherapy',
                 items: [
+                    {
+                        label: 'RADIOTERAPIA',
+                        routerLink: '/radiotherapy'
+                    },
                     {
                         label: 'BRAQUITERAPIA HDR EN PRÓSTATA',
                         routerLink: '/hdr-prostate-brachytherapy'
@@ -73,8 +76,11 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'PSICOLOGÍA',
-                routerLink: '/psychology',
                 items: [
+                    {
+                        label: 'PSICOLOGÍA',
+                        routerLink: '/psychology'
+                    },
                     {
                         label: 'PSICO-ONCOLOGÍA',
                         routerLink: '/psycho-oncology'
@@ -91,7 +97,7 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'TURNOS',
-                routerLink: '/turnos'
+                routerLink: '/shifts-options'
             },
             {
                 label: 'NUESTRO CENTRO',
@@ -126,5 +132,10 @@ export class HeaderComponent implements OnInit {
     redireccionar(): void {
         window.location.href = "/";
     }
+
+    goToShifts(){
+        this.router.navigate(['\shifts-options']);
+      }
+    
 
 }

@@ -19,6 +19,7 @@ import { ClinicalPsychologyComponent } from './screens/psychology-screens/clinic
 import { MindfulnessWorkshopComponent } from './screens/psychology-screens/mindfulness-workshop/mindfulness-workshop.component';
 import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-oncology/psycho-oncology.component';
 import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is-mindfulness/what-is-mindfulness.component';
+import { ShiftsOptionsComponent } from './screens/shifts/shifts-options/shifts-options.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -39,7 +40,8 @@ const routes: Routes = [
   { path: 'mindfulness-workshop', component: MindfulnessWorkshopComponent},
   { path: 'psycho-oncology', component: PsychoOncologyComponent},
   { path: 'clinical-psychology', component: ClinicalPsychologyComponent},
-  { path: 'what-is-mindfulness', component: WhatIsMindfulnessComponent}
+  { path: 'what-is-mindfulness', component: WhatIsMindfulnessComponent},
+  { path: 'shifts-options', component: ShiftsOptionsComponent}
 
 ];
 
