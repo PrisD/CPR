@@ -31,7 +31,7 @@ input#roundedInput,
 }
 .input-container {
     position: relative;
-    width: 40%;
+    width: 50%;
 }
 
 .search-button {
@@ -74,5 +74,11 @@ input#roundedInput,
     }
     .logo{
         width: 40%;
+    }
+    .input-container{
+            width: 90%;
+    }
+    .fondoVerde{
+        width: auto;
     }
 }
