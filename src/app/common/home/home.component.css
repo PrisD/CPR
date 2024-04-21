@@ -46,6 +46,11 @@ input#roundedInput,
 .logo{
     width: 25%;
 }
+.consultas-button img {
+    height: 20px;
+    width: 20px;
+    margin-left: 25px;
+}
 
 /* Resposive */
 
