@@ -60,6 +60,17 @@ div {
     /* Establecer el ancho de la segunda imagen al 65% */
 }
 
+.botones {
+    justify-content: center;
+}
+
+
+.bra-button {
+    margin: 40px;
+    width: 250px;
+    height: 80px;
+}
+
 @media screen and (max-width: 600px) {
 
     .description p{

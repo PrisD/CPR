@@ -20,6 +20,7 @@ import { MindfulnessWorkshopComponent } from './screens/psychology-screens/mindf
 import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-oncology/psycho-oncology.component';
 import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is-mindfulness/what-is-mindfulness.component';
 import { ShiftsOptionsComponent } from './screens/shifts/shifts-options/shifts-options.component';
+import { GynecologicalHDRBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/gynecological-hdr-brachytherapy/gynecological-hdr-brachytherapy.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -41,7 +42,8 @@ const routes: Routes = [
   { path: 'psycho-oncology', component: PsychoOncologyComponent},
   { path: 'clinical-psychology', component: ClinicalPsychologyComponent},
   { path: 'what-is-mindfulness', component: WhatIsMindfulnessComponent},
-  { path: 'shifts-options', component: ShiftsOptionsComponent}
+  { path: 'shifts-options', component: ShiftsOptionsComponent},
+  { path: 'gynecological-hdr-brachytherapy', component: GynecologicalHDRBrachytherapyComponent}
 
 ];
 

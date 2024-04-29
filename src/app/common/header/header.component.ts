@@ -33,12 +33,8 @@ export class HeaderComponent implements OnInit {
                         routerLink: '/hdr-prostate-brachytherapy'
                     },
                     {
-                        label: 'BRAQUITERAPIA HDR GINECOLÓGICA INTRACAVITARIA',
-                        routerLink: '/intracavitary-gynecological-hdr-brachytherapy'
-                    },
-                    {
-                        label: 'BRAQUITERAPIA HDR GINECOLÓGICA INTERSTICIAL',
-                        routerLink: '/interstitial-gynecological-hdr-brachytherapy'
+                        label: 'BRAQUITERAPIA HDR GINECOLÓGICA',
+                        routerLink: '/gynecological-hdr-brachytherapy'
                     },
                     {
                         label: 'BRAQUITERAPIA HDR DE PIEL',

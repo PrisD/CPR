@@ -51,6 +51,16 @@ div {
     margin-bottom: -15px;
 }
 
+.botones {
+    justify-content: center;
+}
+
+.psy-button {
+    margin: 100px;
+    width: 300px;
+    height: 60px;
+}
+
 .content-img {
     margin-left: 5%;
     margin-right: 5%;

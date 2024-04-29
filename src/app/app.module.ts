@@ -37,7 +37,7 @@ import { MindfulnessWorkshopComponent } from './screens/psychology-screens/mindf
 import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-oncology/psycho-oncology.component';
 import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is-mindfulness/what-is-mindfulness.component';
 import { ShiftsOptionsComponent } from './screens/shifts/shifts-options/shifts-options.component';
-
+import { GynecologicalHDRBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/gynecological-hdr-brachytherapy/gynecological-hdr-brachytherapy.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +65,8 @@ import { ShiftsOptionsComponent } from './screens/shifts/shifts-options/shifts-o
     MindfulnessWorkshopComponent,
     PsychoOncologyComponent,
     WhatIsMindfulnessComponent,
-    ShiftsOptionsComponent    
+    ShiftsOptionsComponent,
+    GynecologicalHDRBrachytherapyComponent    
   ],
   imports: [
     BrowserModule,
