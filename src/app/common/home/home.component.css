@@ -53,6 +53,10 @@ input#roundedInput,
     margin-left: 25px;
 }
 
+.consultas-button{
+    margin-right: 65px;
+}
+
 /* Resposive */
 
 @media screen and (max-width: 600px) {
@@ -80,5 +84,8 @@ input#roundedInput,
     }
     .fondoVerde{
         width: auto;
+    }
+    .consultas-button{
+        margin-right: 5px;
     }
 }

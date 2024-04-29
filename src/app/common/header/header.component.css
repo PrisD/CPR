@@ -21,12 +21,12 @@
     color: #ffffff;
 }
 @media screen and (max-width: 600px) {
-.fondoHeaderHome, .fondoHeader {
+    .fondoHeaderHome, .fondoHeader {
         margin: -2.3%;
     }
-        .logo {
+    .logo {
             width: 30%;
-        }
+    }
 }
 :host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action,
 :host::ng-deep  .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-text{
@@ -53,4 +53,8 @@
 
 :host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem:not(.p-highlight):not(.p-disabled)>.p-menuitem-content:hover{
     background: transparent;
+}
+
+.turns{
+    margin-right: 65px;
 }
