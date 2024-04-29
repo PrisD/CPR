@@ -32,7 +32,6 @@ import { IntracavitaryGynecologicalHDRBrachytherapyComponent } from './screens/r
 import { R3DThreeDimensionalConformalRadiotherapyComponent } from './screens/radiotherapy-screens/r3-d-three-dimensional-conformal-radiotherapy/r3-d-three-dimensional-conformal-radiotherapy.component';
 import { SBRTExactracBodyStereotaxicRadiosurgeryComponent } from './screens/radiotherapy-screens/sbrt-exactrac-body-stereotaxic-radiosurgery/sbrt-exactrac-body-stereotaxic-radiosurgery.component';
 import { SRSExactracCranialStereotaxicRadiosurgeryComponent } from './screens/radiotherapy-screens/srs-exactrac-cranial-stereotaxic-radiosurgery/srs-exactrac-cranial-stereotaxic-radiosurgery.component';
-import { ClinicalPsychologyComponent } from './screens/psychology-screens/clinical-psychology/clinical-psychology.component';
 import { MindfulnessWorkshopComponent } from './screens/psychology-screens/mindfulness-workshop/mindfulness-workshop.component';
 import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-oncology/psycho-oncology.component';
 import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is-mindfulness/what-is-mindfulness.component';
@@ -61,7 +60,6 @@ import { GynecologicalHDRBrachytherapyComponent } from './screens/radiotherapy-s
     IGRTExactracBrainlabImageGuidedRadiotherapyComponent,
     IMRTIntensityModulatedRadiotherapyWithMultileafComponent,
     SRSExactracCranialStereotaxicRadiosurgeryComponent,
-    ClinicalPsychologyComponent,
     MindfulnessWorkshopComponent,
     PsychoOncologyComponent,
     WhatIsMindfulnessComponent,

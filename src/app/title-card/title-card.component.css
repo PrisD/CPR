@@ -31,9 +31,11 @@
 
 .article-card .title {
     margin: 0;
-    
     font-size: var(--title-font-size, 10px);
-    
+}
+
+.content .text{
+    margin-left: 55px;
 }
 
 .article-card .subtitle {
@@ -63,13 +65,15 @@ img {
     }
 
     .article-card .title {
-        margin: 0;
         font-size: var(--title-font-size-screen, 15px);
     }
 
     .article-card .subtitle {
-        margin: 0;
         font-size: 8px;
+    }
+
+    .content .text{
+        margin-left: -22px;
     }
 
     .article-card .content {

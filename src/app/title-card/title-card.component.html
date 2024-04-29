@@ -1,9 +1,9 @@
 <div class="flex flex-wrap justify-content-center">
     <div class="article-card">
         <div class="content" [style.backgroundColor]="color">
-            <div class="p-d-flex p-flex-column p-align-start">
-                <h3 class="m-2 ml-7 text-white title font-bold ">{{ title }}</h3>
-                <div *ngIf="subtitle!=''" class="subtitle m-2 ml-7 text-white"> {{subtitle}} </div>
+            <div class="p-d-flex p-flex-column text p-align-start">
+                <h3 class="m-2 text-white title font-bold ">{{ title }}</h3>
+                <div *ngIf="subtitle!=''" class="subtitle m-2 text-white"> {{subtitle}} </div>
             </div>
         </div>
         <img [src]="imageUrl" alt="article-cover" />

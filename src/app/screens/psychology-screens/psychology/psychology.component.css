@@ -85,6 +85,16 @@ div {
     /* Establecer el ancho de la segunda imagen al 65% */
 }
 
+.botones {
+    justify-content: center;
+}
+
+.psy-button {
+    margin: 100px;
+    width: 300px;
+    height: 60px;
+}
+
 @media screen and (max-width: 600px) {
     .titulo {
         font-size: 12px;
