@@ -1,19 +1,17 @@
+
 .fondoHeaderHome {
     background-color: #0009;
     padding: 1%;
     margin: -8px;
 }
-
-.fondoHeader {
+.fondoHeader{
     background-color: #333333;
     padding: 1%;
     margin: -8px;
 }
-
 .logo {
     width: 14%;
 }
-
 :host::ng-deep .p-sidebar-top {
     background: #333333;
 }
@@ -22,59 +20,41 @@
 .p-sidebar .p-sidebar-header .p-sidebar-icon {
     color: #ffffff;
 }
-
 @media screen and (max-width: 600px) {
-
-    .fondoHeaderHome,
-    .fondoHeader {
+    .fondoHeaderHome, .fondoHeader {
         margin: -2.3%;
     }
-
     .logo {
-        width: 30%;
+            width: 30%;
     }
 }
-
 :host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action,
-:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-text {
+:host::ng-deep  .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-text{
     color: #ffffffe1;
     padding: 0.25rem;
     font-weight: 400;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
+    
 }
-
-:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content,
-:host::ng-deep .p-panelmenu .p-panelmenu-content {
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content ,
+:host::ng-deep .p-panelmenu .p-panelmenu-content{
     border: none;
     background: #ffffff00;
-}
+} 
 
 :host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link {
     padding: 0rem;
     padding-left: 30px;
 }
-
 :host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link :hover,
-:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action :hover {
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action  :hover
+{
     color: #919747;
 }
 
-:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem:not(.p-highlight):not(.p-disabled)>.p-menuitem-content:hover {
+:host::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem:not(.p-highlight):not(.p-disabled)>.p-menuitem-content:hover{
     background: transparent;
 }
 
-.turns {
+.turns{
     margin-right: 65px;
-}
-
-:host::ng-deep .p-icon-wrapper {
-    display: inline-flex;
-    transform: rotate(90deg);
-}
-
-:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action .p-submenu-icon {
-    margin-bottom: 0.5rem;
-    margin-right: 0;
 }
