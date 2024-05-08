@@ -1,0 +1,73 @@
+<div class="formulario">
+    <form class="m-3">
+        <div class="flex flex-wrap box">
+            <div class="flex form-text">Nombre completo del paciente</div>
+            <div class="flex">
+                <input type="text" class="input-principal" pInputText [(ngModel)]="nombre" id="nombre" name="nombre" required>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="flex box">
+                <div class="flex form-text">DNI</div>
+                <div class="flex">
+                    <input type="text" pInputText [(ngModel)]="dni" id="dni" name="dni" required>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex form-text box">Fecha de Nac.</div>
+                <div class="flex">
+                    <input type="text" pInputText [(ngModel)]="nacimiento" id="nacimiento" name="nacimiento" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="flex box">
+                <div class="flex form-text">Provincia</div>
+                <div class="flex">
+                    <input type="text" pInputText [(ngModel)]="provincia" id="provincia" name="provincia" required>
+                </div>
+            </div>
+            <div class="flex box">
+                <div class="flex form-text">Localidad</div>
+                <div class="flex">
+                    <input type="text" pInputText [(ngModel)]="localidad" id="localidad" name="localidad" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap box">
+            <div class="flex box">
+                <div class="flex form-text">Celular</div>
+                <div class="flex">
+                    <input type="text" pInputText [(ngModel)]="celular" id="celular" name="celular" required>
+                </div>
+            </div>
+            <div class="flex box">
+                <div class="flex form-text">País</div>
+                <div class="flex">
+                    <input type="text" pInputText [(ngModel)]="pais" id="pais" name="pais" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap box">
+            <div class="flex form-text">E-mail</div>
+            <div class="flex">
+                <input type="text" pInputText [(ngModel)]="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap box">
+            <div class="flex form-text">Diagnóstico</div>
+            <div class="flex">
+                <input type="text" pInputText [(ngModel)]="diagnostico" id="diagnostico" name="diagnostico" required>
+            </div>
+        </div>
+
+        
+
+        <button type="submit" class="btn btn-primary">SOLICITAR TURNO</button>
+    </form>
+</div>

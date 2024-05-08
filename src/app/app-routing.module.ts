@@ -20,6 +20,10 @@ import { PsychoOncologyComponent } from './screens/psychology-screens/psycho-onc
 import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is-mindfulness/what-is-mindfulness.component';
 import { ShiftsOptionsComponent } from './screens/shifts/shifts-options/shifts-options.component';
 import { GynecologicalHDRBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/gynecological-hdr-brachytherapy/gynecological-hdr-brachytherapy.component';
+import { ShiftsDiagnosisByImagingComponent } from './screens/shifts/shifts-diagnosis-by-imaging/shifts-diagnosis-by-imaging.component';
+import { ShiftsPsychologyComponent } from './screens/shifts/shifts-psychology/shifts-psychology.component';
+import { ShiftsStartRadiotherapyComponent } from './screens/shifts/shifts-start-radiotherapy/shifts-start-radiotherapy.component';
+import { ShiftFormComponent } from './screens/shifts/shift-form/shift-form.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -41,7 +45,11 @@ const routes: Routes = [
   { path: 'psycho-oncology', component: PsychoOncologyComponent},
   { path: 'what-is-mindfulness', component: WhatIsMindfulnessComponent},
   { path: 'shifts-options', component: ShiftsOptionsComponent},
-  { path: 'gynecological-hdr-brachytherapy', component: GynecologicalHDRBrachytherapyComponent}
+  { path: 'gynecological-hdr-brachytherapy', component: GynecologicalHDRBrachytherapyComponent},
+  { path: 'shifts-diagnosis-by-imaging', component: ShiftsDiagnosisByImagingComponent},
+  { path: 'shifts-start-radiotherapy', component: ShiftsStartRadiotherapyComponent},
+  { path: 'shifts-psychology', component: ShiftsPsychologyComponent},
+  { path: 'shift-form', component: ShiftFormComponent}
 
 ];
 
