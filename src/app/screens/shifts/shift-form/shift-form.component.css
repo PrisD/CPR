@@ -144,5 +144,104 @@
   }
 
   @media screen and (max-width: 600px) {
+
+    .formulario {
+      border-radius: 0 30px 0 0;
+      padding: 15px;
+    }
+
+    /* Estilos para cada fila de inputs */
+    .formulario .box {
+      margin-bottom: 5px;
+    }
+  
+    .formulario .form-text {
+      font-size: 10px;
+      margin-right: 5px;
+    }
+  
+    .formulario .input-principal {
+      width: 200px;
+      height: 20px;
+      font-size: 9px;
+    }
+  
+    /*Input secundario*/
+  
+    .formulario .dni-box {
+      margin-left: 22%;
+    }
+  
+    .formulario .pais-box {
+      margin-left: 21%;
+    }
+  
+    .formulario .prov-box {
+      margin-left: 13.8%;
+    }
+  
+    .formulario .localidad-box {
+      margin-left: 13.4%;
+    }
+  
+    .formulario .diag-box {
+      margin-left: 10%;
+    }
+  
+    .formulario .input-secundario {
+      width: 50px;
+      font-size: 9px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  
+    .formulario .pais-box .cel-box{
+      margin-left: 14.6%;
+    }
+  
+    .formulario .input-secundario-cel {
+      width: 70px;
+      height: 20px;
+      font-size: 9px;
+    }
+  
+    .formulario .prov-box .email-box{
+      margin-left: 14.8%;
+    }
+  
+    .formulario .input-secundario-email {
+      width: 69.6px;
+      height: 20px;
+      font-size: 9px;
+    }
+  
+    /*Input terciario*/
+  
+    .formulario .input-terciario {
+      width: 20px;
+      height: 25px;
+      margin-right: 1.5px;
+      margin-left: 0.5px;
+      font-size: 9px;
+    }
+  
+    .formulario .input-terciario-anio {
+      width: 25px;
+      height: 25px;
+      font-size: 9px;
+      margin-right: 0px;
+      margin-left: 1px;
+    }
+  
+    /*Boton*/
+  
+    .formulario .submit-button {
+      font-size: 8px;
+      padding: 10px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
     
   }
