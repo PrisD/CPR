@@ -17,6 +17,9 @@ export class ShiftFormComponent implements OnInit {
   pais: string = '';
   email: string = '';
   diagnostico: string = '';
+  diaNacimiento: string = '';
+  mesNacimiento: string = '';
+  anioNacimiento: string = '';
 
 
   ngOnInit(): void {
