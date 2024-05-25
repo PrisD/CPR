@@ -1,13 +1,37 @@
+<!-- NAV -->
+<div class="overlay" *ngIf="sidebarVisible" (click)="toggleSidebar()"></div>
+<div *ngIf="sidebarVisible" [ngClass]="{'cerrar-animacion': animatingOut}"
+    class="flex justify-content-center nav align-items-center font-rubik">
+    <div class="relative">
+        <p-button (click)="toggleSidebar()" size="large" icon="pi pi-times" class="x"
+            [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}"
+            [rounded]="true" [text]="true">
+        </p-button>
+    </div>
+    <ul class="mr-4">
+        <li *ngFor="let item of items; let i = index" routerLinkActive="active">
+            <a [routerLink]="item.routerLink" (click)="toggleSidebar()">
+                <img *ngIf="isLinkActive(item.routerLink)" src="assets/images/isologo.png" class="isologo"
+                    alt="Active">
+                {{ item.label }}
+            </a>
+            <i *ngIf="item.items && item.items.length > 0" class="pi pi-angle-down" [class.expanded]="isItemExpanded(i)"
+                (click)="toggleItem(i)"></i>
+            <ul *ngIf="item.items && isItemExpanded(i)">
+                <li *ngFor="let subItem of item.items" routerLinkActive="active">
+                    <a [routerLink]="subItem.routerLink">
+                        <img *ngIf="isLinkActive(subItem.routerLink)" src="assets/images/isologo.png"
+                            class="isologo" alt="Active">
+                        {{ subItem.label }}
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
 <div *ngIf="headerNoHome" class="flex justify-content-between flex-wrap fondoHeaderHome align-items-center">
-
     <div class="card flex">
-        <p-sidebar class="font-rubik" [(visible)]="sidebarVisible" position="top" styleClass="h-auto">
-            <div class=" flex justify-content-center">
-                <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
-            </div>
-        </p-sidebar>
-
-        <p-button (click)="sidebarVisible = true" size="large" icon="pi pi-bars"
+        <p-button (click)="toggleSidebar()" size="large" icon="pi pi-bars"
             [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
             [text]="true">
         </p-button>
@@ -16,22 +40,16 @@
     <div class="flex turns">
         <p-button label="Turnos" (onClick)="goToShifts()" [rounded]="true"></p-button>
     </div>
-
 </div>
 <div *ngIf="!headerNoHome" class="flex justify-content-between flex-wrap fondoHeader align-items-center">
 
     <div class="card flex">
-        <p-sidebar class="font-rubik" [(visible)]="sidebarVisible" position="top"  styleClass="h-auto">
-            <div class=" flex justify-content-center">
-                <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
-            </div>
-        </p-sidebar>
-        <p-button (click)="sidebarVisible = true" size="large" icon="pi pi-bars"
+        <p-button (click)="toggleSidebar()" size="large" icon="pi pi-bars"
             [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
             [text]="true">
         </p-button>
     </div>
-        <img (click)="redireccionar()" class="logo cursor-pointer" src="../../assets/images/CPR_logo-apaisado.png" alt="">
+    <img (click)="redireccionar()" class="logo cursor-pointer" src="../../assets/images/CPR_logo-apaisado.png" alt="">
 
     <div class="flex turns">
         <p-button label="Turnos" (onClick)="goToShifts()" [rounded]="true"></p-button>

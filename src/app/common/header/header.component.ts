@@ -12,7 +12,9 @@ export class HeaderComponent implements OnInit {
     items: MenuItem[] | undefined;
     sidebarVisible: boolean = false;
     headerNoHome: boolean = true;
-
+    expandedIndex: number = -1;
+    animatingOut: boolean = false;
+    
     constructor(private router: Router) { }
 
     ngOnInit() {
@@ -122,6 +124,39 @@ export class HeaderComponent implements OnInit {
     goToShifts(){
         this.router.navigate(['\shifts-options']);
       }
-    
+    toggleItem(index: number): void {
+        if (this.expandedIndex === index) {
+            this.expandedIndex = -1;
+        } else {
+            this.expandedIndex = index;
+        }
+    }
 
+    isItemExpanded(index: number): boolean {
+        return this.expandedIndex === index;
+    }   
+    toggleSidebar() {
+        this.sidebarVisible = !this.sidebarVisible;
+        if (this.sidebarVisible) {
+            this.disableBodyScroll();
+        } else {
+            this.enableBodyScroll();
+        }
+    }
+
+    disableBodyScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+
+    enableBodyScroll() {
+        document.body.style.overflow = '';
+    }
+    isLinkActive(routerLink: string): boolean {
+        return this.router.isActive(routerLink, {
+            paths: 'exact',
+            queryParams: 'ignored',
+            fragment: 'ignored',
+            matrixParams: 'ignored'
+        });
+    }
 }
