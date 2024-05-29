@@ -56,6 +56,9 @@ input#roundedInput,
 .consultas-button{
     margin-right: 65px;
 }
+.landing {
+    min-height: 87.3vh;
+}
 
 /* Resposive */
 

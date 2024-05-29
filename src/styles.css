@@ -54,10 +54,12 @@ body,
 p,
 .p-component {
     font-family: 'Rubik Regular', sans-serif;
+    font-size: small;
 }
 
 span {
     font-family: 'Rubik Light', sans-serif;
+    font-size: small;
 }
 
 h1,
@@ -73,6 +75,7 @@ h4 {
 h5,
 h6 {
     font-family: 'Rubik Light', sans-serif;
+    font-size: small;
 }
 
 p,
