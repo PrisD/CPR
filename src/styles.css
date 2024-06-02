@@ -12,6 +12,9 @@
 .p-button:focus {
     box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #9197479e, 0 1px 2px 0 rgb(0, 0, 0);
 }
+ .p-button .p-button-label {
+    font-weight: normal;
+}
 
 /* FUENTES */
 @font-face {
@@ -49,6 +52,21 @@
     src: url('assets/fonts/Rubik-LightItalic.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Rubik Medium';
+    src: url('assets/fonts/Rubik-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik Medium Italic';
+    src: url('assets/fonts/Rubik-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('assets/fonts/Rubik-Regular.ttf');
+}
+
 /* FUENTES DEFINIDAS SEGÚN EL TEXTO */
 body,
 p,
@@ -69,7 +87,7 @@ h2 {
 
 h3,
 h4 {
-    font-family: 'Rubik Medium', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 }
 
 h5,
@@ -97,4 +115,10 @@ h6 {
 .turnos-button {
     background-color: #a7a11c !important;
     border: 1px solid #a7a11c;
+}
+
+.titulo {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #919747;
 }

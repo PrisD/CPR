@@ -25,9 +25,7 @@
 
 input#roundedInput,
 #roundedInput::placeholder {
-    font-size: medium;
     color: #919747;
-    font-family: 'Rubik Medium', sans-serif;
 }
 .input-container {
     position: relative;

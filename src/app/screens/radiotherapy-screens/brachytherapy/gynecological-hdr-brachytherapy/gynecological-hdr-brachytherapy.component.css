@@ -85,16 +85,12 @@ div {
     /* Establecer el ancho de la segunda imagen al 65% */
 }
 
-.botones {
-    justify-content: center;
+::ng-deep .p-button {
+    background-color: #e2d40a;
+    border :1px #e2d40a solid;
+    font-weight: 700;
 }
 
-
-.bra-button {
-    margin: 40px;
-    width: 250px;
-    height: 80px;
-}
 
 @media screen and (max-width: 600px) {
     .titulo {

@@ -36,9 +36,9 @@
 /* Estilos para los enlaces */
 a {
     color: #ffffff;
-    font-family: 'Rubik Medium', sans-serif;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: medium;
 }
 
 .pi:hover,

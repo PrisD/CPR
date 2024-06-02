@@ -32,7 +32,7 @@
     border-left: #4f5052 solid 0.3px;
 }
 
-.titulo {
+.tituloFoot {
     color: #919194;
 }
 
@@ -77,7 +77,7 @@ strong {
         width: 100%;
     }
 
-    .titulo {
+    .tituloFoot {
         display: flex;
         justify-content: center;
         margin-top: 10%;
