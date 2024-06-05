@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './shift-form.component.css'
 })
 export class ShiftFormComponent implements OnInit {
+  provinciasOptions: string[] = [];
   nombreCompleto: string = '';
   nombre: string = '';
   edad: string = '';
@@ -23,6 +24,31 @@ export class ShiftFormComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.provinciasOptions = [
+      'Buenos Aires',
+      'Catamarca',
+      'Chaco',
+      'Chubut',
+      'Córdoba',
+      'Corrientes',
+      'Entre Ríos',
+      'Formosa',
+      'Jujuy',
+      'La Pampa',
+      'La Rioja',
+      'Mendoza',
+      'Misiones',
+      'Neuquén',
+      'Río Negro',
+      'Salta',
+      'San Juan',
+      'San Luis',
+      'Santa Cruz',
+      'Santa Fe',
+      'Santiago del Estero',
+      'Tierra del Fuego',
+      'Tucumán'
+    ];
     
   }
 }

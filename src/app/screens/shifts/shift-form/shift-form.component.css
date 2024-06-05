@@ -108,19 +108,16 @@
     border-radius: 0;
     box-sizing: border-box;
     height: 50px;
-    border: 1px solid #464b0e;
     margin-right: 10px;
     border: none;
   }
 
   .formulario .input-terciario-anio {
-    width: 107px;
+    width: 35%;
     padding: 8px;
     border-radius: 0;
     box-sizing: border-box;
     height: 50px;
-    border: 1px solid #464b0e;
-    margin-right: 10px;
     border: none;
   }
 

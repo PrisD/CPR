@@ -42,7 +42,7 @@
             <div class="form-text">Provincia</div>
             <div>
                 <select class="input-secundario" [(ngModel)]="provincia" id="provincia" name="provincia" required>
-                    <!-- Opciones de la provincia -->
+                    <option *ngFor="let provincia of provinciasOptions" [value]="provincia">{{ provincia }}</option>
                 </select>
             </div>
             <div class="form-text email-box">E-mail</div>
