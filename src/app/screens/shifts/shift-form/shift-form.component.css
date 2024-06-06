@@ -1,3 +1,6 @@
+  span{
+    font-size: 23px;
+  }
   /* Formulario Bloque */
   .formulario {
     background-color: #e8e8d6;
@@ -5,7 +8,7 @@
     padding: 20px;
     border-radius: 0 40px 0 0;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     height: auto;
     margin: 0 auto;
     padding: 4%;
@@ -19,13 +22,11 @@
 
   /* Estilos para cada fila de inputs */
   .formulario .box {
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
   }
 
   .formulario .form-text {
-    font-size: 22px;
+    font-size: 23px;
     font-family: 'Rubik Regular', sans-serif;
     color: #464b0e;
     margin-right: 20px;
@@ -33,7 +34,7 @@
   }
 
   .formulario .input-principal {
-    width: 880px; 
+    width: 885px;
     padding: 8px;
     border-radius: 0;
     box-sizing: border-box;
@@ -42,26 +43,6 @@
   }
 
   /*Input secundario*/
-
-  .formulario .dni-box {
-    margin-left: 12.8%;
-  }
-
-  .formulario .pais-box {
-    margin-left: 12.2%;
-  }
-
-  .formulario .prov-box {
-    margin-left: 8%;
-  }
-
-  .formulario .localidad-box {
-    margin-left: 7.7%;
-  }
-
-  .formulario .diag-box {
-    margin-left: 5.9%;
-  }
 
   .formulario .input-secundario {
     width: 350px;
@@ -72,7 +53,7 @@
     border: none;
   }
 
-  .formulario .pais-box .cel-box{
+  .formulario .cel-box {
     margin-left: 7.8%;
   }
 
@@ -86,7 +67,7 @@
     border: none;
   }
 
-  .formulario .prov-box .email-box{
+  .formulario .prov-box .email-box {
     margin-left: 8.1%;
   }
 
@@ -103,7 +84,7 @@
   /*Input terciario*/
 
   .formulario .input-terciario {
-    width: 80px;
+    width: 78px;
     padding: 8px;
     border-radius: 0;
     box-sizing: border-box;
@@ -113,12 +94,20 @@
   }
 
   .formulario .input-terciario-anio {
-    width: 35%;
+    width: 110px;
     padding: 8px;
     border-radius: 0;
     box-sizing: border-box;
     height: 50px;
     border: none;
+  }
+
+  .margen {
+    margin-right: 160px;
+  }
+
+  .fecha {
+    margin-right: 80px;
   }
 
   /*Boton*/
@@ -135,9 +124,10 @@
     width: 60%;
   }
 
-  .formulario .box-button{
+  .formulario .box-button {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
     align-items: center;
   }
 
@@ -146,26 +136,49 @@
     .formulario {
       border-radius: 0 30px 0 0;
       padding: 15px;
+      width: min-content;
     }
 
     /* Estilos para cada fila de inputs */
     .formulario .box {
       margin-bottom: 5px;
     }
-  
-    .formulario .form-text {
+
+    .formulario .form-text , span{
       font-size: 10px;
       margin-right: 5px;
     }
-  
+
     .formulario .input-principal {
       width: 200px;
       height: 20px;
       font-size: 9px;
     }
-  
+
     /*Input secundario*/
   
+  
+    .formulario .dni-box {
+      margin-left: 22%;
+    }
+  
+    .formulario .pais-box {
+      margin-left: 21%;
+    }
+  
+    .formulario .prov-box {
+      margin-left: 13.8%;
+    }
+  
+    .formulario .localidad-box {
+      margin-left: 13.4%;
+    }
+  
+    .formulario .diag-box {
+      margin-left: 10%;
+    }
+  
+
     .formulario .dni-box {
       margin-left: 22%;
     }
@@ -192,29 +205,29 @@
       height: 20px;
       margin-right: 10px;
     }
-  
-    .formulario .pais-box .cel-box{
+
+    .formulario .cel-box {
       margin-left: 14.6%;
     }
-  
+
     .formulario .input-secundario-cel {
       width: 70px;
       height: 20px;
       font-size: 9px;
     }
-  
-    .formulario .prov-box .email-box{
+
+    .formulario .prov-box .email-box {
       margin-left: 14.8%;
     }
-  
+
     .formulario .input-secundario-email {
       width: 69.6px;
       height: 20px;
       font-size: 9px;
     }
-  
+
     /*Input terciario*/
-  
+
     .formulario .input-terciario {
       width: 20px;
       height: 25px;
@@ -222,7 +235,7 @@
       margin-left: 0.5px;
       font-size: 9px;
     }
-  
+
     .formulario .input-terciario-anio {
       width: 25px;
       height: 25px;
@@ -230,9 +243,9 @@
       margin-right: 0px;
       margin-left: 1px;
     }
-  
+
     /*Boton*/
-  
+
     .formulario .submit-button {
       font-size: 8px;
       padding: 10px;
