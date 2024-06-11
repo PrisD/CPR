@@ -32,11 +32,22 @@ div {
     margin-bottom: -20px;
     color: #585f12;
 }
-
-
 .description {
     margin-top: 20px;
     font-size: 22px;
+    display: grid;
+}
+
+.description-items {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.description-text {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .description span {
@@ -53,17 +64,15 @@ div {
 .block {
     display: flex;
     align-items: center;
-    
 }
 
-.block img{
-    width: 30px; 
-    height: 30px; 
+.block img {
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
 .description strong {
-    font-weight: bold;
     font-weight: 800;
 }
 
@@ -140,5 +149,17 @@ div {
         width: 10px; 
         height: 10px; 
         margin-right: 10px;
+    }
+
+    .description-items {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .description-text {
+        font-size: 10px;
+        margin-bottom: 5px;
     }
 }

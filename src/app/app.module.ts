@@ -1,4 +1,4 @@
-import { OurCenterComponent } from './screens/our-center/our-center.component';
+import { OurCenterComponent } from './screens/the-center/our-center/our-center.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -42,6 +42,10 @@ import { ShiftsPsychologyComponent } from './screens/shifts/shifts-psychology/sh
 import { ShiftsStartRadiotherapyComponent } from './screens/shifts/shifts-start-radiotherapy/shifts-start-radiotherapy.component';
 import { ShiftFormComponent } from './screens/shifts/shift-form/shift-form.component';
 import { FormsModule } from '@angular/forms';
+import { OurHistoryComponent } from './screens/the-center/our-history/our-history.component';
+import { AtentionComponent } from './screens/the-center/atention/atention.component';
+import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
+
 
 @NgModule({
   declarations: [
@@ -73,7 +77,10 @@ import { FormsModule } from '@angular/forms';
     ShiftsDiagnosisByImagingComponent,
     ShiftsPsychologyComponent,
     ShiftsStartRadiotherapyComponent,
-    ShiftFormComponent    
+    ShiftFormComponent,
+    OurHistoryComponent,
+    AtentionComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,

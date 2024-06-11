@@ -4,7 +4,7 @@ import { HomeComponent } from './common/home/home.component';
 import { RadiotherapyComponent } from './screens/radiotherapy-screens/radiotherapy/radiotherapy.component';
 import { PsychologyComponent } from './screens/psychology-screens/psychology/psychology.component';
 import { DiagnosticImagingComponent } from './screens/diagnostic-imaging/diagnostic-imaging.component';
-import { OurCenterComponent } from './screens/our-center/our-center.component';
+import { OurCenterComponent } from './screens/the-center/our-center/our-center.component';
 import { HDRProstateBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/hdr-prostate-brachytherapy/hdr-prostate-brachytherapy.component';
 import { HDRSkinBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/hdr-skin-brachytherapy/hdr-skin-brachytherapy.component';
 import { HybridarcVolumetricDynamicTherapyComponent } from './screens/radiotherapy-screens/hybridarc-volumetric-dynamic-therapy/hybridarc-volumetric-dynamic-therapy.component';
@@ -24,6 +24,9 @@ import { ShiftsDiagnosisByImagingComponent } from './screens/shifts/shifts-diagn
 import { ShiftsPsychologyComponent } from './screens/shifts/shifts-psychology/shifts-psychology.component';
 import { ShiftsStartRadiotherapyComponent } from './screens/shifts/shifts-start-radiotherapy/shifts-start-radiotherapy.component';
 import { ShiftFormComponent } from './screens/shifts/shift-form/shift-form.component';
+import { OurHistoryComponent } from './screens/the-center/our-history/our-history.component';
+import { AtentionComponent } from './screens/the-center/atention/atention.component';
+import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -49,8 +52,10 @@ const routes: Routes = [
   { path: 'shifts-diagnosis-by-imaging', component: ShiftsDiagnosisByImagingComponent},
   { path: 'shifts-start-radiotherapy', component: ShiftsStartRadiotherapyComponent},
   { path: 'shifts-psychology', component: ShiftsPsychologyComponent},
-  { path: 'shift-form', component: ShiftFormComponent}
-
+  { path: 'shift-form', component: ShiftFormComponent},
+  { path: 'our-history', component: OurHistoryComponent},
+  { path: 'atention', component: AtentionComponent},
+  { path: 'certifications', component: CertificationsComponent}
 ];
 
 @NgModule({
