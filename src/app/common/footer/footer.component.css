@@ -25,7 +25,7 @@
 
 #logo {
     width: 100%;
-    margin-left: -6vh;
+    margin-left: -3vh;
 }
 
 ::ng-deep .divididor.p-divider.p-divider-vertical:before {
@@ -57,7 +57,10 @@ strong {
 .smallFont {
     font-size: smaller;
 }
-
+.iconos{
+    width: 35px;
+    height: 35px;
+}
 
 @media screen and (max-width: 600px) {
     .fondoClaro {
@@ -75,6 +78,7 @@ strong {
 
     .block {
         width: 100%;
+        align-items: center;
     }
 
     .tituloFoot {
