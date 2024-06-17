@@ -2,59 +2,69 @@
     title="BRAQUITERAPIA GINECOLÓGICA INTERSTICIAL"
     [titleFontSize]="35"
     [titleFontSizeScreen]="15"
-    [titlePadding]="20"
     imageUrl="..\assets\images\CPR_braquiterapia.jpeg"
-    color="rgba(97, 102, 61, 0.65)"
 ></app-title-card>
 
 <div class="content">
-    <div class="content-text">
-        <div class="description">
-            <p>Consiste en colocar, bajo anestesia raquídea, una serie de catéteres o tubos en la zona a irradiar
-                (el lecho tumoral, o el propio tumor), a través de los cuales la fuente radiactiva administra el
-                tratamiento a esa zona y un margen próximo.</p>
-        </div>
-    </div>       
-                
-    <div class="content-img">
-        <img src="..\assets\images\CPR_CancerUtero2.jpeg"/>
-        <img src="..\assets\images\CPR_braqui-aparato-det.jpeg"/>
-    </div>
     
-    <div class="content-text">
-        <div class="description">
-            <p>Esta técnica se utiliza por varias razones:</p>
+    <div class="first flex">
+        <div class="flex">
+            <div class="content-text">
+                <div class="description">
+                    <p>Consiste en colocar, bajo anestesia raquídea, una serie de catéteres o tubos en la zona a irradiar
+                        (el lecho tumoral, o el propio tumor), a través de los cuales la fuente radiactiva administra el
+                        tratamiento a esa zona y un margen próximo.</p>
 
-            <div>
-                <div class="flex align-items-center check">
-                    <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
-                    <p>El tumor es de gran tamaño.</p>
-                </div>
-                <div class="flex align-items-center check">
-                    <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
-                    <p>El tumor tiene una forma extraña.</p>
-                </div>
-                <div class="flex align-items-center check">
-                    <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
-                    <p>El tumor afecta la parte inferior de la vagina.</p>
-                </div>
-                <div class="flex align-items-center check">
-                    <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
-                    <p>El tumor no se puede alcanzar con los aplicadores intracavitarios.</p>
-                </div>
+                    <p>Esta técnica se utiliza por varias razones:</p>
+                    <div>
+                        <div class="flex align-items-center check">
+                            <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
+                            <p>El tumor es de gran tamaño.</p>
+                        </div>
+                        <div class="flex align-items-center check">
+                            <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
+                            <p>El tumor tiene una forma extraña.</p>
+                        </div>
+                        <div class="flex align-items-center check">
+                            <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
+                            <p>El tumor afecta la parte inferior de la vagina.</p>
+                        </div>
+                        <div class="flex align-items-center check">
+                            <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
+                            <p>El tumor no se puede alcanzar con los aplicadores intracavitarios.</p>
+                        </div>
+                    </div>
 
+                    <p class="mt-4">La <strong>Braquiterapia Intersticial</strong> es un tipo de Braquiterapia muy especializada y es específica para
+                        las necesidades de cada paciente.</p>
+
+                </div>
             </div>
+        </div>
             
-            <p class="mt-4">La <strong>Braquiterapia Intersticial</strong> es un tipo de Braquiterapia muy especializada y es específica para
-                las necesidades de cada paciente.</p>
+        <div class="flex align-items-center justify-content-center">
+            <div class="content-img">
+                <img src="..\assets\images\CPR_CancerUtero2.jpeg"/>
+                <img src="..\assets\images\CPR_braqui-aparato-det.jpeg"/>
+            </div>
         </div>
-
-        <div class="flex botones">
-            <p-button class="flex felx-row bra-button" label="BRAQUITERAPIA INTRACAVITARIA" (click)="goToBraquiIntracavitary()" [rounded]="true"></p-button>
-        </div>
-        
     </div>
-    
-    
-    
+
+    <div class="flex">
+        <div class="content-text">
+            <div class="description">
+                <div class="botones">
+                    <p class="botones-text">Te puede interesar: </p>
+                    <p-button class="flex felx-row bra-button" label="BRAQUITERAPIA INTRACAVITARIA" 
+                    (click)="goToBraquiIntracavitary()" [style]="{'border-radius': '15px'}"></p-button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+    
+
+<app-turn-foot></app-turn-foot>
+
+
