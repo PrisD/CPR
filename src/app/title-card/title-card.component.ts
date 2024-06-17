@@ -11,7 +11,6 @@ export class TitleCardComponent implements OnInit{
   @Input() titleFontSizeScreen: number = 0;
   @Input() subtitle: string= '';
   @Input() imageUrl: string = '';
-  @Input() color: string = '';
   @Input() titlePadding: number = 0;
 
 

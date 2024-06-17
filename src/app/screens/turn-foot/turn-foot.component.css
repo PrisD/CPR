@@ -1,0 +1,55 @@
+/*TURNOS*/
+.turnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+
+.turn {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    color: rgb(104, 114, 27);
+    font-weight: bold;
+    font-weight: 550;
+}
+
+.sub p{
+    font-size: 18px; /* Tamaño de fuente más pequeño */
+    color: #abaaaa; /* Color más claro */
+    margin-bottom: -10px; /* Espacio entre el título y el texto */
+}
+
+.turn-button {
+    margin-top: 40px; /* Espacio entre el texto y el botón */
+}
+
+::ng-deep .turn-button .p-button {
+    background-color: #c5b90f;
+    border :1px #c5b90f solid;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+ 
+    .turn {
+        font-size: 16px;
+    }
+    
+    .sub p{
+        font-size: 12px;
+    }
+
+    .turn-button{
+        width: 78px;
+        height: 25px;
+    }
+
+    ::ng-deep .turn-button .p-button-label {
+        font-size: 10px;      
+    }
+    
+    
+}

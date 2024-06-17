@@ -45,7 +45,7 @@ import { FormsModule } from '@angular/forms';
 import { OurHistoryComponent } from './screens/the-center/our-history/our-history.component';
 import { AtentionComponent } from './screens/the-center/atention/atention.component';
 import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
-
+import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +80,8 @@ import { CertificationsComponent } from './screens/the-center/certifications/cer
     ShiftFormComponent,
     OurHistoryComponent,
     AtentionComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    TurnFootComponent
   ],
   imports: [
     BrowserModule,

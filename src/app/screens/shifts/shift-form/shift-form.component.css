@@ -136,7 +136,6 @@
     .formulario {
       border-radius: 0 30px 0 0;
       padding: 15px;
-      width: min-content;
     }
 
     /* Estilos para cada fila de inputs */

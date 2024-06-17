@@ -27,6 +27,7 @@ import { ShiftFormComponent } from './screens/shifts/shift-form/shift-form.compo
 import { OurHistoryComponent } from './screens/the-center/our-history/our-history.component';
 import { AtentionComponent } from './screens/the-center/atention/atention.component';
 import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
+import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -55,7 +56,8 @@ const routes: Routes = [
   { path: 'shift-form', component: ShiftFormComponent},
   { path: 'our-history', component: OurHistoryComponent},
   { path: 'atention', component: AtentionComponent},
-  { path: 'certifications', component: CertificationsComponent}
+  { path: 'certifications', component: CertificationsComponent},
+  { path: 'turn-foot', component: TurnFootComponent}
 ];
 
 @NgModule({

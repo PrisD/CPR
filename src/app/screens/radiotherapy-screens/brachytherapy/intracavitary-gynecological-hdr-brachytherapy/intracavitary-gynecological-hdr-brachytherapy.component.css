@@ -5,18 +5,18 @@ div {
 .container {
     height: 100%;
     width: 100%;
-}
+}   
 
 .content {
-    background: linear-gradient(to bottom, rgba(158, 174, 38, 0.316), rgba(255, 255, 255, 0.5) 25%);
+    background: linear-gradient(to bottom, rgba(137, 151, 33, 0.466), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
     font-family: 'Rubik', sans-serif;
-
 }
 
 .content-text {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 40px;
+    margin-right: 9%;
+    margin-left: 9%;
 }
 
 .description p {
@@ -24,8 +24,6 @@ div {
 }
 
 .description span {
-    margin-right: 10px;
-    margin-top:5px;
     font-size: 1.5rem;
 }
 
@@ -35,58 +33,98 @@ div {
 }
 
 .content-img {
+    margin-top: 40px;
     margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .content-img img {
-    width: 60%;
-    height: 500px;
+    margin-top: 20px;
+    width: 80%;
+    height: 250px;
     object-fit: cover;
     border-radius: 0 40px 0 0;
 }
 
-.content-img img:first-child {
-    width: 35%;
-    /* Establecer el ancho de la primera imagen al 35% */
-    margin-right: 30px;
-}
-
 .content-img img:last-child {
-    width: 65%;
-    /* Establecer el ancho de la segunda imagen al 65% */
+    margin-bottom: 10%;
 }
 
-.botones {
-    justify-content: center;
+.botones{
+    margin-top: -300px;
+    margin-left: -40px;
 }
 
+.botones-text{
+    font-size: 20px;
+}
+
+::ng-deep .bra-button .p-button-label {
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: 800;
+}
 
 .bra-button {
-    margin: 40px;
-    width: 250px;
-    height: 80px;
+    width: 200px;
+    height: 70px;
 }
 
 @media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+    }
 
-    .description p{
-        font-size: 10px;
+    .content-text {
+        margin-top: 15px;
+    }
+
+    .description p {
+        font-size: 12px;
+    }
+        
+    .content-img {
+        margin-top: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: center;
     }
 
     .content-img img {
-        width: 60%;
-        height: 120px;
+        margin-top: 20px;
+        width: 48.5%;
+        height: 130px;
         object-fit: cover;
-        border-radius: 0 20px 0 0;
+        border-radius: 0 40px 0 0;
     }
 
     .content-img img:first-child {
-        width: 35%;
-        /* Establecer el ancho de la primera imagen al 35% */
         margin-right: 10px;
+        margin-bottom: 5%;
     }
+
+    .content-img img:last-child {
+        margin-bottom: 5%;
+    }
+
+    .botones{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+
+    .botones-text{
+        font-size: 12px;
+    }
+
+    ::ng-deep .bra-button .p-button-label {
+        font-size: 10px;
+    }
+
+    .bra-button {
+        width: 120px;
+        height: 35px;
+    }
+
+    
 }
