@@ -3,45 +3,58 @@
     INTRACAVITARIA / INSTERSTICIAL"
     [titleFontSize]="35"
     [titleFontSizeScreen]="15"
-    [titlePadding]="20"
     imageUrl="..\assets\images\CPR_braquiterapia.jpeg"
-    color="rgba(97, 102, 61, 0.65)"
 ></app-title-card>
+
 <div class="content">
-    <div class="content-text">
-        <div>
-            <p class="titulo">Tratamiento seguro e indoloro, con un desarrollo más corto y confortable que otros métodos.</p>
+    
+    <div class="first flex">
+        <div class="flex">
+            <div class="content-text">
+                <div>
+                    <p class="titulo">Tratamiento seguro e indoloro, con un desarrollo más corto y confortable que otros métodos.</p>
+                </div>
+                <div class="description">
+                    <p>La Braquiterapia forma parte de los protocolos de tratamiento de tumores ginecológicos y
+                        consiste en <strong>irradiar selectivamente el tejido tumoral</strong> mediante la inserción de fuentes
+                        radioactivas en el organismo que son controladas de forma <strong>precisa y exacta</strong> por un sistema
+                        robótico.</p>
+        
+                    <p>Las sesiones duran de <strong>10 a 15 minutos</strong>. Y se realiza de manera <strong>ambulatoria</strong>. </p>
+        
+                    <p>Al ser un tratamiento indoloro, aumenta considerablemente la calidad de vida de la paciente.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="description">
-            <p>La Braquiterapia forma parte de los protocolos de tratamiento de tumores ginecológicos y
-                consiste en <strong>irradiar selectivamente el tejido tumoral</strong> mediante la inserción de fuentes
-                radioactivas en el organismo que son controladas de forma <strong>precisa y exacta</strong> por un sistema
-                robótico.</p>
-
-            <p>Las sesiones duran de <strong>10 a 15 minutos</strong>. Y se realiza de manera <strong>ambulatoria</strong>. </p>
-
-            <p>Al ser un tratamiento indoloro, aumenta considerablemente la calidad de vida de la paciente.</p>
+            
+        <div class="flex align-items-center justify-content-center">
+            <div class="content-img">
+                <img src="..\assets\images\CPR_braqui-ginecologica.jpg"/>
+                <img src="..\assets\images\CPR_braqui-aparato-det.jpeg"/>
+            </div>
         </div>
-    </div>   
-
-    <div class="content-img">
-        <img src="..\assets\images\CPR_braqui-ginecologica.jpg"/>
-        <img src="..\assets\images\CPR_braqui-aparato-det.jpeg"/>
     </div>
 
-    <div class="content-text">
-        <div class="description">
-            <p>En función al tipo de tumor a tratar <strong>-carcinoma de endometrio, de cervix, de vulva o vagina-</strong>,
-                se emplea la técnica más adecuada.</p>
-
-            <p>Estas técnicas pueden ser:</p>    
-        </div>
+    <div class="flex">
+        <div class="content-text">
+            <div class="botones">
+                <div class="description">
+                    <p>En función al tipo de tumor a tratar <strong>-carcinoma de endometrio, de cervix, de vulva o vagina-</strong>,
+                        se emplea la técnica más adecuada.</p>
         
-        <div class="flex mb-4 gap-4 justify-content-center">
-            <p-button class="" label="BRAQUITERAPIA INTRACAVITARIA" (click)="goToBraquiIntracavitary()"  [rounded]="true"></p-button>
-            <p-button class="" label="BRAQUITERAPIA INTERSTICIAL"  (click)="goToBraquiIntersitial()" [rounded]="true"></p-button>
+                    <p>Estas técnicas pueden ser:</p> 
+                </div>
+                <div class="flex mb-4 gap-4 justify-content-center">
+                    <p-button class="bra-button" label="BRAQUITERAPIA INTRACAVITARIA" (click)="goToBraquiIntracavitary()"  [rounded]="true"></p-button>
+                    <p-button class="bra-button" label="BRAQUITERAPIA INTERSTICIAL"  (click)="goToBraquiIntersitial()" [rounded]="true"></p-button>
+                </div>
+            </div>
+            
         </div>
-
-    </div>        
+    </div>
 </div>
+
+    
+
+<app-turn-foot></app-turn-foot>
+
