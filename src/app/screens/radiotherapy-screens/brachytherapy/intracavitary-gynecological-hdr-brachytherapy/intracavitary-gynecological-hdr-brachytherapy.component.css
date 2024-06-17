@@ -40,8 +40,9 @@ div {
 
 .content-img img {
     margin-top: 20px;
-    width: 80%;
+    width: 380px;
     height: 250px;
+    margin-right: 80px;
     object-fit: cover;
     border-radius: 0 40px 0 0;
 }
@@ -92,10 +93,11 @@ div {
 
     .content-img img {
         margin-top: 20px;
-        width: 48.5%;
+        width: 168px;
         height: 130px;
         object-fit: cover;
         border-radius: 0 40px 0 0;
+        margin-right: 0px;
     }
 
     .content-img img:first-child {
