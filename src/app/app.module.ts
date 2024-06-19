@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './common/home/home.component';
@@ -46,6 +47,8 @@ import { OurHistoryComponent } from './screens/the-center/our-history/our-histor
 import { AtentionComponent } from './screens/the-center/atention/atention.component';
 import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
 import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
+import { AddressService } from './services/address.service';
+
 
 @NgModule({
   declarations: [
@@ -97,9 +100,10 @@ import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
     ButtonModule,
     CardModule,
     InputTextModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AddressService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

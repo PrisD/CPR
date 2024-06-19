@@ -23,27 +23,36 @@
                 <div class="flex justify-content-end align-items-center mt-5">
                     <div class="form-text">País</div>
                     <div>
-                        <select class="input-secundario" [(ngModel)]="pais" id="pais" name="pais" required>
-                            <!-- Opciones del país -->
+                        <select  (change)="clear()" class="input-secundario" [(ngModel)]="pais" id="pais" name="pais" required>
+                            <option *ngFor="let pais of paises" [value]="pais">{{ pais }}
+                            </option>
                         </select>
                     </div>
                 </div>
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div *ngIf="pais =='Otro'" class="flex justify-content-end align-items-center mt-5">
+                    <div class="form-text cel-box">Otro pais</div>
+                    <div>
+                        <input type="text" class="input-secundario" pInputText [(ngModel)]="otro" id="otro" name="otro"
+                            required>
+                    </div>
+                </div>
+                <div *ngIf="pais =='Argentina'" class="flex justify-content-end align-items-center mt-5">
                     <div class="form-text">Provincia</div>
                     <div>
-                        <select class="input-secundario" [(ngModel)]="provincia" id="provincia" name="provincia"
+                        <select (change)="getLocalities(provincia)" class="input-secundario" [(ngModel)]="provincia" id="provincia" name="provincia"
                             required>
                             <option *ngFor="let provincia of provinciasOptions" [value]="provincia">{{ provincia }}
                             </option>
                         </select>
                     </div>
                 </div>
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div *ngIf="provincia && pais =='Argentina'" class="flex justify-content-end align-items-center mt-5">
                     <div class="form-text">Localidad</div>
                     <div>
                         <select class="input-secundario" [(ngModel)]="localidad" id="localidad" name="localidad"
                             required>
-                            <!-- Opciones de la localidad -->
+                            <option *ngFor="let localidad of localidades" [value]="localidad">{{ localidad }}
+                            </option>
                         </select>
                     </div>
                 </div>
