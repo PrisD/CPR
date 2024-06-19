@@ -1,20 +1,10 @@
-<div class="landing">
-
-    <div class="flex justify-content-center align-items-center fondoVerde mt-5">
-        <img class="logo" src="../../assets/images/CPR_logo-apaisado.png" alt="">
-        <p-divider layout="vertical"></p-divider>
-        <span class="text-white texto">Excelencia médica y calidez<br>humana al servicio de su Salud
-        </span>
-    </div>
-    <div class="flex  flex-column justify-content-center align-items-center ">
-        <h2 class="text-white textoPregunta">¿EN QUÉ PODEMOS AYUDARTE?</h2>
+<div class="landing flex justify-content-center align-items-center">
+    <div class="flex flex-column align-items-center w-full">
+        <h2 class="text-white textoPregunta">¿En qué podemos ayudarte?</h2>
         <div class="input-container">
             <input type="text" id="roundedInput" placeholder="TURNOS, TRATAMIENTOS, ESPECIALIDADES, PROFESIONALES..." />
             <button type="button" pButton icon="pi pi-search" class="p-button-warning search-button"></button>
         </div>
-    </div>
-    <div>
-        <app-mini-card></app-mini-card>
     </div>
     <div class="absolute bottom-0 right-0 m-3">
         <button pButton pRipple class="p-button-success p-button-rounded p-button-raised consultas-button">
@@ -22,4 +12,7 @@
             <img src="/assets/images/whatsapp_logo.png" alt="WhatsApp Logo">
         </button>
     </div>
+</div>
+<div class="m-5">
+    <app-mini-card></app-mini-card>
 </div>

@@ -11,7 +11,6 @@ import { MenuItem, MessageService } from 'primeng/api';
 export class HeaderComponent implements OnInit {
     items: MenuItem[] | undefined;
     sidebarVisible: boolean = false;
-    headerNoHome: boolean = true;
     expandedIndex: number = -1;
     animatingOut: boolean = false;
     
@@ -20,116 +19,108 @@ export class HeaderComponent implements OnInit {
     ngOnInit() {
         this.items = [
             {
-                label: 'HOME',
+                label: 'Home',
                 routerLink: '/'
             },
             {
-                label: 'RADIOTERAPIA',
+                label: 'Radioterapia',
                 routerLink: '/radiotherapy',
                 items: [
                     {
-                        label: 'BRAQUITERAPIA HDR EN PRÓSTATA',
+                        label: 'Braquiterapia HDR (Próstata)',
                         routerLink: '/hdr-prostate-brachytherapy'
                     },
                     {
-                        label: 'BRAQUITERAPIA HDR GINECOLÓGICA',
+                        label: 'Braquiterapia HDR (Ginecológica)',
                         routerLink: '/gynecological-hdr-brachytherapy'
                     },
                     {
-                        label: 'BRAQUITERAPIA HDR DE PIEL',
+                        label: 'Braquiterapia HDR (De Piel)',
                         routerLink: '/hdr-skin-brachytherapy'
                     },
                     {
-                        label: 'IGRT EXACTRAC – BRAINLAB – RADIOTERAPIA GUIADA POR IMÁGENES',
+                        label: 'IGRT EXACTRAC – BRAINLAB –(Radioterapia guiada por Imágenes)',
                         routerLink: '/igrt-exactrac-brainlab-image-guided-radiotherapy'
                     },
                     {
-                        label: 'SBRT EXACTRAC – RADIOCIRUGÍA ESTEREOTÁXICA CORPORAL',
+                        label: 'SBRT EXACTRAC – (Radiocirugía Corporal)',
                         routerLink: '/sbrt-exactrac-body-stereotaxic-radiosurgery'
                     },
                     {
-                        label: 'SRS EXACTRAC – RADIOCIRUGÍA ESTEREOTÁXICA CRANEAL',
+                        label: 'SRS EXACTRAC – (Radiocirugía Craneal)',
                         routerLink: '/srs-exactrac-cranial-stereotaxic-radiosurgery'
                     },
                     {
-                        label: 'HYBRIDARC TERAPIA DINÁMICA VOLUMÉTRICA',
+                        label: 'Hybridarc Terapia Dinámica Volumétrica',
                         routerLink: '/hybridarc-volumetric-dynamic-therapy'
                     },
                     {
-                        label: 'IMRT – RADIOTERAPIA DE INTENSIDAD MODULADA CON MULTILÁMINAS',
+                        label: 'IMRT – (Radioterapia de Int. Modulada)',
                         routerLink: '/imrt-intensity-modulated-radiotherapy-with-multileaf'
                     },
                     {
-                        label: 'R3D – RADIOTERAPIA TRIDIMENSIONAL CONFORMADA',
+                        label: 'R3D – (Radioterapia Tridimensional)',
                         routerLink: '/r3-d-three-dimensional-conformal-radiotherapy'
                     }
                 ]
             },
             {
-                label: 'DIAGNÓSTICO POR IMÁGENES',
+                label: 'Diagnóstico por imágenes',
                 routerLink: '/diagnostic-imaging'
             },
             {
-                label: 'PSICOLOGÍA',
+                label: 'Psicología',
                 routerLink: '/psychology',
                 items: [
                     {
-                        label: 'PSICO-ONCOLOGÍA',
+                        label: 'Psico-Oncología',
                         routerLink: '/psycho-oncology'
                     },
                     {
-                        label: 'TALLER DE MINDFULNESS',
+                        label: 'Taller de Mindfulness',
                         routerLink: '/mindfulness-workshop'
                     }
                 ]
             },
             {
-                label: 'TURNOS',
+                label: 'Turnos',
                 routerLink: '/shifts-options'
             },
             {
-                label: 'NUESTRO CENTRO',
+                label: 'Nuestro centro',
                 routerLink: '/our-center',
                 items: [
                     {
-                        label: 'NUESTRA HISTORIA',
+                        label: 'Nuestra historia',
                         routerLink: '/our-history'
                     },
                     {
-                        label: 'ATENCIÓN LOCAL Y EXTERNA',
+                        label: 'Atención local y externa',
                         routerLink: '/atention'
                     },
                     {
-                        label: 'CERTIFICACIONES',
+                        label: 'Certificaciones',
                         routerLink: '/certifications'
                     }
                 ]
             },
             {
-                label: 'STAFF DE PROFESIONALES',
+                label: 'Staff',
                 routerLink: '/staff-profesionales'
             },
             {
-                label: 'EQUIPAMIENTO',
+                label: 'Equipamiento',
                 routerLink: '/equipamiento'
             },
             {
-                label: 'NOVEDADES',
+                label: 'Novedades',
                 routerLink: '/novedades'
             },
             {
-                label: 'CONTACTO',
+                label: 'Contacto',
                 routerLink: '/contacto'
             }
         ];
-
-        this.router.events.subscribe((event) => {
-            if (event instanceof NavigationEnd) {
-                this.headerNoHome = (event.urlAfterRedirects === '/');
-            }
-        });
-        
-
     }
     redireccionar(): void {
         window.location.href = "/";

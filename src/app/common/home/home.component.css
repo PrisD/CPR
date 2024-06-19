@@ -1,17 +1,13 @@
-.fondoVerde {
-    background-color: #61663de0;
-    border-top-right-radius: 2rem;
-    margin: 0 1% 0 -5%;
-    width: 57%;
-}
-
 .texto {
     font-size: 17px;
 }
+.textoPregunta {
+     font-size: 30px;
+    font-family: 'Rubik Regular', sans-serif;}
 
 #roundedInput {
     border-radius: 30px;
-    padding: 1.4%;
+    padding: 2.4%;
     border: 1px solid #ccc;
     width: 100%;
 }

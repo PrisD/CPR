@@ -9,7 +9,10 @@
     padding: 1%;
     margin: -8px;
 }
-
+.logoHeader {
+    width: 40%;
+    margin: -15px;
+}
 .logo {
     width: 14%;
 }
@@ -17,19 +20,17 @@
 .x {
     position: fixed;
     top: 0;
-    left: 0;    
+    right: 0;
 }
-
-
-
-
-
-
 .nav {
     position: absolute;
     top: 0;
+    right: 0;
+    font-family: 'Rubik Light', sans-serif;
+    font-size: 20px;
+    width: 50%;
     z-index: 999;
-    background-color: #333333;
+    background-color: #333333b5;
     height: -webkit-fill-available;
     margin-left: -1%;
     animation: fadeIn 0.5s ease;
@@ -96,7 +97,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     z-index: 998;
 }
 

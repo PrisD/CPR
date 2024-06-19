@@ -1,7 +1,7 @@
 <!-- NAV -->
 <div class="overlay" *ngIf="sidebarVisible" (click)="toggleSidebar()"></div>
 <div *ngIf="sidebarVisible" [ngClass]="{'cerrar-animacion': animatingOut}"
-    class="flex justify-content-center nav align-items-center font-rubik">
+    class="flex nav align-items-center font-rubik">
     <div class="relative">
         <p-button (click)="toggleSidebar()" size="large" icon="pi pi-times" class="x"
             [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
@@ -28,30 +28,23 @@
         </li>
     </ul>
 </div>
-<div *ngIf="headerNoHome" class="flex justify-content-between flex-wrap fondoHeaderHome align-items-center">
-    <div class="card flex">
-        <p-button (click)="toggleSidebar()" size="large" icon="pi pi-bars"
-            [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
-            [text]="true">
-        </p-button>
+<div class="flex justify-content-between flex-wrap fondoHeaderHome align-items-center">
+    <div class="flex align-items-center ml-5">
+        <img class="logoHeader" src="../../assets/images/CPR_logo-apaisado.png" alt="">
+        <p-divider layout="vertical"></p-divider>
+        <span class="text-white texto">Excelencia médica y calidez<br>humana al servicio de su Salud
+        </span>
     </div>
-
-    <div class="flex turns">
-        <p-button label="Turnos" (onClick)="goToShifts()" [rounded]="true"></p-button>
+    <div class="flex align-items-center">
+        <div class="flex turns">
+            <p-button label="Turnos" (onClick)="goToShifts()" [rounded]="true"></p-button>
+        </div>
+        <div class="card flex">
+            <p-button (click)="toggleSidebar()" size="large" icon="pi pi-bars"
+                [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
+                [text]="true">
+            </p-button>
+        </div>
     </div>
-</div>
-<div *ngIf="!headerNoHome" class="flex justify-content-between flex-wrap fondoHeader align-items-center">
-
-    <div class="card flex">
-        <p-button (click)="toggleSidebar()" size="large" icon="pi pi-bars"
-            [style]="{'color':'white','background':'rgb(51 51 51 / 0%)','border':'none'}" [rounded]="true"
-            [text]="true">
-        </p-button>
-    </div>
-    <img (click)="redireccionar()" class="logo cursor-pointer" src="../../assets/images/CPR_logo-apaisado.png" alt="">
-
-    <div class="flex turns">
-        <p-button label="Turnos" (onClick)="goToShifts()" [rounded]="true"></p-button>
-    </div>
-
+    
 </div>
