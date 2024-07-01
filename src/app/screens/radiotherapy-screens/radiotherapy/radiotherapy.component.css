@@ -2,18 +2,22 @@
     background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 15%);
     padding-top: 50px;
     font-family: 'Rubik', sans-serif;
-    min-height: 72vh;
 }
 
+.container {
+    height: 100%;
+    width: 100%;
+}   
+
 .content-text {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 
 
 .description {
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 
