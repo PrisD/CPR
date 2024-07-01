@@ -11,7 +11,7 @@
 
 .content-text {
     margin-left: 9%;
-    margin-right: 9%;
+    margin-right: -10%;
 }
 
 
@@ -45,6 +45,10 @@
     .content {
         background: linear-gradient(to bottom, rgba(158, 174, 38, 0.365), rgba(255, 255, 255, 0.7) 5%);
         padding-top: 20px;
+    }
+
+    .content-text{
+        margin-right: 9%;
     }
 
     .titulo {

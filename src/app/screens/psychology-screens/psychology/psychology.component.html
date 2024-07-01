@@ -1,58 +1,68 @@
 <div class="conteiner">
-    <app-title-card 
+    <app-title-card
         title="PSICOLOGÍA" 
         [titleFontSize]="60"
         [titleFontSizeScreen]="30"
         imageUrl="..\assets\images\CPR_psicologia.jpg"
-        color="rgba(167, 160, 28, 0.799)"
     ></app-title-card>
 
+
     <div class="content">
-        <div class="content-text">
-            <div>
-                <p  class="titulo" >La atención de Psicología para pacientes privados en nuestro Centro, se
+    
+        <div class="first flex">
+            <div class="flex">
+                <div class="content-text">
+                    <div>
+                        <p class="titulo" >La atención de Psicología para pacientes privados en nuestro Centro, se
                     realiza los lunes, martes, jueves y viernes. </p>
-            </div>
+                    </div>
 
-            <div class="description">
-                <p>La psicoterapia es un tratamiento de colaboración basado en la relación entre el consultante
-                    y el psicólogo.</p>
+                    <div class="description">
 
-                <p>Como su base fundamental es el <strong>diálogo</strong>, proporciona un ambiente de apoyo que le permite
-                    hablar abiertamente con alguien objetivo, neutral e imparcial.</p>
-
-                <p>La psicología trata de entender el comportamiento de las personas en diferentes situaciones.
-                    Por tanto, un especialista de la salud mental aplica evaluaciones que sirven para analizar
-                    cómo piensan o se sienten las personas consigo mismas, sus familias, amistades o ambientes de trabajo.</p>
-              
-
-                <div class="flex align-items-center check">
-                    <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                    <p>Hablar ayuda a sanar. Un espacio terapéutico es un ámbito absolutamente privado y
-                        confidencial. </p>
-                </div>
-
-                <div class="flex align-items-center check">
-                    <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                    <p>Entre los trastornos o problemas más comunes que atienden en terapia se encuentran:
-                        trastornos del estado de ánimo, como la ansiedad y la depresión, timidez, fobias,
-                        conflictos personales directos o indirectos, miedos, traumas, adicciones o cualquier
-                        situación adversa o dificultosa con la que la persona no está pudiendo lidiar.</p>
-                </div>
-
-                <div class="flex align-items-center check">
-                    <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                    <p>El Lic. Juan Pablo Montanelli, psicólogo e instructor de Mindfulness, desarrolla ambas
-                        actividades en nuestro Centro.</p>
-                </div>
-                
-            </div>    
-
-            <div class="flex justify-content-center gap-5 mt-5 mb-5">
-                <p-button class="flex" label="SACAR TURNO" (click)="goToPsychologyTurns()" [rounded]="true"></p-button>
-            </div>
+                        <p>La psicoterapia es un tratamiento de colaboración basado en la relación entre el consultante
+                            y el psicólogo.</p>
         
-        </div>        
-    </div>
+                        <p>Como su base fundamental es el <strong>diálogo</strong>, proporciona un ambiente de apoyo que le permite
+                            hablar abiertamente con alguien objetivo, neutral e imparcial.</p>
+        
+                        <p>La psicología trata de entender el comportamiento de las personas en diferentes situaciones.
+                            Por tanto, un especialista de la salud mental aplica evaluaciones que sirven para analizar
+                            cómo piensan o se sienten las personas consigo mismas, sus familias, amistades o ambientes de trabajo.</p>
 
+                        <div class="flex align-items-center check">
+                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
+                            <p>Hablar ayuda a sanar. Un espacio terapéutico es un ámbito absolutamente privado y confidencial.</p>
+                        </div>
+                            
+                        <p-divider></p-divider>
+        
+                        <div class="flex align-items-center check">
+                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
+                            <p>Entre los trastornos o problemas más comunes que atienden en terapia se encuentran:
+                                trastornos del estado de ánimo, como la ansiedad y la depresión, timidez, fobias,
+                                conflictos personales directos o indirectos, miedos, traumas, adicciones o cualquier
+                                situación adversa o dificultosa con la que la persona no está pudiendo lidiar.</p>
+                        </div>
+    
+                        <p-divider></p-divider>
+    
+                        <div class="flex align-items-center check">
+                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
+                            <p>El Lic. Juan Pablo Montanelli, psicólogo e instructor de Mindfulness, desarrolla ambas
+                                actividades en nuestro Centro.</p>
+                        </div>
+    
+                        <p-divider></p-divider>
+
+                    </div>
+
+                </div>   
+            </div>
+        </div>
+        
+    </div>
 </div>
+
+<app-turn-foot></app-turn-foot>
+
+
