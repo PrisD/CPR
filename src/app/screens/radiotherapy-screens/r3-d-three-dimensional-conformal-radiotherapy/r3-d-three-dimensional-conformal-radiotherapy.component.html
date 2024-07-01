@@ -1,37 +1,46 @@
-<app-title-card
+<div class="conteiner">
+    <app-title-card
     title="R3D – RADIOTERAPIA TRIDIMENSIONAL CONFORMADA"
     [titleFontSize]="35"
     [titleFontSizeScreen]="15"
-    [titlePadding]="40"
     imageUrl="..\assets\images\CPR_tratamiento2.jpg"
-    color="rgba(97, 102, 61, 0.65)"
-></app-title-card>
+    ></app-title-card>
 
-<div class="content">
-    <div class="content-text">
-        <div>
-            <p class="titulo">Es una técnica de tratamiento en la que se realiza una planificación virtual
-                en tres dimensiones. </p>
-        </div>
-
-        <div class="description">
-            <p>Esto se logra gracias a la utilización conjunta de un <strong>acelerador lineal,</strong> un <strong>software
-                especializado</strong> para la planificación de tratamientos y las <strong>modernas técnicas de imágenes
-                (TAC, RMN y PET).</strong> Estas imágenes pueden ser reconstruidas en el sistema de planificación,
-                determinando con exactitud el volumen de la lesión a tratar.</p>
-
-            <p>Se reproduce una imagen exacta del tumor y de los órganos vecinos, de modo que la radiación
-                conforme el contorno exacto del área de tratamiento, logrando envolver la zona a tratar y
-                disminuyendo al mínimo la radiación en los tejidos sanos periféricos. </p> 
-
-            <p>De esta manera, <strong>se disminuye la toxicidad producida por el tratamiento.</strong></p>
-
-        </div>
-    </div>       
-                
-    <div class="content-img">
-        <img src="..\assets\images\CPR_tomografia.jpeg"/>
-        <img src="..\assets\images\CPR_tratamiento6.jpg"/>
+    <div class="content">
+    
+        <div class="first flex">
+            <div class="flex">
+                <div class="content-text">
+                    <div>
+                        <p class="titulo">Es una técnica de tratamiento en la que se realiza una planificación virtual
+                            en tres dimensiones. </p>
+                    </div>
+            
+                    <div class="description">
+                        <p>Esto se logra gracias a la utilización conjunta de un <strong>acelerador lineal,</strong> un <strong>software
+                            especializado</strong> para la planificación de tratamientos y las <strong>modernas técnicas de imágenes
+                            (TAC, RMN y PET).</strong> Estas imágenes pueden ser reconstruidas en el sistema de planificación,
+                            determinando con exactitud el volumen de la lesión a tratar.</p>
+            
+                        <p>Se reproduce una imagen exacta del tumor y de los órganos vecinos, de modo que la radiación
+                            conforme el contorno exacto del área de tratamiento, logrando envolver la zona a tratar y
+                            disminuyendo al mínimo la radiación en los tejidos sanos periféricos. </p> 
+            
+                        <p>De esta manera, <strong>se disminuye la toxicidad producida por el tratamiento.</strong></p>
+            
+                    </div>
+                </div>   
+            </div>
+            
+            <div class="mb-4 flex align-items-center justify-content-center">
+                <div class="content-img">
+                    <img src="..\assets\images\CPR_tomografia.jpeg"/>
+                    <img src="..\assets\images\CPR_tratamiento6.jpg"/>
+                </div>
+            </div>
+        </div>        
     </div>
-
 </div>
+
+
+
