@@ -1,14 +1,21 @@
-.fondo{
+.fondo {
     z-index: -1;
     width: 100%;
 }
+
 .main-content {
     margin: -8px;
 }
+
 @media screen and (max-width: 600px) {
 
     .main-content {
         margin: -2.3%;
         margin-top: 2.3%;
+    }
+
+    .fondo {
+        object-position: left;
+        object-fit: cover;
     }
 }
