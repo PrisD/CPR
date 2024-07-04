@@ -99,7 +99,6 @@ div {
 
 .content-img img:last-child {
     width: 65%;
-    /* Establecer el ancho de la segunda imagen al 65% */
 }
 ::ng-deep .p-button {
     background-color: #a7a11c;

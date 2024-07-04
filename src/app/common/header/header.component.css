@@ -134,4 +134,10 @@ ul {
     a {
         font-size: small;
     }
+    .texto{
+        font-size: 7px;
+    } 
+    ::ng-deep  .p-button {
+        padding: 7px !important;
+    }
 }
