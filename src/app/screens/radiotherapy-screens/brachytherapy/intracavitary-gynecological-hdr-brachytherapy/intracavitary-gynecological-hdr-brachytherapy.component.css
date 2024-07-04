@@ -93,7 +93,7 @@ div {
 
     .content-img img {
         margin-top: 20px;
-        width: 168px;
+        width: 48%;
         height: 130px;
         object-fit: cover;
         border-radius: 0 40px 0 0;

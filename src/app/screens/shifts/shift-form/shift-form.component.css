@@ -144,6 +144,14 @@
       padding: 15px;
     }
 
+    .formulario .izquierda div{
+      margin-left: -20%;
+    }
+
+    .formulario .derecha div{
+      margin-left: 122%;
+    }
+
     /* Estilos para cada fila de inputs */
     .formulario .box {
       margin-bottom: 5px;
@@ -151,78 +159,32 @@
 
     .formulario .form-text , span{
       font-size: 10px;
+      margin-left: 65%;
       margin-right: 5px;
     }
 
     .formulario .input-principal {
-      width: 200px;
+      width: 230px;
       height: 20px;
+      margin-left: 22%;
       font-size: 9px;
     }
 
     /*Input secundario*/
   
-  
-    .formulario .dni-box {
-      margin-left: 22%;
-    }
-  
-    .formulario .pais-box {
-      margin-left: 21%;
-    }
-  
-    .formulario .prov-box {
-      margin-left: 13.8%;
-    }
-  
-    .formulario .localidad-box {
-      margin-left: 13.4%;
-    }
-  
-    .formulario .diag-box {
-      margin-left: 10%;
-    }
-  
-
-    .formulario .dni-box {
-      margin-left: 22%;
-    }
-  
-    .formulario .pais-box {
-      margin-left: 21%;
-    }
-  
-    .formulario .prov-box {
-      margin-left: 13.8%;
-    }
-  
-    .formulario .localidad-box {
-      margin-left: 13.4%;
-    }
-  
-    .formulario .diag-box {
-      margin-left: 10%;
-    }
-  
     .formulario .input-secundario {
-      width: 50px;
+      width: 70px;
       font-size: 9px;
       height: 20px;
       margin-right: 10px;
+      margin-left: 50%;
     }
 
-    .formulario .cel-box {
-      margin-left: 14.6%;
-    }
 
     .formulario .input-secundario-cel {
       width: 70px;
       height: 20px;
       font-size: 9px;
-    }
-
-    .formulario .prov-box .email-box {
-      margin-left: 14.8%;
     }
 
     .formulario .input-secundario-email {
