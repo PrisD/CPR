@@ -118,7 +118,7 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'Contacto',
-                routerLink: '/contacto'
+                routerLink: '/contact'
             }
         ];
     }

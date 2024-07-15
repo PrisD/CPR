@@ -1,1 +1,20 @@
-<p>contact works!</p>
+<app-title-card
+    title="CONTACTO"
+    subtitle="Todas las vías de comunicación disponibles de nuestro Centro, para
+    brindarle un servicio rápido y efectivo."
+    [titleFontSize]="45"
+    [titleFontSizeScreen]="20"
+    imageUrl="..\assets\images\CPR_gingko.jpg"
+></app-title-card>
+<div class="content">
+    <div class="content-text">
+        <div>
+            <p class="titulo">Nuestro Centro está ubicado en una de las calles principales de la
+                Ciudad de Río Cuarto, provincia de Córdoba, Argentina.</p>
+        </div>
+
+        <div class="mb-8">
+            <app-leaflet-map></app-leaflet-map>
+        </div>
+    </div>
+</div>        

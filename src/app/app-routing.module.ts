@@ -28,6 +28,7 @@ import { OurHistoryComponent } from './screens/the-center/our-history/our-histor
 import { AtentionComponent } from './screens/the-center/atention/atention.component';
 import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
 import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
+import { ContactComponent } from './screens/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -57,7 +58,9 @@ const routes: Routes = [
   { path: 'our-history', component: OurHistoryComponent},
   { path: 'atention', component: AtentionComponent},
   { path: 'certifications', component: CertificationsComponent},
-  { path: 'turn-foot', component: TurnFootComponent}
+  { path: 'turn-foot', component: TurnFootComponent},
+  { path: 'contact', component: ContactComponent}
+
 ];
 
 @NgModule({

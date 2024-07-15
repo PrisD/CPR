@@ -48,6 +48,8 @@ import { AtentionComponent } from './screens/the-center/atention/atention.compon
 import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
 import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
 import { AddressService } from './services/address.service';
+import { ContactComponent } from './screens/contact/contact.component';
+import { LeafletMapComponent } from './screens/leaflet-map/leaflet-map.component';
 
 
 @NgModule({
@@ -55,8 +57,10 @@ import { AddressService } from './services/address.service';
     AppComponent,
     HomeComponent,
     HeaderComponent,
+    LeafletMapComponent,
     FooterComponent,
     MiniCardComponent,
+    ContactComponent,
     TitleCardComponent,
     PsychologyComponent,
     DiagnosticImagingComponent,
