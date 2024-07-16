@@ -23,7 +23,7 @@ export class LeafletMapComponent implements OnInit {
 
     // Configurar el icono del marcador estándar
     const icon = L.icon({
-      iconUrl: '../../assets/images/ping-map.png', 
+      iconUrl: '../../assets/images/marcador-de-posicion.png', 
       iconSize: [30, 30], // tamaño del icono
       iconAnchor: [12, 41], // punto del icono que corresponde a la posición del marcador
       popupAnchor: [1, -34], // donde debe estar el popup en relación con el icono
