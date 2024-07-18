@@ -2,9 +2,15 @@
     font-size: 17px;
 }
 .textoPregunta {
-     font-size: 30px;
+    font-size: 30px;
     font-family: 'Rubik Regular', sans-serif;}
+.textoVerde {
+    color: #919747;
+}
 
+.especialidades {
+    background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 15%);
+}
 #roundedInput {
     border-radius: 30px;
     padding: 2.4%;

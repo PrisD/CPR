@@ -1,0 +1,23 @@
+.contenedor{
+    min-height: 70vh;
+    background-color: #f0f0f0;
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Rubik Regular', sans-serif;
+    color: #919747;
+}
+.card{
+    height: 45vh;
+    width: 45vh;
+    background-color: #919747;
+}
+.imagen-contenedor{
+    background-color: rgb(136, 136, 136);
+    height: 50%;
+}
+.info-contenedor{
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+}

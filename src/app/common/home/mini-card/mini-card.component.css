@@ -1,7 +1,7 @@
     .article-card {
         width: 30%;
-        height: 200px;
-        border-radius: 0 40px 0 0;
+        height: 220px;
+        border-radius: 0 20px 0 0;
         overflow: hidden;
         position: relative;
         font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +10,6 @@
 
     .article-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
     .article-card img {
@@ -27,12 +26,16 @@
         bottom: 0;
         background: #919747;
     }
-
+    .article-card .date {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 4px;
+    }
     .article-card .title {
         margin: 0;
     }
     .title {
-        font-family: 'Rubik Light';
+        font-family: 'Rubik Regular', sans-serif;
         font-weight: 500;
         font-size: x-large;
     }

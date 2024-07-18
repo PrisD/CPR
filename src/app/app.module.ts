@@ -16,7 +16,7 @@ import { MenuModule } from 'primeng/menu';
 import { DividerModule } from 'primeng/divider';
 import { SidebarModule } from 'primeng/sidebar';
 import { PanelMenuModule } from 'primeng/panelmenu';
-import { MiniCardComponent } from './mini-card/mini-card.component';
+import { MiniCardComponent } from './common/home/mini-card/mini-card.component';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { TitleCardComponent } from './title-card/title-card.component';
@@ -50,6 +50,7 @@ import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
 import { AddressService } from './services/address.service';
 import { ContactComponent } from './screens/contact/contact.component';
 import { LeafletMapComponent } from './screens/leaflet-map/leaflet-map.component';
+import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
 
 
 @NgModule({
@@ -105,8 +106,9 @@ import { LeafletMapComponent } from './screens/leaflet-map/leaflet-map.component
     CardModule,
     InputTextModule,
     FormsModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    NewsHomeComponent
+],
   providers: [AddressService],
   bootstrap: [AppComponent]
 })
