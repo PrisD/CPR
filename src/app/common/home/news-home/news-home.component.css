@@ -10,7 +10,7 @@
 }
 .card{
     height: 45vh;
-    width: 45vh;
+    width: 50vh;
     background-color: #919747;
 }
 .imagen-contenedor{
@@ -20,4 +20,8 @@
 .info-contenedor{
     background-color: rgb(255, 255, 255);
     height: 50%;
+}
+.texto{
+    font-size: 15px;
+    font-weight: bold;
 }

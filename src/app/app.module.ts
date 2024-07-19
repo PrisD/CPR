@@ -89,7 +89,8 @@ import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
     OurHistoryComponent,
     AtentionComponent,
     CertificationsComponent,
-    TurnFootComponent
+    TurnFootComponent,
+    NewsHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -107,7 +108,7 @@ import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
     InputTextModule,
     FormsModule,
     HttpClientModule,
-    NewsHomeComponent
+    
 ],
   providers: [AddressService],
   bootstrap: [AppComponent]
