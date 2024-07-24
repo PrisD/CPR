@@ -1,26 +1,25 @@
 
 <div class="formulario">
     <form>
-        <div class="box flex justify-content-end align-items-center">
-            <div class="form-text text-right">
-                <span>Nombre completo</span><br>
-                <span>del paciente</span>
+        <div class=" filas box flex justify-content-end align-items-center">
+            <div class="form-text">
+                Nombre completo <br> del paciente
             </div>
             <div class="fecha">
                 <input type="text" class="input-principal" pInputText [(ngModel)]="nombre" id="nombre" name="nombre"
                     required>
             </div>
         </div>
-        <div class="flex justify-content-end">
+        <div class="flex justify-content-end inputs">
             <div class="izquierda">
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text">DNI</div>
                     <div>
                         <input type="text" class="input-secundario" pInputText [(ngModel)]="dni" id="dni" name="dni"
                             required>
                     </div>
                 </div>
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text">País</div>
                     <div>
                         <select  (change)="clear()" class="input-secundario" [(ngModel)]="pais" id="pais" name="pais" required>
@@ -29,14 +28,14 @@
                         </select>
                     </div>
                 </div>
-                <div *ngIf="pais =='Otro'" class="flex justify-content-end align-items-center mt-5">
+                <div *ngIf="pais =='Otro'" class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text cel-box">Otro pais</div>
                     <div>
                         <input type="text" class="input-secundario" pInputText [(ngModel)]="otro" id="otro" name="otro"
                             required>
                     </div>
                 </div>
-                <div *ngIf="pais =='Argentina'" class="flex justify-content-end align-items-center mt-5">
+                <div *ngIf="pais =='Argentina'" class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text">Provincia</div>
                     <div>
                         <select (change)="getLocalities(provincia)" class="input-secundario" [(ngModel)]="provincia" id="provincia" name="provincia"
@@ -46,7 +45,7 @@
                         </select>
                     </div>
                 </div>
-                <div *ngIf="provincia && pais =='Argentina'" class="flex justify-content-end align-items-center mt-5">
+                <div *ngIf="provincia && pais =='Argentina'" class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text">Localidad</div>
                     <div>
                         <select class="input-secundario" [(ngModel)]="localidad" id="localidad" name="localidad"
@@ -56,7 +55,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text">Diagnóstico</div>
                     <div>
                         <select class="input-secundario" [(ngModel)]="diagnostico" id="diagnostico" name="diagnostico"
@@ -66,7 +65,7 @@
                 </div>
             </div>
             <div class="derecha">
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text cel-box">Fecha de Nac.</div>
                     <div class="fecha w-full flex justify-content-end align-items-center">
                         <input type="text" class="input-terciario" pInputText [(ngModel)]="diaNacimiento"
@@ -77,14 +76,14 @@
                             id="anioNacimiento" name="anioNacimiento" required>
                     </div>
                 </div>
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text cel-box">Celular</div>
                     <div>
                         <input type="text" class="input-secundario-cel" pInputText [(ngModel)]="celular" id="celular"
                             name="celular" required>
                     </div>
                 </div>
-                <div class="flex justify-content-end align-items-center mt-5">
+                <div class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text email-box">E-mail</div>
                     <div>
                         <input type="email" class="input-secundario-email" pInputText [(ngModel)]="email" id="email"

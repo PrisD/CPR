@@ -1,6 +1,7 @@
-  span{
+  span {
     font-size: 23px;
   }
+
   /* Formulario Bloque */
   .formulario {
     background-color: #e8e8d6;
@@ -21,9 +22,6 @@
   }
 
   /* Estilos para cada fila de inputs */
-  .formulario .box {
-    margin-bottom: 20px;
-  }
 
   .formulario .form-text {
     font-size: 23px;
@@ -55,9 +53,6 @@
     border: none;
   }
 
-  .formulario .cel-box {
-    margin-left: 7.8%;
-  }
 
   .formulario .input-secundario-cel {
     width: 285px;
@@ -139,87 +134,45 @@
 
   @media screen and (max-width: 600px) {
 
-    .formulario {
-      border-radius: 0 30px 0 0;
-      padding: 15px;
+    .inputs {
+      flex-direction: column !important;
     }
 
-    .formulario .izquierda div{
-      margin-left: -20%;
+    .input-secundario,
+    .input-secundario-cel,
+    .input-secundario-email {
+      margin-right: 0;
     }
 
-    .formulario .derecha div{
-      margin-left: 122%;
-    }
-
-    /* Estilos para cada fila de inputs */
-    .formulario .box {
-      margin-bottom: 5px;
-    }
-
-    .formulario .form-text , span{
-      font-size: 10px;
-      margin-left: 65%;
-      margin-right: 5px;
+    .filas {
+      flex-direction: column;
     }
 
     .formulario .input-principal {
-      width: 230px;
-      height: 20px;
-      margin-left: 22%;
-      font-size: 9px;
+      width: 100%;
     }
 
-    /*Input secundario*/
-  
-    .formulario .input-secundario {
-      width: 70px;
-      font-size: 9px;
-      height: 20px;
-      margin-right: 10px;
-      margin-left: 50%;
+    .formulario .input-secundario,
+    .formulario .input-secundario-email,
+    .formulario .input-secundario-cel,
+    .fecha {
+      width: 296px;
+      margin-right: 0;
+      height: 40px;
     }
 
-
-    .formulario .input-secundario-cel {
-      width: 70px;
-      height: 20px;
-      font-size: 9px;
-    }
-
-    .formulario .input-secundario-email {
-      width: 69.6px;
-      height: 20px;
-      font-size: 9px;
-    }
-
-    /*Input terciario*/
-
-    .formulario .input-terciario {
-      width: 20px;
-      height: 25px;
-      margin-right: 1.5px;
-      margin-left: 0.5px;
-      font-size: 9px;
-    }
-
+    .formulario .input-terciario,
     .formulario .input-terciario-anio {
-      width: 25px;
-      height: 25px;
-      font-size: 9px;
-      margin-right: 0px;
-      margin-left: 1px;
+      height: 40px;
     }
 
-    /*Boton*/
-
-    .formulario .submit-button {
-      font-size: 8px;
-      padding: 10px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      margin-top: 20px;
+    .formulario .form-text {
+      font-size: 13px;
+      margin-right: 0;
     }
-    
+
+    select {
+      font-family: 'Rubik Regular', sans-serif;
+      font-size: small;
+    }
   }
