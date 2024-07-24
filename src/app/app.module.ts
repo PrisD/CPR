@@ -51,6 +51,8 @@ import { AddressService } from './services/address.service';
 import { ContactComponent } from './screens/contact/contact.component';
 import { LeafletMapComponent } from './screens/leaflet-map/leaflet-map.component';
 import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
+import { BackgroundComponent } from "./common/home/background/background.component";
+import { GalleriaModule } from 'primeng/galleria';
 
 
 @NgModule({
@@ -90,7 +92,8 @@ import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
     AtentionComponent,
     CertificationsComponent,
     TurnFootComponent,
-    NewsHomeComponent
+    NewsHomeComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
@@ -108,7 +111,7 @@ import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
     InputTextModule,
     FormsModule,
     HttpClientModule,
-    
+    GalleriaModule
 ],
   providers: [AddressService],
   bootstrap: [AppComponent]

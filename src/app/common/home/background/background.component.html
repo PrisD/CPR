@@ -1,0 +1,10 @@
+<div class="absolute top-0 left-0 z-0">
+    <p-galleria [value]="imagenes" [showIndicators]="true" [showIndicatorsOnItem]="true" [autoPlay]="true"
+        [showThumbnails]="false" [circular]="true">
+        <ng-template pTemplate="item" let-item>
+            <div class="contenedorImagenes">
+                <img class="imagen" [src]="item.itemImageSrc" />
+            </div>
+        </ng-template>
+    </p-galleria>
+</div>

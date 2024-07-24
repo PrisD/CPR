@@ -1,10 +1,8 @@
 <div class="app-container">
-  <div>
-    <img *ngIf="showBackgroundImage" class="fondo h-full absolute top-0 left-0" src="../assets/slides/bg-hero1.jpg"
-      alt="fondo">
+  <div *ngIf="showBackgroundImage">
+    <app-background></app-background>
   </div>
   <app-header></app-header>
-
   <div class="main-content">
     <router-outlet></router-outlet>
   </div>

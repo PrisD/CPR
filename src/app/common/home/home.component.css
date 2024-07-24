@@ -91,4 +91,7 @@ input#roundedInput,
     .consultas-button{
         margin-right: 5px;
     }
+    .bottom-0{
+        bottom: 30px !important;
+    }
 }
