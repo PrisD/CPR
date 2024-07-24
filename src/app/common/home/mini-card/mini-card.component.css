@@ -58,9 +58,11 @@
     @media screen and (max-width: 600px) {
         .article-card {
             width: 90%;
-            height: 15vh;
+            height: 23vh;
         }
-
+        .article-card img {
+            height: 100%;
+        }
         .title {
             font-size: medium;
         }
