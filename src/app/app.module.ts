@@ -53,6 +53,7 @@ import { LeafletMapComponent } from './screens/leaflet-map/leaflet-map.component
 import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
 import { BackgroundComponent } from "./common/home/background/background.component";
 import { GalleriaModule } from 'primeng/galleria';
+import { NewsComponent } from './screens/news/news.component';
 
 
 @NgModule({
@@ -93,7 +94,8 @@ import { GalleriaModule } from 'primeng/galleria';
     CertificationsComponent,
     TurnFootComponent,
     NewsHomeComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

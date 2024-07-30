@@ -1,0 +1,163 @@
+div {
+    font-family: 'Rubik Regular', sans-serif;
+}
+
+.titulo {
+    font-size: 28px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titulo p {
+    color: #757a3a;
+    margin-top: 40px;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}   
+
+.content {
+    background: linear-gradient(to bottom, rgba(137, 151, 33, 0.466), rgba(255, 255, 255, 0.5) 25%);
+    padding-top: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.content-text {
+    margin-top: 40px;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+
+.content-text-2 {
+    margin-right: 9%;
+    margin-left: 6.5%;
+}
+
+.description p {
+    font-size: 22px;
+}
+
+.description span {
+    font-size: 1.5rem;
+}
+
+.content-img {
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.content-img img {
+    margin-top: 20px;
+    width: 380px;
+    height: 350px;
+    margin-right: 80px;
+    object-fit: cover;
+    border-radius: 0 40px 0 0;
+}
+
+.content-img-2 {
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content-img-2 img {
+    margin-top: 0px;
+    width: 380px;
+    height: 350px;
+    margin-right: 80px;
+    object-fit: cover;
+    border-radius: 0 40px 0 0;
+}
+
+.content-img img:last-child {
+    margin-bottom: 10%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .content {
+        background: linear-gradient(to bottom, rgba(137, 151, 33, 0.333), rgba(255, 255, 255, 0.5) 15%);
+        padding-top: 10px;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .first {
+        flex-direction: column;
+    }
+
+    .titulo{
+        font-size: 15px;
+    }
+
+    .titulo p {
+        margin-top: 20px;
+    }
+
+    .content-text {
+        margin-top: 15px;
+    }
+
+    .description p {
+        font-size: 12px;
+    }
+        
+    .content-img {
+        margin-top: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        align-items: center;
+    }
+
+    .content-img img {
+        margin-top: 20px;
+        width: 250px;
+        height: 230px;
+        margin-right: 0px;
+    }
+
+    .content-img-2 {
+        margin-top: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        align-items: center;
+    }
+
+    .content-img-2 img {
+        margin-top: 20px;
+        width: 250px;
+        height: 230px;
+        margin-right: 0px;
+    }
+
+    .content-img img:first-child {
+        margin-right: 10px;
+        margin-bottom: 0%;
+    }
+
+    .content-img img:last-child {
+        margin-bottom: 0%;
+    }
+
+    .description span {
+        margin-right: 0px;
+        font-size: 0.8rem;
+    }
+
+    .content-text-2 {
+        margin-right: 9%;
+        margin-left: 9%;
+    }
+
+
+    
+
+    
+}

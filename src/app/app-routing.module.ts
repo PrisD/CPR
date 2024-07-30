@@ -29,6 +29,7 @@ import { AtentionComponent } from './screens/the-center/atention/atention.compon
 import { CertificationsComponent } from './screens/the-center/certifications/certifications.component';
 import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
 import { ContactComponent } from './screens/contact/contact.component';
+import { NewsComponent } from './screens/news/news.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -59,7 +60,8 @@ const routes: Routes = [
   { path: 'atention', component: AtentionComponent},
   { path: 'certifications', component: CertificationsComponent},
   { path: 'turn-foot', component: TurnFootComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'news', component: NewsComponent}
 
 ];
 

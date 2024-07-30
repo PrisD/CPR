@@ -114,7 +114,7 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'Novedades',
-                routerLink: '/novedades'
+                routerLink: '/news'
             },
             {
                 label: 'Contacto',

@@ -107,22 +107,38 @@ div {
     .description p {
         font-size: 12px;
     }
-        
+
     .content-img {
+        margin-top: 0px;
+        margin-left: 1%;
+        margin-right: 1%;
+        align-items: center;
+    }
+
+    .content-img img {
+        margin-top: 20px;
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 0 40px 0 0;
+        margin-right: 0px;
+    }
+    .content-img-2 {
         margin-top: 0px;
         margin-left: 10%;
         margin-right: 10%;
         align-items: center;
     }
 
-    .content-img img {
+    .content-img-2 img {
         margin-top: 20px;
-        width: 48%;
+        width: 200px;
         height: 130px;
         object-fit: cover;
         border-radius: 0 40px 0 0;
         margin-right: 0px;
     }
+
 
     .content-img img:first-child {
         margin-right: 10px;
@@ -136,21 +152,6 @@ div {
     .description span {
         margin-right: 0px;
         font-size: 0.8rem;
-    }
-
-    .indicaciones{
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-right: 0%;
-    }
-    
-    .check {
-        margin-top: -20px;
-        margin-bottom: -20px;
-    }
-    
-    .check span{
-        margin-right: 12px;
     }
     
 
