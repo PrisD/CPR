@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    text-align: left; 
+    text-align: left;
 }
 
 .content .text{
@@ -57,7 +57,7 @@
 
 .shift-card {
     margin-top: -60px;
-    width: 20%;
+    width: 30%;
     height: 250px;
     border-radius: 0 40px 0 0;
     overflow: hidden;
@@ -126,6 +126,7 @@ img {
     }
 
     .article-card .title {
+        margin-top: 25%;
         font-size: 20px;
         font-weight: bold;
         font-weight: 800;
@@ -133,6 +134,7 @@ img {
 
     .article-card .subtitle {
         font-size: 10px;
+        margin-bottom: 50px;
     }
 
     .article-card .content {

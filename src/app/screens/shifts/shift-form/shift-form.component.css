@@ -134,8 +134,16 @@
 
   @media screen and (max-width: 600px) {
 
+    .hide-on-mobile {
+      display: none;
+  }
+
     .inputs {
       flex-direction: column !important;
+    }
+
+    .form-text {
+      margin-bottom: 10px;
     }
 
     .input-secundario,
@@ -164,6 +172,15 @@
     .formulario .input-terciario,
     .formulario .input-terciario-anio {
       height: 40px;
+      
+    }
+
+    .formulario .input-terciario-anio{
+      margin-right: 12px;
+    }
+
+    .formulario .input-terciario{
+      width: 83px;
     }
 
     .formulario .form-text {

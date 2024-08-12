@@ -1,6 +1,6 @@
 .imagen {
     object-fit: cover;
-    width: 203.8vh;
+    width: 206vh;
     height: 100vh;
 }
 
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 600px) {
     .imagen {
-        width: 100%;
+        width: 99%;
     }
 
     .contenedorImagenes {
