@@ -9,7 +9,7 @@
     padding: 20px;
     border-radius: 0 40px 0 0;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
     height: auto;
     margin: 0 auto;
     padding: 4%;
@@ -32,8 +32,9 @@
   }
 
   .formulario .input-principal {
-    width: 885px;
+    width: 1015px;
     padding: 8px;
+    margin-right: -50px;
     font-size: 20px;
     border-radius: 0;
     box-sizing: border-box;
@@ -44,23 +45,24 @@
   /*Input secundario*/
 
   .formulario .input-secundario {
-    width: 350px;
+    width: 415px;
     border-radius: 0;
     box-sizing: border-box;
     font-size: 20px;
     height: 55px;
     margin-right: 80px;
+
     border: none;
   }
 
 
   .formulario .input-secundario-cel {
-    width: 285px;
+    width: 350px;
     border-radius: 0;
     box-sizing: border-box;
     height: 55px;
     border: 1px solid #464b0e;
-    margin-right: 80px;
+    margin-right: 30px;
     font-size: 20px;
     border: none;
   }
@@ -70,20 +72,20 @@
   }
 
   .formulario .input-secundario-email {
-    width: 285px;
+    width: 350px;
     border-radius: 0;
     font-size: 20px;
     box-sizing: border-box;
     height: 55px;
     border: 1px solid #464b0e;
-    margin-right: 80px;
+    margin-right: 30px;
     border: none;
   }
 
   /*Input terciario*/
 
   .formulario .input-terciario {
-    width: 78px;
+    width: 90px;
     padding: 8px;
     border-radius: 0;
     font-size: 20px;
@@ -94,13 +96,14 @@
   }
 
   .formulario .input-terciario-anio {
-    width: 110px;
+    width: 150px;
     padding: 8px;
     border-radius: 0;
     box-sizing: border-box;
     height: 50px;
     border: none;
     font-size: 20px;
+    margin-right: -50px;
   }
 
   .margen {
@@ -158,6 +161,7 @@
 
     .formulario .input-principal {
       width: 100%;
+      height: 40px;
     }
 
     .formulario .input-secundario,
@@ -176,11 +180,12 @@
     }
 
     .formulario .input-terciario-anio{
-      margin-right: 12px;
+      margin-right: 0px;
+      width: 120px;
     }
 
     .formulario .input-terciario{
-      width: 83px;
+      width: 76.5px;
     }
 
     .formulario .form-text {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AddressService } from 'src/app/services/address.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { AddressService } from 'src/app/services/address.service';
   styleUrl: './shift-form.component.css'
 })
 export class ShiftFormComponent implements OnInit {
+  @Input() psycho: boolean = false; 
   provinciasOptions: string[] = [];
   nombreCompleto: string = '';
   nombre: string = '';
@@ -25,6 +26,7 @@ export class ShiftFormComponent implements OnInit {
   mesNacimiento: string = '';
   anioNacimiento: string = '';
   otro: string = '';
+  opcion: string = '';
 
   constructor(public addressService: AddressService) {
 
