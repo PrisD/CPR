@@ -1,0 +1,21 @@
+.consultas-button img {
+    height: 20px;
+    width: 20px;
+    margin-left: 25px;
+}
+.consultas-button {
+    margin-right: 100px;
+    padding: 9%;
+}
+body,
+p,
+.p-component {
+    font-family: 'Rubik Regular', sans-serif;
+    font-size: medium;
+}
+@media screen and (max-width: 600px) {
+
+    .consultas-button {
+        margin-right: 5px;
+    }
+}

@@ -47,15 +47,7 @@ input#roundedInput,
 .logo{
     width: 25%;
 }
-.consultas-button img {
-    height: 20px;
-    width: 20px;
-    margin-left: 25px;
-}
 
-.consultas-button{
-    margin-right: 65px;
-}
 .landing {
     min-height: 100vh;
 }
@@ -87,9 +79,6 @@ input#roundedInput,
     }
     .fondoVerde{
         width: auto;
-    }
-    .consultas-button{
-        margin-right: 5px;
     }
     .bottom-0{
         bottom: 30px !important;

@@ -53,6 +53,7 @@ import { LeafletMapComponent } from './screens/leaflet-map/leaflet-map.component
 import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
 import { BackgroundComponent } from "./common/home/background/background.component";
 import { NewsComponent } from './screens/news/news.component';
+import { WhatsappButtonComponent } from "./common/whatsapp-button/whatsapp-button.component";
 
 
 @NgModule({
@@ -94,7 +95,8 @@ import { NewsComponent } from './screens/news/news.component';
     TurnFootComponent,
     NewsHomeComponent,
     BackgroundComponent,
-    NewsComponent
+    NewsComponent,
+    WhatsappButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -111,7 +113,7 @@ import { NewsComponent } from './screens/news/news.component';
     CardModule,
     InputTextModule,
     FormsModule,
-    HttpClientModule,
+    HttpClientModule
 ],
   providers: [AddressService],
   bootstrap: [AppComponent]
