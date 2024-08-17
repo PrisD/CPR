@@ -35,7 +35,7 @@
     font-size: 20px;
     width: 50%;
     z-index: 999;
-    background-color: #333333b5;
+    background-color: #333333d6;
     height: -webkit-fill-available;
     margin-left: -1%;
     animation: fadeIn 0.5s ease;
@@ -46,7 +46,7 @@ a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: medium;
+    font-size: larger;
 }
 
 .pi:hover,

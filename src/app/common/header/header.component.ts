@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
                         routerLink: '/hdr-skin-brachytherapy'
                     },
                     {
-                        label: 'IGRT EXACTRAC – BRAINLAB –(Radioterapia guiada por Imágenes)',
+                        label: 'IGRT EXACTRAC –(Radioterapia guiada por Imágenes)',
                         routerLink: '/igrt-exactrac-brainlab-image-guided-radiotherapy'
                     },
                     {
