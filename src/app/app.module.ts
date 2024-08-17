@@ -52,7 +52,6 @@ import { ContactComponent } from './screens/contact/contact.component';
 import { LeafletMapComponent } from './screens/leaflet-map/leaflet-map.component';
 import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
 import { BackgroundComponent } from "./common/home/background/background.component";
-import { GalleriaModule } from 'primeng/galleria';
 import { NewsComponent } from './screens/news/news.component';
 
 
@@ -113,7 +112,6 @@ import { NewsComponent } from './screens/news/news.component';
     InputTextModule,
     FormsModule,
     HttpClientModule,
-    GalleriaModule
 ],
   providers: [AddressService],
   bootstrap: [AppComponent]
