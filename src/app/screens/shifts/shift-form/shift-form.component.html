@@ -58,9 +58,8 @@
                 <div class="filas flex justify-content-end align-items-center mt-5">
                     <div class="form-text">Diagnóstico</div>
                     <div>
-                        <select class="input-secundario" [(ngModel)]="diagnostico" id="diagnostico" name="diagnostico"
-                            required>
-                        </select>
+                        <input type="text" class="input-secundario" pInputText [(ngModel)]="diagnostico"
+                            id="diagnostico" name="diagnostico" required>
                     </div>
                 </div>
                 <div *ngIf="psycho == true" class="filas flex justify-content-end align-items-center mt-5">

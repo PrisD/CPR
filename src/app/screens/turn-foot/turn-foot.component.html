@@ -1,9 +1,9 @@
 <div class="turnos flex align-items-center justify-content-center">
     <div class="turn">Turnos</div>
     <div class="sub">
-        <p>Contactanos y solicitá de manera simple tu turno</p>
-        <p>en cualquiera de nuestras especialidades y tratamientos</p>
+        <p [innerHTML]="title1"></p>
+        <p>{{ title2 }}</p>
     </div>
-    <p-button class="flex flex-row justify-content-center turn-button" label="TURNOS" (click)="goToShifts()" 
+    <p-button class="flex flex-row justify-content-center turn-button" label="SOLICITAR" (click)="goToShifts()" 
                 [style]="{'border-radius': '20px'}"></p-button>
 </div>

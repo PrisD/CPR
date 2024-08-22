@@ -2,7 +2,7 @@
     <div class="article-card">
         <div class="content">
             <div class="p-d-flex p-flex-column text p-align-start">
-                <h3 class="text-white title font-bold ">{{ title }}</h3>
+                <h3 class="text-white title font-bold " [innerHTML]="title"></h3>
                 <div *ngIf="subtitle!=''" class="subtitle text-white"> {{subtitle}} </div>
             </div>
         </div>

@@ -51,6 +51,10 @@
         margin-right: 9%;
     }
 
+    .hide-on-mobile {
+        display: none;
+    }
+
     .titulo {
         font-size: 12px;
         margin-bottom: 20px;

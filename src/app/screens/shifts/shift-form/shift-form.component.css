@@ -125,7 +125,7 @@
     border-radius: 30px;
     cursor: pointer;
     margin-top: 20px;
-    width: 60%;
+    width: 17%;
   }
 
   .formulario .box-button {
@@ -196,5 +196,12 @@
     select {
       font-family: 'Rubik Regular', sans-serif;
       font-size: small;
+    }
+
+    .formulario .submit-button {
+      font-size: 12px;
+      padding: 12px;
+      margin-top: 0px;
+      width: 55%;
     }
   }
