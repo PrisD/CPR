@@ -24,7 +24,6 @@ export class BackgroundComponent implements OnInit, OnDestroy {
   }
 
   private startCarousel(): void {
-    this.changeBackground(); // Inicialmente, muestra la primera imagen
     this.intervalId = setInterval(() => {
       if (!this.userInteracted) {
         this.changeBackground();
