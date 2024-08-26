@@ -6,6 +6,10 @@
     position: absolute;
 }
 
+::ng-deep #turnosButton .p-button-label {
+    font-size: 16px !important;
+}
+
 .fondoHeader {
     background-color: #333333;
     padding: 1%;
@@ -113,6 +117,11 @@ ul {
 
 @media screen and (max-width: 600px) {
 
+    ::ng-deep #turnosButton .p-button-label {
+        font-size: 12px !important;
+        padding: 1px;
+    }
+
     .fondoHeaderHome,
     .fondoHeader {
         margin: -2.3%;
@@ -147,6 +156,6 @@ ul {
     }
 
     ::ng-deep .p-button {
-        padding: 7px !important;
+        padding: 8px !important;
     }
 }
