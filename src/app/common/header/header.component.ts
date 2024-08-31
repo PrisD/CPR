@@ -79,6 +79,10 @@ export class HeaderComponent implements OnInit {
                     {
                         label: 'Taller de Mindfulness',
                         routerLink: '/mindfulness-workshop'
+                    },
+                    {
+                        label: 'Mindfulness',
+                        routerLink: '/what-is-mindfulness'
                     }
                 ]
             },

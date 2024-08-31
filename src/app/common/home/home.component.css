@@ -51,7 +51,9 @@ input#roundedInput,
 .landing {
     min-height: 100vh;
 }
-
+.sinEspacio{
+    margin-bottom: -5%;
+}
 /* Resposive */
 
 @media screen and (max-width: 600px) {

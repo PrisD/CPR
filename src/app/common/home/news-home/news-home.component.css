@@ -25,7 +25,20 @@
     font-size: 15px;
     font-weight: bold;
 }
-
+.footerText{
+    color: #888888;
+}
+a{
+    text-decoration: unset;
+    transition: color 0.3s;
+}
+.footerText:hover{
+    color: #919747;
+}
+.espacio{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
 @media screen and (max-width: 600px) {
 .card {
         height: 35vh;
