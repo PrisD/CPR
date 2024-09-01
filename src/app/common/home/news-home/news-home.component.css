@@ -1,4 +1,4 @@
-.contenedor{
+.contenedor {
     min-height: 70vh;
     background-color: #f0f0f0;
 }
@@ -8,11 +8,13 @@
     font-family: 'Rubik Regular', sans-serif;
     color: #919747;
 }
-.card{
+
+.card {
     height: 45vh;
     width: 50vh;
     background-color: #919747;
 }
+
 .imagen-contenedor {
     height: 50%;
     display: flex;
@@ -26,30 +28,37 @@ img {
     height: auto;
     object-fit: cover;
 }
-.info-contenedor{
+
+.info-contenedor {
     background-color: rgb(255, 255, 255);
     height: 50%;
 }
-.texto{
+
+.texto {
     font-size: 15px;
     font-weight: bold;
 }
-.footerText{
+
+.footerText {
     color: #888888;
 }
-a{
+
+a {
     text-decoration: unset;
     transition: color 0.3s;
 }
-.footerText:hover{
+
+.footerText:hover {
     color: #919747;
 }
-.espacio{
+
+.espacio {
     padding-top: 2%;
     padding-bottom: 5%;
 }
+
 @media screen and (max-width: 600px) {
-.card {
+    .card {
         height: 35vh;
         width: 35vh;
         background-color: #919747;
