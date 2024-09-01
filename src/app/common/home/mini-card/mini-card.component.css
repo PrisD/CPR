@@ -1,73 +1,79 @@
-    .article-card {
-        width: 30%;
-        height: 220px;
-        border-radius: 0 20px 0 0;
-        overflow: hidden;
-        position: relative;
-        font-family: Arial, Helvetica, sans-serif;
-        transition: all 300ms;
-    }
+.titulo {
+    font-size: 30px;
+    font-family: 'Rubik Regular', sans-serif;
+    color: #ffffff;
+}
 
-    .article-card:hover {
-        transform: translateY(-2px);
-    }
+.card {
+    height: 32vh;
+    width: 50vh;
+    background-color: #919747;
+    border-radius: 0 20px 0 0;
+}
 
-    .article-card img {
-        width: 100%;
-        height: 150%;
-        object-fit: cover;
-    }
+.imagen-contenedor {
+    height: 50%;
+    border-radius: 0 20px 0 0;
+    overflow: hidden;
+}
 
-    .article-card .content {
-        box-sizing: border-box;
-        width: 100%;
-        position: absolute;
-        padding: 10px 10px 10px 10px;
-        bottom: 0;
-        background: #919747;
-    }
-    .article-card .date {
-        font-size: 15px;
-        color: rgba(255, 255, 255, 0.9);
-        margin-bottom: 4px;
-    }
-    .article-card .title {
-        margin: 0;
-    }
-    .title {
-        font-family: 'Rubik Regular', sans-serif;
-        font-weight: 500;
-        font-size: x-large;
-    }
+img {
+    padding-top: 20%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
-    .fondoNaranja {
-        background-color: #d78a00 !important;
-    }
+.info-contenedor {
+    height: 50%;
+}
 
-    .fondoAmarillo {
-        background-color: #a7a11c !important;
-    }
+.card:nth-child(1) .info-contenedor {
+    background-color: #919747
+}
 
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
+.card:nth-child(2) .info-contenedor {
+    background-color: #d78a00
+}
 
-    @media screen and (max-width: 600px) {
-        .article-card {
-            width: 90%;
-            height: 23vh;
-        }
-        .article-card img {
-            height: 100%;
-        }
-        .title {
-            font-size: medium;
-        }
+.card:nth-child(3) .info-contenedor {
+    background-color: #a7a11c
+}
 
-        .article-card .date {
-            font-size: 12px;
-        }
+.texto {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.footerText {
+    color: #888888;
+}
+
+.footerText:hover {
+    color: #919747;
+}
+
+.espacio {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.subtitulo {
+    font-family: 'Rubik Regular', sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        height: 35vh;
+        width: 35vh;
+        background-color: #919747;
     }
+}
