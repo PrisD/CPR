@@ -1,3 +1,7 @@
+a{
+            cursor: pointer;
+            text-decoration: none;
+}
 .titulo {
     font-size: 30px;
     font-family: 'Rubik Regular', sans-serif;
@@ -7,7 +11,6 @@
 .card {
     height: 32vh;
     width: 50vh;
-    background-color: #919747;
     border-radius: 0 20px 0 0;
 }
 
@@ -28,15 +31,15 @@ img {
     height: 50%;
 }
 
-.card:nth-child(1) .info-contenedor {
-    background-color: #919747
+.card1 {
+    background-color: #838940
 }
 
-.card:nth-child(2) .info-contenedor {
+.card2 {
     background-color: #d78a00
 }
 
-.card:nth-child(3) .info-contenedor {
+.card3 {
     background-color: #a7a11c
 }
 
