@@ -56,6 +56,10 @@ a {
     padding-top: 2%;
     padding-bottom: 5%;
 }
+::ng-deep .p-button {
+    margin-top: 2rem !important;
+
+}
 
 @media screen and (max-width: 600px) {
     .card {
@@ -63,4 +67,14 @@ a {
         width: 35vh;
         background-color: #919747;
     }
+
+    .texto {
+        font-size: 13px;
+    }
+
+    ::ng-deep .p-button {
+        margin-top: 0.5rem !important;
+
+    }
+
 }

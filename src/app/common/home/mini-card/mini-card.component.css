@@ -1,7 +1,8 @@
-a{
-            cursor: pointer;
-            text-decoration: none;
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
+
 .titulo {
     font-size: 30px;
     font-family: 'Rubik Regular', sans-serif;
@@ -75,8 +76,16 @@ img {
 
 @media screen and (max-width: 600px) {
     .card {
-        height: 35vh;
+        height: 24vh;
         width: 35vh;
         background-color: #919747;
     }
+        .titulo {
+            font-size: 15px;
+            font-family: 'Rubik Regular', sans-serif;
+            color: #ffffff;
+        }
+        .subtitulo{
+            font-size: 8px;
+        }
 }
