@@ -36,7 +36,9 @@ img {
 
 .texto {
     font-size: 15px;
+    margin-bottom: 2rem;
     font-weight: bold;
+    margin-top: 0;
 }
 
 .footerText {
@@ -55,10 +57,6 @@ a {
 .espacio {
     padding-top: 2%;
     padding-bottom: 5%;
-}
-::ng-deep .p-button {
-    margin-top: 2rem !important;
-
 }
 
 @media screen and (max-width: 600px) {
