@@ -1,88 +1,65 @@
-<div class="conteiner">
+<div class="container">
     <app-title-card
         title="BRAQUITERAPIA DE ALTA TASA DE DOSIS
-        - HDR - PARA CÁNCER DE PRÓSTATA "
+        - HDR - PARA CÁNCER DE PRÓSTATA"
         [titleFontSize]="35"
         [titleFontSizeScreen]="15"
         imageUrl="..\assets\images\CPR_braquiterapia.jpeg"
     ></app-title-card>
 
-
     <div class="content">
-    
-        <div class="first flex">
-            <div class="flex">
-                <div class="content-text">
-                    <div>
-                        <p class="titulo">Procedimiento corto, efectivo y con muy buena tolerancia.</p>
-                    </div>
-        
-                    <div class="description">
-                        <p>Es una práctica <strong>innovadora</strong> que consiste en aplicar una fuente de radiación directamente en el
-                            tumor permitiendo aumentar la dosis en el objetivo y <strong>conservar la integridad de los tejidos
-                            sanos y órganos vecinos</strong>.</p>
-        
-                        <p><strong> Es un procedimiento ambulatorio que lleva entre 3 y 4 horas.</strong> Sus efectos secundarios son
-                            mínimos y transitorios que se resuelven al cabo de unas semanas.</p> 
-                    </div>
-                </div>   
+        <!-- Primera sección de texto e imágenes -->
+        <div class="flex container">
+            <!-- Texto de introducción -->
+            <div class="content-text first-text">
+                <p class="titulo">Procedimiento corto, efectivo y con muy buena tolerancia.</p>
+                <div class="description">
+                    <p>Es una práctica <strong>innovadora</strong> que consiste en aplicar una fuente de radiación directamente en el
+                        tumor permitiendo aumentar la dosis en el objetivo y <strong>conservar la integridad de los tejidos
+                        sanos y órganos vecinos</strong>.</p>
+                    <p><strong>Es un procedimiento ambulatorio que lleva entre 3 y 4 horas.</strong> Sus efectos secundarios son
+                        mínimos y transitorios que se resuelven al cabo de unas semanas.</p>
+                </div>
             </div>
             
-            <div class="flex align-items-center justify-content-center">
-                <div class="content-img">
-                    <img src="..\assets\images\CPR_braqui1.jpg"/>
-                    <img src="..\assets\images\CPR_braqui2.jpeg"/>
-                </div>
+            <!-- Imágenes -->
+            <div class="content-img">
+                <img src="..\assets\images\CPR_braqui1.jpg"/>
+                <img src="..\assets\images\CPR_braqui2.jpeg"/>
             </div>
         </div>
 
-        <div class="flex">
-            <div class="content-text">
-                <div class="indicaciones">
-                    <div>
-                        <p class="titulo">La Braquiterapia HDR se indica para: </p>
+        <!-- Sección de indicaciones -->
+        <div class="content-text second-text">
+            <div class="checks">
+                <p class="titulo">La Braquiterapia HDR se indica para:</p>
+                <div class="description">
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p><strong>Pacientes de bajo riesgo:</strong> como terapia única.</p>
                     </div>
-                    
-                    <div class="description">
 
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p><strong>Pacientes de bajo riesgo:</strong> como terapia única.</p>
-                        </div>
+                    <p-divider></p-divider>
 
-                        <p-divider></p-divider>
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p><strong>Pacientes de bajo riesgo:</strong> como refuerzo o boost combinado con la radioterapia externa,
+                            luego de 3 semanas de tratamiento.</p>
+                    </div>
 
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p><strong>Pacientes de bajo riesgo:</strong> como refuerzo o boost combinado con la radioterapia externa,
-                                luego de 3 semanas de tratamiento.</p>
-                        </div>
+                    <p-divider></p-divider>
 
-                        <p-divider></p-divider>
-
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p><strong>Pacientes con recaídas locales:</strong> como tratamiento indicado para este tipo de casos.</p>
-                        </div>
-
-                        <p-divider></p-divider>
-
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p><strong>Pacientes con recaídas locales:</strong> como tratamiento indicado para este tipo de casos.</p>
                     </div>
                 </div>
-                
-
             </div>        
         </div>
-        
     </div>
 </div>
 
-    
-
 <app-turn-foot 
-title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-direccion="/shifts-start-radiotherapy"
+    title1="Contactanos y solicitá de manera simple tu <strong>primer turno</strong>"
+    direccion="/shifts-start-radiotherapy"
 ></app-turn-foot>
-
-
-
