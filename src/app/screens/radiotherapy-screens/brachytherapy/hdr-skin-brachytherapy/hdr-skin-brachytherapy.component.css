@@ -54,10 +54,6 @@ div {
     border-radius: 0 40px 0 0;
 }
 
-
-
-
-
 @media screen and (max-width: 600px) {
     .titulo{
         margin-top: 15px;

@@ -6,92 +6,78 @@
         imageUrl="..\assets\images\CPR_tratamiento2.jpg"
     ></app-title-card>
 
-
     <div class="content">
-    
-        <div class="first flex">
-            <div class="flex">
-                <div class="content-text">
-                    <div>
-                        <p class="titulo">La SRBT es ambulatoria, indolora y administrable en 1 o pocas fracciones de
-                            15 minutos, permitiéndole al paciente llevar una vida normal.</p>
-                    </div>
-        
-                    <div class="description">
-                        <p>La Radiocirugía Estereotáxica Corporal — SBRT (Stereotactic Body Radiation Therapy) es una
-                            técnica terapéutica <strong>moderna y precisa</strong> en la cual se irradian pequeños volúmenes con altas
-                            dosis de radiación, <strong>dirigida a pacientes con tumores primarios o metastásicos</strong>, produciendo
-                            tasas de control comparables a la cirugía clásica.</p>
-
-                        <p>La planificación se realiza a partir de imágenes en cuatro dimensiones, teniendo en cuenta el
-                            volumen y movimiento de los órganos.</p>
-                    </div>
-                </div>   
-            </div>
+    <!-- Primera sección de texto e imágenes -->
+        <div class="flex container">
+        <!-- Texto de introducción -->
+            <div class="content-text first-text">
+                <p class="titulo">La SRBT es ambulatoria, indolora y administrable en 1 o pocas fracciones de
+                    15 minutos, permitiéndole al paciente llevar una vida normal.</p>    
+                <div class="description">
+                    <p>La Radiocirugía Estereotáxica Corporal — SBRT (Stereotactic Body Radiation Therapy) es una
+                        técnica terapéutica <strong>moderna y precisa</strong> en la cual se irradian pequeños volúmenes con altas
+                        dosis de radiación, <strong>dirigida a pacientes con tumores primarios o metastásicos</strong>, produciendo
+                        tasas de control comparables a la cirugía clásica.</p>
+                    <p>La planificación se realiza a partir de imágenes en cuatro dimensiones, teniendo en cuenta el
+                        volumen y movimiento de los órganos.</p>
+                </div>
+            </div>   
             
-            <div class="flex align-items-center justify-content-center">
-                <div class="content-img">
-                    <img src="..\assets\images\CPR_SRBT.jpeg"/>
-                    <img src="..\assets\images\CPR_tratamiento3.jpg"/>
-                </div>
+            <!-- Imágenes -->
+            <div class="content-img">
+                <img src="..\assets\images\CPR_SRBT.jpeg"/>
+                <img src="..\assets\images\CPR_tratamiento3.jpg"/>
             </div>
         </div>
-
-        <div class="flex">
-            <div class="content-text">
-                <div class="indicaciones">
-                    <div>
-                        <p class="titulo">Beneficios de este tratamiento:</p>
-                    </div>
-                    
-                    <div class="description">
-
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p>Ambulatoria</p>
-                        </div>
-
-                        <p-divider></p-divider>
-
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p>No invasiva</p>
-                        </div>
-
-                        <p-divider></p-divider>
-
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p>Indolora</p>
-                        </div>
-
-                        <p-divider></p-divider>
-
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p>Se realiza sin anestesia</p>
-                        </div>
-
-                        <p-divider></p-divider>
-
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
-                            <p>Administrable en 1 o pocas fracciones de 15 minutos</p>
-                        </div>
-
-                        <p-divider></p-divider>
-
-                    </div>
-                </div>
-                
-
-            </div>        
-        </div>
         
-    </div>
+        <!-- Sección de indicaciones -->
+        <div class="content-text second-text">
+            <div class="checks">
+                <p class="titulo">Beneficios de este tratamiento:</p>
+                <div class="description">
+
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p>Ambulatoria</p>
+                    </div>
+
+                    <p-divider></p-divider>
+
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p>No invasiva</p>
+                    </div>
+
+                    <p-divider></p-divider>
+
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p>Indolora</p>
+                    </div>
+
+                    <p-divider></p-divider>
+
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p>Se realiza sin anestesia</p>
+                    </div>
+
+                    <p-divider></p-divider>
+
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-check" style="color: rgba(127, 137, 54, 0.65)"></span> 
+                        <p>Administrable en 1 o pocas fracciones de 15 minutos</p>
+                    </div>
+
+                    <p-divider></p-divider>
+
+                </div>
+            </div>        
+        </div>        
+    </div>   
 </div>
 
 <app-turn-foot 
-title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-direccion="/shifts-start-radiotherapy"
+    title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+    direccion="/shifts-start-radiotherapy"
 ></app-turn-foot>

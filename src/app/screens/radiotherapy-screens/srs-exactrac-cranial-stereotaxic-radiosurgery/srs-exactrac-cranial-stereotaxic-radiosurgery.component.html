@@ -1,47 +1,44 @@
 <div class="conteiner">
     <app-title-card
-    title="SRS EXATRAC – RADIOCIRUGÍA ESTEREOTÁXICA CRANEAL"
-    [titleFontSize]="35"
-    [titleFontSizeScreen]="15"
-    imageUrl="..\assets\images\CPR_tratamientoIGRT.jpg"
+        title="SRS EXATRAC – RADIOCIRUGÍA ESTEREOTÁXICA CRANEAL"
+        [titleFontSize]="35"
+        [titleFontSizeScreen]="15"
+        imageUrl="..\assets\images\CPR_tratamientoIGRT.jpg"
     ></app-title-card>
 
     <div class="content">
-    
-        <div class="first flex">
-            <div class="flex">
-                <div class="content-text">
-                    <div>
-                        <p class="titulo">Es una técnica terapéutica moderna y precisa en la cual se irradian
-                            pequeños volúmenes del cráneo con altas dosis de radiación. </p>
-                    </div>
-        
-                    <div class="description">
-                        <p>Se necesita una técnica de inmovilización y fijación precisa, un software específico, y la
-                            posibilidad de utilizar y fusionar imágenes de TAC, RMN, PET y angiografía digital. Esto permite
-                            ubicar un punto específico en el encéfalo.</p>
-            
-                        <p>El propósito de la Radiocirugía es curar al paciente, <strong>evitar la recidiva local</strong> o 
-                        <strong>paliar síntomas.</strong></p>
-            
-                        <p>Con esta técnica focalizada <strong>se minimizan las dosis de radiación</strong> en estructuras que no forman
-                            parte del objetivo, mejorando así la tolerancia al tratamiento y su efectividad.</p>
-                    </div>
-                </div>   
-            </div>
-            
-            <div class="mb-4 flex align-items-center justify-content-center">
-                <div class="content-img">
-                    <img src="..\assets\images\CPR_SRS.jpeg"/>
-                    <img src="..\assets\images\CPR_cirugia-esterotaxica.jpeg"/>
+    <!-- Primera sección de texto e imágenes -->
+         <div class="flex container">
+        <!-- Texto de introducción -->
+            <div class="content-text">
+                <div>
+                    <p class="titulo">Es una técnica terapéutica moderna y precisa en la cual se irradian
+                        pequeños volúmenes del cráneo con altas dosis de radiación. </p>
                 </div>
+                <div class="description">
+                    <p>Se necesita una técnica de inmovilización y fijación precisa, un software específico, y la
+                        posibilidad de utilizar y fusionar imágenes de TAC, RMN, PET y angiografía digital. Esto permite
+                        ubicar un punto específico en el encéfalo.</p>
+            
+                    <p>El propósito de la Radiocirugía es curar al paciente, <strong>evitar la recidiva local</strong> o 
+                    <strong>paliar síntomas.</strong></p>
+            
+                    <p>Con esta técnica focalizada <strong>se minimizan las dosis de radiación</strong> en estructuras que no forman
+                        parte del objetivo, mejorando así la tolerancia al tratamiento y su efectividad.</p>
+                </div>
+            </div>   
+
+            <!-- Imágenes -->
+            <div class="content-img">
+                <img src="..\assets\images\CPR_SRS.jpeg"/>
+                <img src="..\assets\images\CPR_cirugia-esterotaxica.jpeg"/>
             </div>
         </div>        
     </div>
 </div>
 
 <app-turn-foot 
-title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-direccion="/shifts-start-radiotherapy"
+    title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+    direccion="/shifts-start-radiotherapy"
 ></app-turn-foot>
 

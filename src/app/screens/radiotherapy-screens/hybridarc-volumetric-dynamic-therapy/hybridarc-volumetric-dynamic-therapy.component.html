@@ -1,44 +1,39 @@
 <div class="conteiner">
     <app-title-card
-    title="HYBRIDARC - TERAPIA <br>DINÁMICA VOLUMÉTRICA"
-    [titleFontSize]="35"
-    [titleFontSizeScreen]="15"
-    imageUrl="..\assets\images\CPR_tratamientoIGRT.jpg"
+        title="HYBRIDARC - TERAPIA <br>DINÁMICA VOLUMÉTRICA"
+        [titleFontSize]="35"
+        [titleFontSizeScreen]="15"
+        imageUrl="..\assets\images\CPR_tratamientoIGRT.jpg"
     ></app-title-card>
 
     <div class="content">
-    
-        <div class="first flex">
-            <div class="flex">
-                <div class="content-text">
-                    <div>
-                        <p class="titulo">Tratamiento de vanguardia, eficaz y seguro, que permite la administración
-                            de la radiación de manera eficiente y adaptada a la anatomía de la lesión.</p>
-                    </div>
+    <!-- Primera sección de texto e imágenes -->
+        <div class="flex container">
+        <!-- Texto de introducción -->
+            <div class="content-text">
+                <p class="titulo">Tratamiento de vanguardia, eficaz y seguro, que permite la administración
+                    de la radiación de manera eficiente y adaptada a la anatomía de la lesión.</p>
+                <div class="description">
+                    <p>Como parte de la solución de planificación y tratamiento iPlan HybridArc° proporciona la
+                        configuración de dosis volumétrica rotacional, lo que <strong>agiliza la planificación de tratamientos
+                        tanto simples como complejos.</strong></p>
             
-                    <div class="description">
-                        <p>Como parte de la solución de planificación y tratamiento iPlan HybridArc° proporciona la
-                            configuración de dosis volumétrica rotacional, lo que <strong>agiliza la planificación de tratamientos
-                            tanto simples como complejos.</strong></p>
-            
-                        <p>Otorga un mayor confort en el procedimiento, aumenta la seguridad y la calidad en la
-                            administración de dosis, y con esto la <strong>protección de los órganos en riesgo</strong> mediante la
-                            optimización del arco dinámico.</p> 
-                    </div>
-                </div>   
-            </div>
-            
-            <div class="mb-4 flex align-items-center justify-content-center">
-                <div class="content-img">
-                    <img src="..\assets\images\CPR_hybridarc.jpg"/>
-                    <img src="..\assets\images\CPR_cirugia-esterotaxica.jpeg"/>
+                    <p>Otorga un mayor confort en el procedimiento, aumenta la seguridad y la calidad en la
+                        administración de dosis, y con esto la <strong>protección de los órganos en riesgo</strong> mediante la
+                        optimización del arco dinámico.</p> 
                 </div>
+            </div>   
+        
+            <!-- Imágenes -->
+            <div class="content-img">
+                <img src="..\assets\images\CPR_hybridarc.jpg"/>
+                <img src="..\assets\images\CPR_cirugia-esterotaxica.jpeg"/>
             </div>
         </div>        
     </div>
 </div>
 
 <app-turn-foot 
-title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-direccion="/shifts-start-radiotherapy"
+    title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+    direccion="/shifts-start-radiotherapy"
 ></app-turn-foot>

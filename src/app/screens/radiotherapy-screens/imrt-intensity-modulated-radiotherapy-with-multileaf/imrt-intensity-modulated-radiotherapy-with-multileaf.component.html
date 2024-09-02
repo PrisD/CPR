@@ -1,46 +1,40 @@
 <div class="conteiner">
     <app-title-card
-    title="IMRT – RADIOTERAPIA DE INTENSIDAD MODULADA CON MULTILÁMINAS"
-    [titleFontSize]="35"
-    [titleFontSizeScreen]="15"
-    imageUrl="..\assets\images\CPR_tratamientoIGRT.jpg"
+        title="IMRT – RADIOTERAPIA DE INTENSIDAD MODULADA CON MULTILÁMINAS"
+        [titleFontSize]="35"
+        [titleFontSizeScreen]="15"
+        imageUrl="..\assets\images\CPR_tratamientoIGRT.jpg"
     ></app-title-card>
 
     <div class="content">
-    
-        <div class="first flex">
-            <div class="flex">
-                <div class="content-text">
-                    <div>
-                        <p class="titulo">Tratamiento ambulatorio, no doloroso que logra un grado de control y precisión imposible de 
-                            obtener con otras técnicas.</p>
-                    </div>
+    <!-- Primera sección de texto e imágenes -->
+        <div class="flex container">
+        <!-- Texto de introducción -->
+            <div class="content-text">
+                <p class="titulo">Tratamiento ambulatorio, no doloroso que logra un grado de control y precisión imposible de 
+                    obtener con otras técnicas.</p>            
+                <div class="description">
+                    <p><strong>Es una de las técnicas más avanzadas en tratamientos de radioterapia</strong> contra el cáncer que
+                        brinda la posibilidad de irradiar con precisión y en altas dosis el blanco tumoral y minimizar los
+                        efectos adversos en los tejidos sanos, gracias a la modulación del mapa de intensidad de cada
+                        haz utilizado.</p>
             
-                    <div class="description">
-                        <p><strong>Es una de las técnicas más avanzadas en tratamientos de radioterapia</strong> contra el cáncer que
-                            brinda la posibilidad de irradiar con precisión y en altas dosis el blanco tumoral y minimizar los
-                            efectos adversos en los tejidos sanos, gracias a la modulación del mapa de intensidad de cada
-                            haz utilizado.</p>
+                    <p>Tiene amplia aplicación en la mayoría de los tumores y ha demostrado mínima toxicidad aguda
+                        haciendo posible el escalamiento de dosis en el tumor.</p> 
             
-                        <p>Tiene amplia aplicación en la mayoría de los tumores y ha demostrado mínima toxicidad aguda
-                            haciendo posible el escalamiento de dosis en el tumor.</p> 
-            
-                        <p>La IMRT con Colimador Multiláminas <strong>brinda flexibilidad en el diseño del tratamiento y
-                            adaptación continua a los requerimientos particulares de cada paciente</strong>, permitiendo
-                            conformar los campos de radiación y modular la intensidad de los haces mediante la utilización
-                            de las multiláminas de un colimador especial que produce una secuencia de haces de pequeño
-                            tamaño que, sumados en conjunto, dan como resultado el mapa de intensidad requerido por el
-                            sistema de planificación.
-                        </p>
-                    </div>
-                </div>   
-            </div>
-            
-            <div class="mb-4 flex align-items-center justify-content-center">
-                <div class="content-img">
-                    <img src="..\assets\images\CPR_tratamiento4.jpg"/>
-                    <img src="..\assets\images\CPR_tratamiento5.png"/>
+                    <p>La IMRT con Colimador Multiláminas <strong>brinda flexibilidad en el diseño del tratamiento y
+                        adaptación continua a los requerimientos particulares de cada paciente</strong>, permitiendo
+                        conformar los campos de radiación y modular la intensidad de los haces mediante la utilización
+                        de las multiláminas de un colimador especial que produce una secuencia de haces de pequeño
+                        tamaño que, sumados en conjunto, dan como resultado el mapa de intensidad requerido por el
+                        sistema de planificación.</p>
                 </div>
+            </div>   
+            
+            <!-- Imágenes -->
+            <div class="content-img">
+                <img src="..\assets\images\CPR_tratamiento4.jpg"/>
+                <img src="..\assets\images\CPR_tratamiento5.png"/>
             </div>
         </div>        
     </div>
@@ -48,6 +42,6 @@
 
 
 <app-turn-foot 
-title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-direccion="/shifts-start-radiotherapy"
+    title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+    direccion="/shifts-start-radiotherapy"
 ></app-turn-foot>

@@ -1,50 +1,50 @@
-<app-title-card
-    title="BRAQUITERAPIA GINECOLÓGICA INTRACAVITARIA"
-    [titleFontSize]="35"
-    [titleFontSizeScreen]="15"
-    imageUrl="..\assets\images\CPR_braquiterapia.jpeg"
-></app-title-card>
+<div class="container">
+    <app-title-card
+        title="BRAQUITERAPIA GINECOLÓGICA INTRACAVITARIA"
+        [titleFontSize]="35"
+        [titleFontSizeScreen]="15"
+        imageUrl="..\assets\images\CPR_braquiterapia.jpeg"
+    ></app-title-card>
 
-<div class="content">
-    
-    <div class="flex">
-        <div class="flex">
-            <div class="content-text">
+    <div class="content">
+        <!-- Primera sección de texto e imágenes -->
+        <div class="flex container">
+            <!-- Texto de introducción -->
+            <div class="content-text first-text">
                 <div class="description">
                     <p>En este tipo de intervención la fuente radiactiva se introduce en unos dispositivos especiales
                         (aplicadores, catéteres), que se colocan en cavidades anatómicas para luego realizar la
                         irradiación.</p>
-                        
                     <p>En la <strong>Braquiterapia Intracavitaria</strong> se coloca un aplicador que contiene una sustancia radiactiva en 
                         la zona donde se encuentra el tumor, o de donde ha sido extirpado.</p>
                 </div>
             </div>
-        </div>
-            
-        <div class="flex align-items-center justify-content-center">
+                
+            <!-- Imágenes -->
             <div class="content-img">
                 <img src="../assets/images/CPR_braqui-det1.jpeg"/>
                 <img src="../assets/images/CPR_braqui-aparato-det.jpeg"/>
-            </div>
+            </div>    
         </div>
-    </div>
 
-    <div class="flex">
-        <div class="content-text">
-            <div class="description">
-                <div class="botones">
+        <div class="content-text second-text">
+            <div class="botones">
+                <div class="description">
                     <p class="botones-text">Te puede interesar: </p>
-                    <p-button class="flex flex-row bra-button" label="BRAQUITERAPIA INTERSTICIAL" (click)="goToBraquiIntracavitary()" 
-                    [style]="{'border-radius': '15px'}"></p-button>
+                    <div class="flex mb-4 gap-4">
+                        <p-button class="bra-button" label="BRAQUITERAPIA INTERSTICIAL" (click)="goToBraquiIntracavitary()" 
+                        [style]="{'border-radius': '15px'}"></p-button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
     
 
 <app-turn-foot 
-title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-direccion="/shifts-start-radiotherapy"
+    title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+    direccion="/shifts-start-radiotherapy"
 ></app-turn-foot>
