@@ -30,6 +30,9 @@
     top: 0;
     right: 0;
 }
+.align{
+    margin-left: 8%;
+}
 
 .nav {
     position: absolute;
