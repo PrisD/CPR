@@ -11,14 +11,11 @@ export class TitleCardComponent implements OnInit{
   @Input() titleFontSizeScreen: number = 0;
   @Input() subtitle: string= '';
   @Input() imageUrl: string = '';
-  @Input() titlePadding: number = 0;
 
 
   ngOnInit(): void {
     document.documentElement.style.setProperty('--title-font-size', this.titleFontSize + 'px');  
-    document.documentElement.style.setProperty('--title-font-size-screen', this.titleFontSizeScreen + 'px');   
-    document.documentElement.style.setProperty('--title-padding', this.titlePadding + 'px');   
- 
+    document.documentElement.style.setProperty('--title-font-size-screen', this.titleFontSizeScreen + 'px');
   }
 
 }

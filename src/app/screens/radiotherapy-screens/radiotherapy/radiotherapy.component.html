@@ -1,85 +1,24 @@
-<div class="conteiner">
-    <app-title-card
+<app-title-card
     title="RADIOTERAPIA"
     [titleFontSize]="50"
     [titleFontSizeScreen]="20"
-    imageUrl="..\assets\images\CPR_radioterapia.jpg"
+    imageUrl="..\assets\images\banner-home1.png"
     subtitle="Nuestro Centro ofrece tratamientos para diversos tipos de patologías oncológicas
     con equipamiento y profesionales interdisciplinarios de excelencia, que están
     siempre a disposición para brindar el mejor proceso de cura al paciente"
-    ></app-title-card>
+ ></app-title-card>
 
-
+<div class="container mb-8">
     <div class="content">
-    
-        <div class="first flex">
-            <div class="flex">
-                <div class="content-text mb-6">
-                    <div>
-                        <p class="titulo"> Estos son los tratamientos de Radioterapia<span class="hide-on-mobile"><br></span> que se realizan en nuestro Centro.</p>
-                    </div>
-
-                    <div class="description mb-5">
-
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/hdr-prostate-brachytherapy">Braquiterapia HDR de Próstata</a>
-                        </div>
-                        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/intracavitary-gynecological-hdr-brachytherapy">Braquiterapia HDR Ginecológica Intracavitaria</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/interstitial-gynecological-hdr-brachytherapy">Braquiterapia HDR Ginecológica Intersticial</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/hdr-skin-brachytherapy">Braquiterapia HDR de Piel</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/igrt-exactrac-brainlab-image-guided-radiotherapy">IGRT Exactrac – Brainlab – Radioterapia Guiada por Imágenes</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/sbrt-exactrac-body-stereotaxic-radiosurgery">SBRT Exactrac –Radiocirugía Estereotáxica Corporal</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/srs-exactrac-cranial-stereotaxic-radiosurgery">SRS Exactrac – Radiocirugía Estereotáxica Craneal</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/hybridarc-volumetric-dynamic-therapy">Hybridarc Terapia Dinámica Volumétrica</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/imrt-intensity-modulated-radiotherapy-with-multileaf">IMRT – Radioterapia de Intensidad Modulada con Multiláminas</a>
-                        </div>
-        
-                        <div class="block flex flex-row">
-                            <img src="..\assets\images\isologo.png"/>
-                            <a routerLink="/r3-d-three-dimensional-conformal-radiotherapy">R3D – Radioterapia Tridimensional Conformada</a>
-                        </div>
-
-                    </div>
-
-                </div>   
+        <div class="content-text">
+            <p class="titulo"> Estos son los tratamientos de Radioterapia<span class="hide-on-mobile"><br></span> que se realizan en nuestro Centro.</p>
+            <div class="description">
+                <div class="block flex flex-row" *ngFor="let treatment of treatments">
+                    <img src="..\assets\images\isologo.png"/>
+                    <a [routerLink]="treatment.link">{{treatment.name}}</a>
+                </div>
             </div>
         </div>
         
     </div>
 </div>
-
-
-
-

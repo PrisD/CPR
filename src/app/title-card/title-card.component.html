@@ -1,12 +1,11 @@
 <div class="flex flex-wrap justify-content-center">
     <div class="article-card">
         <div class="content">
-            <div class="p-d-flex p-flex-column text p-align-start">
-                <h3 class="text-white title font-bold " [innerHTML]="title"></h3>
-                <div *ngIf="subtitle!=''" class="subtitle text-white"> {{subtitle}} </div>
+            <div class="text-container">
+                <h3 class="text-white title font-bold" [innerHTML]="title"></h3>
+                <div *ngIf="subtitle" class="subtitle text-white"> {{subtitle}} </div>
             </div>
         </div>
         <img [src]="imageUrl" alt="article-cover" />
     </div>
 </div>
-
