@@ -14,12 +14,12 @@ div {
 }
 
 .content-text {
-    margin-top: 40px;
-    margin-right: 9%;
-    margin-left: 9%;
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
 .description p {
+    margin-top: 40px;
     font-size: 22px;
 }
 
@@ -33,32 +33,18 @@ div {
 }
 
 .content-img {
-    margin-top: 40px;
+    margin-top: 3.5%;
     margin-left: 5%;
-    margin-right: 5%;
     align-items: center;
 }
 
 .content-img img {
-    margin-top: 20px;
+    margin-top: 4%;
     width: 380px;
     height: 250px;
     margin-right: 80px;
     object-fit: cover;
     border-radius: 0 40px 0 0;
-}
-
-.content-img img:last-child {
-    margin-bottom: 10%;
-}
-
-.botones{
-    margin-top: -150px;
-    margin-left: -40px;
-}
-
-.botones-text{
-    font-size: 20px;
 }
 
 ::ng-deep .bra-button .p-button-label {
@@ -77,31 +63,30 @@ div {
 }
 
 @media screen and (max-width: 600px) {
-    .first {
-        flex-direction: column;
-    }
-
-    .check {
-        margin-top: 10px;
-    }
-
-    .content-text {
-        margin-top: 15px;
-    }
 
     .description p {
         font-size: 12px;
+        margin-top: 15px;
     }
-        
+
+    .container {
+        flex-direction: column;
+    }
+
+    .content-text{
+        margin-right: 5%;
+        margin-top: 0px;
+    }
+
     .content-img {
-        margin-top: -10px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         align-items: center;
+        margin-top: 0px;
     }
 
     .content-img img {
-        margin-top: 20px;
+        margin-top: 0px;    
         width: 48%;
         height: 130px;
         object-fit: cover;
@@ -114,30 +99,26 @@ div {
         margin-bottom: 0%;
     }
 
-    .content-img img:last-child {
-        margin-bottom: 0%;
-    }
-
     .botones{
-        margin-top: 0px;
+        margin-top: 10px;
         margin-left: 0px;
-    }
-    
-
-    .botones-text{
-        font-size: 12px;
+        margin-right: 0px;
+        width: 100%;
     }
 
     ::ng-deep .bra-button .p-button-label {
         font-size: 10px;
     }
+    
 
     .bra-button {
         width: 120px;
         height: 35px;
+        margin-bottom: 12%;
     }
 
     .check {
+        margin-top: 10px;
         margin-bottom: -20px;
     }
     

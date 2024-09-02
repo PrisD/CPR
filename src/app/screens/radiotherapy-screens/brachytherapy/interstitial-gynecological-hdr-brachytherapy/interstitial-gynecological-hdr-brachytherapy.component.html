@@ -1,20 +1,20 @@
-<app-title-card
+<div class="container">
+    <app-title-card
     title="BRAQUITERAPIA GINECOLÓGICA INTERSTICIAL"
     [titleFontSize]="35"
     [titleFontSizeScreen]="15"
     imageUrl="..\assets\images\CPR_braquiterapia.jpeg"
-></app-title-card>
+    ></app-title-card>
 
-<div class="content">
-    
-    <div class="first flex">
-        <div class="flex">
-            <div class="content-text">
+    <div class="content">
+        <!-- Primera sección de texto e imágenes -->
+        <div class="flex container">
+            <!-- Texto de introducción -->
+            <div class="content-text first-text">
                 <div class="description">
                     <p>Consiste en colocar, bajo anestesia raquídea, una serie de catéteres o tubos en la zona a irradiar
                         (el lecho tumoral, o el propio tumor), a través de los cuales la fuente radiactiva administra el
                         tratamiento a esa zona y un margen próximo.</p>
-
                     <p>Esta técnica se utiliza por varias razones:</p>
                     <div>
                         <div class="flex align-items-center check">
@@ -39,33 +39,32 @@
                         las necesidades de cada paciente.</p>
 
                 </div>
-            </div>
-        </div>
             
-        <div class="flex align-items-center justify-content-center">
+            </div>
+                
+            <!-- Imágenes -->
             <div class="content-img">
                 <img src="..\assets\images\CPR_CancerUtero2.jpeg"/>
                 <img src="..\assets\images\CPR_braqui-aparato-det.jpeg"/>
             </div>
         </div>
-    </div>
 
-    <div class="flex">
-        <div class="content-text">
-            <div class="description">
-                <div class="botones">
+        <div class="content-text second-text">
+            <div class="botones">
+                <div class="description">
                     <p class="botones-text">Te puede interesar: </p>
-                    <p-button class="flex felx-row bra-button" label="BRAQUITERAPIA INTRACAVITARIA" 
-                    (click)="goToBraquiIntracavitary()" [style]="{'border-radius': '15px'}"></p-button>
+                    <div class="flex mb-4 gap-4">
+                        <p-button class="bra-button" label="BRAQUITERAPIA INTRACAVITARIA" 
+                        (click)="goToBraquiIntracavitary()" [style]="{'border-radius': '15px'}"></p-button>
+                    </div>    
                 </div>
             </div>
         </div>
     </div>
+
 </div>
-
-    
-
+        
 <app-turn-foot 
-title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-direccion="/shifts-start-radiotherapy"
+    title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+    direccion="/shifts-start-radiotherapy"
 ></app-turn-foot>
