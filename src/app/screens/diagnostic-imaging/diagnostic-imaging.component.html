@@ -1,82 +1,67 @@
 <div class="conteiner">
     <app-title-card
         title="DIAGNÓSTICO POR IMÁGENES"
-        [titleFontSize]="45"
-        [titleFontSizeScreen]="18"
-        imageUrl="..\assets\images\CPR_tomografia1.jpg"
+        [titleFontSize]="44"
+        [titleFontSizeScreen]="17"
+        imageUrl="..\assets\images\bg-diagnostico.jpg"
         subtitle="Nuestro Centro ofrece el servicio de Diagnóstico por Imágenes tanto para pacientes
         del Centro, como para particulares"
+        objectPosition="50% 28%"
     ></app-title-card>
 
 
     <div class="content">
-    
-        <div class="first flex">
-            <div class="flex">
-                <div class="content-text">
-                    <div>
-                        <p class="titulo"> Equipamiento de última generación para realizar Tomografías de diagnótico.</p>
-                    </div>
-        
-                    <div class="description">
-                        <p>El Centro cuenta con un tomógrafo <strong>SOMATOM go.Now</strong> para Diagnóstico con Imágenes de forma simple y efectiva.</p>
-                        
-                        <p>Sus múltiples receptores ofrecen una mejor resolución y definen mejor el contorno de los
-                            órganos. Brinda cortes submilimétricos en todo el ancho del detector lo que permite imágenes
-                            ideales para tratamientos de <strong>radiocirugía y radioterapia</strong>, así como también para <strong>escaneos de
-                            rutina, angiografías, exámenes neurológicos</strong> y de <strong>estructuras óseas</strong> hasta las más
-                            pequeñas como las del oído interno. 
-                        </p>
-
-                    </div>
-                </div>   
+        <!-- Primera sección de texto e imágenes -->
+        <div class="flex container">
+            <!-- Texto de introducción -->
+            <div class="content-text first-text">
+                <p class="titulo"> Equipamiento de última generación para realizar Tomografías de diagnótico.</p>
+                <div class="description">
+                    <p>El Centro cuenta con un tomógrafo <strong>SOMATOM go.Now</strong> para Diagnóstico con Imágenes de forma simple y efectiva.</p>  
+                    <p>Sus múltiples receptores ofrecen una mejor resolución y definen mejor el contorno de los
+                        órganos. Brinda cortes submilimétricos en todo el ancho del detector lo que permite imágenes
+                        ideales para tratamientos de <strong>radiocirugía y radioterapia</strong>, así como también para <strong>escaneos de
+                        rutina, angiografías, exámenes neurológicos</strong> y de <strong>estructuras óseas</strong> hasta las más
+                        pequeñas como las del oído interno.</p>
+                </div>  
             </div>
             
-            <div class="flex align-items-center justify-content-center">
-                <div class="content-img">
-                    <img src="..\assets\images\CPR_equipamiento5.jpg"/>
-                    <img src="..\assets\images\CPR_tomografo2.jpg"/>
-                </div>
+            <!-- Imágenes -->
+            <div class="content-img">
+                <img src="..\assets\images\CPR_equipamiento5.jpg"/>
+                <img src="..\assets\images\CPR_tomografo2.jpg"/>
             </div>
         </div>
 
-        <div class="flex">
-            <div class="content-text">
-                <div class="indicaciones">
-                    <div>
-                        <p class="titulo">La Braquiterapia HDR se indica para: </p>
+         <!-- Sección de indicaciones -->
+        <div class="content-text">
+            <div class="checks">
+                <p class="titulo">La Braquiterapia HDR se indica para: </p>
+                <div class="description">
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
+                        <p>Brinda imágenes de alta calidad con cortes multislice.</p>
                     </div>
-                    
-                    <div class="description">
 
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
-                            <p>Brinda imágenes de alta calidad con cortes multislice.</p>
-                        </div>
-
-                        <p-divider></p-divider>
+                    <p-divider></p-divider>
     
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
-                            <p>Cuenta con CARE i-Tilt para la protección de órganos sensibles.</p>
-                        </div>
-
-                        <p-divider></p-divider>
-    
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
-                            <p>Modula el amperaje y voltaje para cada ancho de corte, lo que significa menor dosis para el paciente.</p>
-                        </div>
-
-                        <p-divider></p-divider>
-
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
+                        <p>Cuenta con CARE i-Tilt para la protección de órganos sensibles.</p>
                     </div>
+
+                    <p-divider></p-divider>
+    
+                    <div class="flex align-items-center check">
+                        <span class="pi pi-angle-right" style="color: rgb(97, 102, 61)"></span> 
+                        <p>Modula el amperaje y voltaje para cada ancho de corte, lo que significa menor dosis para el paciente.</p>
+                    </div>
+
+                    <p-divider></p-divider>
+
                 </div>
-                
-
-            </div>        
-        </div>
-        
+            </div>
+        </div>            
     </div>
 </div>
 
