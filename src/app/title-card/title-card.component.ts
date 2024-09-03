@@ -11,6 +11,7 @@ export class TitleCardComponent implements OnInit{
   @Input() titleFontSizeScreen: number = 0;
   @Input() subtitle: string= '';
   @Input() imageUrl: string = '';
+  @Input() objectPosition: string = '50% 50%';
 
 
   ngOnInit(): void {
