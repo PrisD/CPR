@@ -1,5 +1,6 @@
 .fondoHeaderHome {
     background-color: #0009;
+    padding-top: 2%;
     padding: 1%;
     margin: -8px;
     z-index: 1;
@@ -17,7 +18,7 @@
 }
 
 .logoHeader {
-    width: 40%;
+    width: 35%;
     margin: -15px;
 }
 
@@ -31,7 +32,7 @@
     right: 0;
 }
 .align{
-    margin-left: 8%;
+    margin-left: 5%;
 }
 
 .nav {

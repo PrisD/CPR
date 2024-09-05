@@ -1,6 +1,6 @@
 .fondoClaro {
     background-color: #333333;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 15%;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -20,12 +20,11 @@
 }
 
 .block {
-    width: 23%;
+    width: 18%;
 }
 
 #logo {
     width: 100%;
-    margin-left: -3vh;
 }
 
 ::ng-deep .divididor.p-divider.p-divider-vertical:before {
