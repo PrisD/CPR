@@ -1,10 +1,12 @@
-input, select, textarea {
+input,
+select,
+textarea {
   border-radius: 0;
   margin-bottom: 4%;
   margin-top: 2%;
   height: 55px;
   border: none;
-  font-size:20px ;
+  font-size: 20px;
   color: black;
 }
 
@@ -22,20 +24,25 @@ div {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 select {
-  font-family: 'Rubik Regular', sans-serif; 
+  font-family: 'Rubik Regular', sans-serif;
 }
 
-input#diaNacimiento,input#mesNacimiento {
+input#diaNacimiento,
+input#mesNacimiento {
   width: 23%;
   margin-right: 2%;
 }
+
 input#anioNacimiento {
   width: 50%;
 }
-#diagnostico{
+
+#diagnostico {
   height: 130px;
 }
+
 .submit-button {
   background-color: #b5ae29;
   color: white;
@@ -45,7 +52,7 @@ input#anioNacimiento {
   border-radius: 30px;
   cursor: pointer;
   margin-top: 20px;
-  width:21%;
+  width: 21%;
 }
 
 @media screen and (max-width: 600px) {
@@ -54,5 +61,10 @@ input#anioNacimiento {
     padding: 12px;
     margin-top: 0px;
     width: 55%;
+  }
+
+  .responsive {
+    flex-wrap: wrap;
+    gap: 0 !important;
   }
 }
