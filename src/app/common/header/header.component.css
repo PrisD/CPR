@@ -78,7 +78,9 @@ li.ng-leave {
     transition: color 0.3s;
     transition: transform 0.3s ease;
 }
-
+::ng-deep #menu .p-button:focus {
+    box-shadow: none;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
