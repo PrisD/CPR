@@ -5,13 +5,8 @@ div {
 .titulo {
     font-size: 28px;
     font-family: 'Rubik', sans-serif;
-}
-
-.titulo p {
     color: #919747;
     margin-top: 40px;
-    margin-right: 9%;
-    margin-left: 9%;
 }
 
 .container {
@@ -23,12 +18,13 @@ div {
     background: linear-gradient(to bottom, rgba(137, 151, 33, 0.466), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
     font-family: 'Rubik', sans-serif;
+    
 }
 
 .content-text {
-    margin-top: 40px;
-    margin-right: 9%;
-    margin-left: 6.5%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 8%;
 }
 
 .description p {
@@ -45,120 +41,53 @@ div {
 }
 
 .content-img {
-    margin-top: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 12%;
     align-items: center;
+    margin-bottom: 12%;
 }
 
 .content-img img {
-    margin-top: 20px;
-    width: 380px;
-    height: 250px;
+    margin-top: 5%;
+    height: 220px;
     margin-right: 80px;
     object-fit: cover;
     border-radius: 0 40px 0 0;
 }
 
-.content-img img:last-child {
-    margin-bottom: 10%;
-}
-
-.botones{
-    margin-top: -280px;
-    margin-right: 35%;
-    margin-left: -40px;
-}
-
-.botones-text{
-    font-size: 20px;
-}
-
-::ng-deep .bra-button .p-button-label {
-    font-size: 16px;
-    font-weight: bold;
-    font-weight: 800;
-}
-
-.bra-button {
-    width: 200px;
-    height: 70px;
-    margin-left: 20px;
-    align-items: center;
-}
-
 
 @media screen and (max-width: 600px) {
-    .titulo{
-        font-size: 12px;
-    }
-
-    .titulo{
-        font-size: 15px;
-    }
-
-    .titulo p {
-        margin-top: 20px;
-    }
-
-    .first {
-        flex-direction: column;
-    }
-
-    .content-text {
+    .titulo {
         margin-top: 15px;
-        margin-left: 9%;
+        font-size: 15px;
     }
 
     .description p {
         font-size: 12px;
     }
-        
+
+    .container {
+        flex-direction: column;
+    }
+
+    .content-text {
+        margin-right: 5%;
+        margin-top: 0px;
+    }
+
     .content-img {
-        margin-top: 10px;
-        margin-left: 10%;
-        margin-right: 10%;
-        align-items: center;
+        align-items: center; /* Centramos las imágenes */
+        margin-top: 0px;
+        display: flex; /* Flexbox para alinear elementos */
+        flex-direction: column; /* Cambiar dirección a columna */
     }
 
     .content-img img {
-        margin-top: 0px;
-        width: 168px;
-        height: 130px;
+        margin-top: 10px; /* Ajustar el margen superior entre imágenes */
+        width: 100%; /* Asegurar que la imagen ocupe todo el ancho */
+        height: auto; /* Ajustar altura automáticamente */
         object-fit: cover;
         border-radius: 0 40px 0 0;
         margin-right: 0px;
     }
-
-    .content-img img:first-child {
-        margin-right: 10px;
-        margin-bottom: 0%;
-    }
-
-    .content-img img:last-child {
-        margin-bottom: 0%;
-    }
-
-    .botones{
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .botones-text{
-        font-size: 12px;
-    }
-
-    ::ng-deep .bra-button .p-button-label {
-        font-size: 10px;
-    }
-
-    .bra-button {
-        margin-top: 10px;
-        width: 120px;
-        height: 35px;
-        margin-left: 0px;
-    }
-
-    
 }
+
