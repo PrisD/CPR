@@ -80,14 +80,15 @@
                             required>
                     </div>
                 </div>
-                <div *ngIf="psycho == true"></div>
-                <div>Tipo de turno</div>
-                <div>
-                    <select class="w-full" [(ngModel)]="opcion" id="opcion" name="opcion" required>
-                        <option value="Psico-oncología">Psico-oncología</option>
-                        <option value="Psicología">Psicología</option>
-                        <option value="Taller de Mindfulness">Taller de Mindfulness</option>
-                    </select>
+                <div *ngIf="psycho == true">
+                    <div>Tipo de turno</div>
+                    <div>
+                        <select class="w-full" [(ngModel)]="opcion" id="opcion" name="opcion" required>
+                            <option value="Psico-oncología">Psico-oncología</option>
+                            <option value="Psicología">Psicología</option>
+                            <option value="Taller de Mindfulness">Taller de Mindfulness</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
