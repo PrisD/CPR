@@ -10,7 +10,7 @@ div {
 .content {
     background: linear-gradient(to bottom, rgba(158, 174, 38, 0.316), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 
 }
 
@@ -21,7 +21,7 @@ div {
 
 .titulo {
     font-size: 28px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 }
 
 .titulo p {
@@ -40,18 +40,23 @@ div {
 
 
 .img-container {
-    width: 100%; /* Asegúrate de que el contenedor tome todo el ancho disponible */
+    width: 100%;
+    /* Asegúrate de que el contenedor tome todo el ancho disponible */
     display: flex;
-    flex-direction: column; /* Hace que los hijos se dispongan en una columna */
-    align-items: center; /* Centra las imágenes horizontalmente */
+    flex-direction: column;
+    /* Hace que los hijos se dispongan en una columna */
+    align-items: center;
+    /* Centra las imágenes horizontalmente */
 }
 
 .img-container img {
     width: 30%;
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
     object-fit: cover;
     margin-bottom: 30px;
-    display: block; /* Asegura que las imágenes se traten como bloques */
+    display: block;
+    /* Asegura que las imágenes se traten como bloques */
 }
 
 
@@ -68,8 +73,8 @@ div {
     .img-container img {
         width: 50%;
     }
-    
 
 
-    
+
+
 }

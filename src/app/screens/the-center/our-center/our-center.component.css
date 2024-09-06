@@ -10,7 +10,7 @@ div {
 .content {
     background: linear-gradient(to bottom, rgba(158, 174, 38, 0.316), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 
 }
 
@@ -22,16 +22,17 @@ div {
 .titulo {
     font-size: 28px;
     color: #585f12;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 }
 
 
 .subtitle {
     font-size: 25px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
     margin-bottom: -20px;
     color: #585f12;
 }
+
 .description {
     margin-top: 20px;
     font-size: 22px;
@@ -100,16 +101,18 @@ div {
 .content-img img:last-child {
     width: 65%;
 }
+
 ::ng-deep .p-button {
     background-color: #a7a11c;
     border: 1px solid #a7a11c;
 }
+
 @media screen and (max-width: 600px) {
     .titulo {
         font-size: 12px;
     }
 
-    
+
     .description {
         margin-top: 10px;
         font-size: 10px;
@@ -143,10 +146,10 @@ div {
         font-size: 9px;
         display: flex;
     }
-    
-    .block img{
-        width: 10px; 
-        height: 10px; 
+
+    .block img {
+        width: 10px;
+        height: 10px;
         margin-right: 10px;
     }
 

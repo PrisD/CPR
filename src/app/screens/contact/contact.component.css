@@ -10,7 +10,7 @@ div {
 .content {
     background: linear-gradient(to bottom, rgba(158, 174, 38, 0.316), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 }
 
 .content-text {
@@ -20,7 +20,7 @@ div {
 
 .titulo {
     font-size: 28px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 }
 
 .titulo p {
@@ -31,15 +31,15 @@ div {
     font-size: 22px;
 }
 
-.subtitulo p{
+.subtitulo p {
     font-size: 20px;
     color: #797979;
     margin: 0;
 }
 
-.subtitulo img{
-    width: 28px; 
-    height: 28px; 
+.subtitulo img {
+    width: 28px;
+    height: 28px;
     margin-right: 10px;
 }
 
@@ -47,7 +47,7 @@ div {
     display: flex;
     align-items: center;
     margin-top: 6px;
-  }
+}
 
 
 @media screen and (max-width: 600px) {
@@ -57,7 +57,7 @@ div {
         margin-right: 10%;
     }
 
-    
+
     .titulo {
         font-size: 15px;
         margin-bottom: -0.5px;
@@ -66,17 +66,17 @@ div {
     .subtitulo {
         font-size: 10px;
     }
-    
-    
-    .subtitulo p{
+
+
+    .subtitulo p {
         font-size: 14px;
     }
-    
-    .subtitulo img{
-        width: 15px; 
-        height: 15px; 
+
+    .subtitulo img {
+        width: 15px;
+        height: 15px;
         margin-right: 10px;
     }
-   
-    
+
+
 }

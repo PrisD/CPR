@@ -4,7 +4,7 @@ div {
 
 .titulo {
     font-size: 28px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
     color: #919747;
     margin-top: 40px;
 }
@@ -12,12 +12,12 @@ div {
 .container {
     height: 100%;
     width: 100%;
-}   
+}
 
 .content {
     background: linear-gradient(to bottom, rgba(137, 151, 33, 0.466), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 }
 
 .content-text {
@@ -55,7 +55,7 @@ div {
 }
 
 @media screen and (max-width: 600px) {
-    .titulo{
+    .titulo {
         margin-top: 15px;
         font-size: 15px;
     }
@@ -68,7 +68,7 @@ div {
         flex-direction: column;
     }
 
-    .content-text{
+    .content-text {
         margin-right: 5%;
         margin-top: 0px;
     }
@@ -81,7 +81,7 @@ div {
     }
 
     .content-img img {
-        margin-top: 0px;    
+        margin-top: 0px;
         width: 48%;
         height: 130px;
         object-fit: cover;
@@ -94,5 +94,5 @@ div {
         margin-bottom: 0%;
     }
 
-    
+
 }

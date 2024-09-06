@@ -10,7 +10,7 @@ div {
 .content {
     background: linear-gradient(to bottom, rgba(158, 174, 38, 0.316), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 
 }
 
@@ -19,7 +19,7 @@ div {
     margin-right: 5%;
 }
 
-.description p{
+.description p {
     font-size: 22px;
 }
 
@@ -46,7 +46,7 @@ div {
     font-size: 22px;
     font-weight: bold;
     color: #585f12;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Regular', sans-serif;
 }
 
 .content-img img {
@@ -70,11 +70,11 @@ div {
 
 @media screen and (max-width: 600px) {
 
-    .description{
+    .description {
         margin-bottom: 50px;
     }
 
-    .description p{
+    .description p {
         font-size: 12px;
     }
 
@@ -85,8 +85,8 @@ div {
         display: flex;
         align-items: center;
     }
-    
-    
+
+
     .content-img img {
         width: 60%;
         height: 120px;
@@ -99,7 +99,7 @@ div {
         font-size: 13px;
         font-weight: bold;
         color: #585f12;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Rubik Regular', sans-serif;
     }
 
     .content-img img:first-child {
@@ -107,5 +107,5 @@ div {
         height: 130px;
         margin-right: 10px;
     }
-    
+
 }
