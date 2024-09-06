@@ -21,6 +21,7 @@ div {
 .titulo {
     font-size: 28px;
     font-family: 'Rubik Regular', sans-serif;
+    margin-top: 7%;
 }
 
 .titulo p {
@@ -49,6 +50,10 @@ div {
     margin-top: 6px;
 }
 
+#principal{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
 
 @media screen and (max-width: 600px) {
 
