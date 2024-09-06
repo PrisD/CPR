@@ -1,207 +1,58 @@
-  span {
-    font-size: 23px;
+input, select, textarea {
+  border-radius: 0;
+  margin-bottom: 4%;
+  margin-top: 2%;
+  height: 55px;
+  border: none;
+  font-size:20px ;
+  color: black;
+}
+
+div {
+  font-size: 23px;
+  font-family: 'Rubik Regular', sans-serif;
+  color: #464b0e;
+}
+
+.formulario {
+  background-color: #e8e8d6;
+  border: 2px solid #61663d;
+  border-radius: 0 40px 0 0;
+  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+select {
+  font-family: 'Rubik Regular', sans-serif; 
+}
+
+input#diaNacimiento,input#mesNacimiento {
+  width: 23%;
+  margin-right: 2%;
+}
+input#anioNacimiento {
+  width: 50%;
+}
+#diagnostico{
+  height: 130px;
+}
+.submit-button {
+  background-color: #b5ae29;
+  color: white;
+  font-size: 15px;
+  padding: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  width:21%;
+}
+
+@media screen and (max-width: 600px) {
+  .submit-button {
+    font-size: 12px;
+    padding: 12px;
+    margin-top: 0px;
+    width: 55%;
   }
-
-  /* Formulario Bloque */
-  .formulario {
-    background-color: #e8e8d6;
-    border: 2px solid #61663d;
-    padding: 20px;
-    border-radius: 0 40px 0 0;
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    margin: 0 auto;
-    padding: 4%;
-  }
-
-  .formulario label {
-    display: block;
-    margin-bottom: 10px;
-    color: #464b0e;
-  }
-
-  /* Estilos para cada fila de inputs */
-
-  .formulario .form-text {
-    font-size: 23px;
-    font-family: 'Rubik Regular', sans-serif;
-    color: #464b0e;
-    margin-right: 20px;
-    white-space: nowrap;
-  }
-
-  .formulario .input-principal {
-    width: 1015px;
-    padding: 8px;
-    margin-right: -50px;
-    font-size: 20px;
-    border-radius: 0;
-    box-sizing: border-box;
-    height: 55px;
-    border: none;
-  }
-
-  /*Input secundario*/
-
-  .formulario .input-secundario {
-    width: 415px;
-    border-radius: 0;
-    box-sizing: border-box;
-    font-size: 20px;
-    height: 55px;
-    margin-right: 80px;
-
-    border: none;
-  }
-
-
-  .formulario .input-secundario-cel {
-    width: 350px;
-    border-radius: 0;
-    box-sizing: border-box;
-    height: 55px;
-    border: 1px solid #464b0e;
-    margin-right: 30px;
-    font-size: 20px;
-    border: none;
-  }
-
-  .formulario .prov-box .email-box {
-    margin-left: 8.1%;
-  }
-
-  .formulario .input-secundario-email {
-    width: 350px;
-    border-radius: 0;
-    font-size: 20px;
-    box-sizing: border-box;
-    height: 55px;
-    border: 1px solid #464b0e;
-    margin-right: 30px;
-    border: none;
-  }
-
-  /*Input terciario*/
-
-  .formulario .input-terciario {
-    width: 90px;
-    padding: 8px;
-    border-radius: 0;
-    font-size: 20px;
-    box-sizing: border-box;
-    height: 50px;
-    margin-right: 10px;
-    border: none;
-  }
-
-  .formulario .input-terciario-anio {
-    width: 150px;
-    padding: 8px;
-    border-radius: 0;
-    box-sizing: border-box;
-    height: 50px;
-    border: none;
-    font-size: 20px;
-    margin-right: -50px;
-  }
-
-  .margen {
-    margin-right: 160px;
-  }
-
-  .fecha {
-    margin-right: 80px;
-  }
-
-  /*Boton*/
-
-  .formulario .submit-button {
-    background-color: #b5ae29;
-    color: white;
-    font-size: 15px;
-    padding: 18px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 17%;
-  }
-
-  .formulario .box-button {
-    display: flex;
-    justify-content: center;
-    /* Centrar horizontalmente */
-    align-items: center;
-  }
-
-  @media screen and (max-width: 600px) {
-
-    .hide-on-mobile {
-      display: none;
-  }
-
-    .inputs {
-      flex-direction: column !important;
-    }
-
-    .form-text {
-      margin-bottom: 10px;
-    }
-
-    .input-secundario,
-    .input-secundario-cel,
-    .input-secundario-email {
-      margin-right: 0;
-    }
-
-    .filas {
-      flex-direction: column;
-    }
-
-    .formulario .input-principal {
-      width: 100%;
-      height: 40px;
-    }
-
-    .formulario .input-secundario,
-    .formulario .input-secundario-email,
-    .formulario .input-secundario-cel,
-    .fecha {
-      width: 296px;
-      margin-right: 0;
-      height: 40px;
-    }
-
-    .formulario .input-terciario,
-    .formulario .input-terciario-anio {
-      height: 40px;
-      
-    }
-
-    .formulario .input-terciario-anio{
-      margin-right: 0px;
-      width: 120px;
-    }
-
-    .formulario .input-terciario{
-      width: 76.5px;
-    }
-
-    .formulario .form-text {
-      font-size: 13px;
-      margin-right: 0;
-    }
-
-    select {
-      font-family: 'Rubik Regular', sans-serif;
-      font-size: small;
-    }
-
-    .formulario .submit-button {
-      font-size: 12px;
-      padding: 12px;
-      margin-top: 0px;
-      width: 55%;
-    }
-  }
+}

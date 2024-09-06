@@ -1,109 +1,108 @@
-
 <div class="formulario">
     <form>
-        <div class=" filas box flex justify-content-end align-items-center">
-            <div class="form-text">
-                Nombre completo <span class="hide-on-mobile"><br></span> del paciente
-            </div>
-            <div class="fecha">
-                <input type="text" class="input-principal" pInputText [(ngModel)]="nombre" id="nombre" name="nombre"
-                    required>
+        <div>
+            <div>
+                <div>
+                    Nombre completo del paciente
+                </div>
+                <div>
+                    <input class="w-full" type="text" pInputText [(ngModel)]="nombre" id="nombre" name="nombre"
+                        required>
+                </div>
             </div>
         </div>
-        <div class="flex justify-content-end inputs">
-            <div class="izquierda">
-                <div class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text">DNI</div>
+        <div class="flex gap-7">
+            <div class="flex flex-column w-full">
+                <div>
+                    <div>DNI o Pasaporte</div>
                     <div>
-                        <input type="text" class="input-secundario" pInputText [(ngModel)]="dni" id="dni" name="dni"
+                        <input class="w-full" type="text" pInputText [(ngModel)]="dni" id="dni" name="dni" required>
+                    </div>
+                </div>
+                <div>
+                    <div>Celular</div>
+                    <div>
+                        <input class="w-full" type="text" pInputText [(ngModel)]="celular" id="celular" name="celular"
                             required>
                     </div>
                 </div>
-                <div class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text">País</div>
+                <div>
+                    <div>Fecha de Nacimiento (XX,XX,XXXX)</div>
+                    <div class="w-full gap-3">
+                        <input type="text" pInputText [(ngModel)]="diaNacimiento" id="diaNacimiento"
+                            name="diaNacimiento" required>
+                        <input type="text" pInputText [(ngModel)]="mesNacimiento" id="mesNacimiento"
+                            name="mesNacimiento" required>
+                        <input type="text" pInputText [(ngModel)]="anioNacimiento" id="anioNacimiento"
+                            name="anioNacimiento" required>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-column w-full">
+                <div>
+                    <div>País</div>
                     <div>
-                        <select  (change)="clear()" class="input-secundario" [(ngModel)]="pais" id="pais" name="pais" required>
+                        <select class="w-full" (change)="clear()" [(ngModel)]="pais" id="pais" name="pais" required>
                             <option *ngFor="let pais of paises" [value]="pais">{{ pais }}
                             </option>
                         </select>
                     </div>
                 </div>
-                <div *ngIf="pais =='Otro'" class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text cel-box">Otro pais</div>
+                <div *ngIf="pais =='Otro'">
+                    <div>Otro pais</div>
                     <div>
-                        <input type="text" class="input-secundario" pInputText [(ngModel)]="otro" id="otro" name="otro"
-                            required>
+                        <input class="w-full" type="text" pInputText [(ngModel)]="otro" id="otro" name="otro" required>
                     </div>
                 </div>
-                <div *ngIf="pais =='Argentina'" class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text">Provincia</div>
+                <div *ngIf="pais =='Argentina'">
+                    <div>Provincia</div>
                     <div>
-                        <select (change)="getLocalities(provincia)" class="input-secundario" [(ngModel)]="provincia" id="provincia" name="provincia"
-                            required>
+                        <select class="w-full" (change)="getLocalities(provincia)" [(ngModel)]="provincia"
+                            id="provincia" name="provincia" required>
                             <option *ngFor="let provincia of provinciasOptions" [value]="provincia">{{ provincia }}
                             </option>
                         </select>
                     </div>
                 </div>
-                <div *ngIf="provincia && pais =='Argentina'" class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text">Localidad</div>
+                <div *ngIf="provincia && pais =='Argentina'">
+                    <div>Localidad</div>
                     <div>
-                        <select class="input-secundario" [(ngModel)]="localidad" id="localidad" name="localidad"
-                            required>
+                        <select class="w-full" [(ngModel)]="localidad" id="localidad" name="localidad" required>
                             <option *ngFor="let localidad of localidades" [value]="localidad">{{ localidad }}
                             </option>
                         </select>
                     </div>
                 </div>
-                <div class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text">Diagnóstico</div>
+                <div>
+                    <div>Email</div>
                     <div>
-                        <input type="text" class="input-secundario" pInputText [(ngModel)]="diagnostico"
-                            id="diagnostico" name="diagnostico" required>
+                        <input class="w-full" type="email" pInputText [(ngModel)]="email" id="email" name="email"
+                            required>
                     </div>
                 </div>
-                <div *ngIf="psycho == true" class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text">Tipo de turno</div>
-                    <div>
-                        <select class="input-secundario" [(ngModel)]="opcion" id="opcion" name="opcion" required>
-                            <option value="Psico-oncología">Psico-oncología</option>
-                            <option value="Psicología">Psicología</option>
-                            <option value="Taller de Mindfulness">Taller de Mindfulness</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="derecha">
-                <div class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text cel-box">Fecha de Nac.</div>
-                    <div class="fecha w-full flex justify-content-end align-items-center">
-                        <input type="text" class="input-terciario" pInputText [(ngModel)]="diaNacimiento"
-                            id="diaNacimiento" name="diaNacimiento" required>
-                        <input type="text" class="input-terciario" pInputText [(ngModel)]="mesNacimiento"
-                            id="mesNacimiento" name="mesNacimiento" required>
-                        <input type="text" class="input-terciario-anio" pInputText [(ngModel)]="anioNacimiento"
-                            id="anioNacimiento" name="anioNacimiento" required>
-                    </div>
-                </div>
-                <div class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text cel-box">Celular</div>
-                    <div>
-                        <input type="text" class="input-secundario-cel" pInputText [(ngModel)]="celular" id="celular"
-                            name="celular" required>
-                    </div>
-                </div>
-                <div class="filas flex justify-content-end align-items-center mt-5">
-                    <div class="form-text email-box">E-mail</div>
-                    <div>
-                        <input type="email" class="input-secundario-email" pInputText [(ngModel)]="email" id="email"
-                            name="email" required>
-                    </div>
+                <div *ngIf="psycho == true"></div>
+                <div>Tipo de turno</div>
+                <div>
+                    <select class="w-full" [(ngModel)]="opcion" id="opcion" name="opcion" required>
+                        <option value="Psico-oncología">Psico-oncología</option>
+                        <option value="Psicología">Psicología</option>
+                        <option value="Taller de Mindfulness">Taller de Mindfulness</option>
+                    </select>
                 </div>
             </div>
         </div>
+        <div>
+            <div>
+                <div>Diagnóstico</div>
+                <div style="position: relative; width: 100%;">
+                    <textarea class="w-full" pInputText [(ngModel)]="diagnostico" id="diagnostico" name="diagnostico"
+                        required rows="3" style="resize: vertical; padding-right: 30px;"></textarea>
+                </div>
 
-        <div class="box-button mt-5 flex align-items-center">
-            <button type="submit" class="submit-button">SOLICITAR TURNO</button>
+            </div>
+        </div>
+        <div class="mt-5 flex align-items-center justify-content-center">
+            <button class="submit-button" type="submit">SOLICITAR TURNO</button>
         </div>
     </form>
 </div>
