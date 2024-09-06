@@ -59,6 +59,7 @@ a {
     padding-top: 2%;
     padding-bottom: 5%;
 }
+
 .align {
     gap: 4.5%;
 }
@@ -68,7 +69,11 @@ a {
         height: 35vh;
         width: 41vh;
         background-color: #919747;
-        margin-top: 6%; 
+        margin-top: 6%;
+    }
+
+    .titulo {
+        font-size: 15px;
     }
 
     .texto {
@@ -76,7 +81,7 @@ a {
         margin-bottom: 2%
     }
 
-.align {
-    flex-direction: column;
-}
+    .align {
+        flex-direction: column;
+    }
 }
