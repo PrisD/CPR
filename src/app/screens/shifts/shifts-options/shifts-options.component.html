@@ -1,17 +1,16 @@
 <div class="background-image sinEspacio">
-   
-    <div class="article-card">
-        <div class="content card-color ">
-            <div class="p-d-flex p-flex-column text p-align-start">
-                <h3 class="text-white title ">TURNOS</h3>
-                <div class="subtitle text-white">Para una atención más ágil y específica, nuestro Centro le ofrece distintos canales de
-                    comunicación para obtener turnos con nuestros profesionales o evacuar dudas acerca
-                    de los tratamientos.</div>
-            </div>
-        </div>
-    </div>
 
-    <div class="flex flex-wrap justify-content-center mb-3 gap-3">
+    <app-title-card
+        title="TURNOS"
+        [titleFontSize]="45"
+        [titleFontSizeScreen]="20"
+        subtitle="Para una atención más ágil y específica, nuestro Centro le ofrece distintos canales de
+        comunicación para obtener turnos con nuestros profesionales o evacuar dudas acerca
+        de los tratamientos."
+        [height]="350"
+    ></app-title-card>
+
+    <div class="banners">
 
         <a routerLink="/shifts-start-radiotherapy" class="shift-card shadow-6">
             <div class="content" style="background-color: #919747;">
@@ -19,18 +18,21 @@
             </div>
             <img src="..\assets\images\CPR_diagnostico.jpg" alt="article-cover" />
         </a>
+
         <a routerLink="/shifts-psychology" class="shift-card shadow-6">
             <div class="content" style="background-color: #a7a11c;">
                 <h3 class="ml-3 m-0 text-white title">PSICOLOGÍA</h3>
             </div>
             <img src="..\assets\images\CPR_psico-oncologia.jpg" alt="article-cover" />
         </a>
+        
         <a routerLink="/shifts-diagnosis-by-imaging" class="shift-card shadow-6">
             <div class="content" style="background-color: #d78a00;">
                 <h3 class="ml-3 m-0 text-white title">DIAGNÓSTICO POR IMÁGENES</h3>
             </div>
             <img src="..\assets\images\CPR_tomografia2.jpg" alt="article-cover" />
-        </a>    
+        </a>
+
     </div>
 
 </div>
