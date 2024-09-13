@@ -1,23 +1,48 @@
 <app-title-card
     title="CERTIFICACIONES"
     subtitle="Contamos con auditorías externas para el equipamiento y somos miembro de
-    Sociedades de Medicina oncológica, tanto nacionales como internacionales. "
+    Sociedades de Medicina oncológica, tanto nacionales como internacionales."
     [titleFontSize]="45"
     [titleFontSizeScreen]="20"
     imageUrl="..\assets\images\CPR_gingko.jpg"
     color="rgba(167, 160, 28, 0.75)"
 ></app-title-card>
+
 <div class="content">
     <div class="content-text">
         <div>
-            <p class="titulo">Entidades que avalan nuestra calidad médica y de equipamiento</p>
+            <p class="titulo">Entidades que avalan nuestra calidad médica<span class="hide-on-mobile"><br></span>
+                y de equipamiento</p>
         </div>
-        <div class="img-container">
-            <img src="..\assets\images\CPR_astro_logo1.png"/>
-            <img src="..\assets\images\CPR_MDAnderson_logo_grey.png"/>
-            <img src="..\assets\images\CPR_INCA_Logo_grey.png"/>
-            <img src="..\assets\images\CPR_SATRO_logo.png"/>
-            <img src="..\assets\images\CPR_CNEA_logo.png"/>
+
+        <div class="images-conteiner">
+            <!-- Fila 1 -->
+            <div class="img-container">
+                <div class="img-item fixed-size">
+                    <img class="img1" src="..\assets\images\CPR_astro_logo1.png" />
+                    <hr class="divider">
+                </div>
+                <div class="img-item fixed-size">
+                    <img class="img2" src="..\assets\images\CPR_MDAnderson_logo_grey.png" />
+                    <hr class="divider">
+                </div>
+                <div class="img-item fixed-size">
+                    <img class="img3" src="..\assets\images\CPR_INCA_Logo_grey.png" />
+                    <hr class="divider">
+                </div>
+            </div>
+
+            <!-- Fila 2 -->
+            <div class="img-container">
+                <div class="img-item fixed-size">
+                    <img class="img4" src="..\assets\images\CPR_SATRO_logo.png" />
+                    <hr class="divider">
+                </div>
+                <div class="img-item fixed-size">
+                    <img class="img5" src="..\assets\images\CPR_CNEA_logo.png" />
+                    <hr class="divider">
+                </div>
+            </div>
         </div>
     </div>
-</div>        
+</div>

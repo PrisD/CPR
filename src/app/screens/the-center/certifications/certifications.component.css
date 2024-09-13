@@ -1,80 +1,115 @@
-div {
-    font-family: 'Rubik Regular', sans-serif
-}
-
 .container {
     height: 100%;
     width: 100%;
 }
 
 .content {
-    background: linear-gradient(to bottom, rgba(158, 174, 38, 0.316), rgba(255, 255, 255, 0.5) 25%);
-    padding-top: 10px;
+    background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 15%);
+    padding-top: 5%;
     font-family: 'Rubik Regular', sans-serif;
-
 }
 
 .content-text {
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 10%;
 }
 
 .titulo {
     font-size: 28px;
     font-family: 'Rubik Regular', sans-serif;
+    color: #585f12;
+    margin-bottom: 5%;
 }
-
-.titulo p {
-    color: #919747;
-}
-
-.description {
-    font-size: 22px;
-}
-
-
-.description strong {
-    font-weight: bold;
-    font-weight: 800;
-}
-
 
 .img-container {
-    width: 100%;
-    /* Asegúrate de que el contenedor tome todo el ancho disponible */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.img-item {
     display: flex;
     flex-direction: column;
-    /* Hace que los hijos se dispongan en una columna */
     align-items: center;
-    /* Centra las imágenes horizontalmente */
+    justify-content: space-between;
+    height: 100%;
 }
 
-.img-container img {
-    width: 30%;
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-    object-fit: cover;
-    margin-bottom: 30px;
-    display: block;
-    /* Asegura que las imágenes se traten como bloques */
+/* Estilos individuales para cada imagen */
+.img1 {
+    margin-top: 23%;
+    width: 250px;
+    height: 100px;
 }
 
+.img2{
+    margin-top: 8%;
+    width: 350px;
+    height: 200px;
+}
 
+.img3 {
+    margin-top: 10%;
+    width: 220px;
+    height: 150px;
+}
 
+.img4 {
+    width: 240px;
+    height: 220px;
+}
+
+.img5 {
+    margin-top: 5%;
+    width: 200px;
+    height: 200px;
+}
+
+/* Tamaños fijos para los contenedores */
+.fixed-size {
+    width: 400px; /* Ancho fijo para alinear todas las imágenes y dividers */
+    height: 250px; /* Alto fijo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Colocar el divider al final */
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+/* Divider */
+.divider {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    border: 1.5px solid #585f12;
+    margin-top: auto; /* Hace que el divider se posicione al final del contenedor */
+}
+/* Media Queries */
 @media screen and (max-width: 600px) {
     .titulo {
         font-size: 12px;
+        margin-bottom: -50px;
     }
 
-    .description {
-        font-size: 10px;
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
-    .img-container img {
-        width: 50%;
+    .img1, .img2, .img3, .img4, .img5 {
+        width: 40%;
+        height: auto;
     }
 
+    .fixed-size {
+        width: 100%;
+        height: auto;
+    }
 
-
-
+    .divider {
+        width: 40%;
+    }
+   
+   
 }
