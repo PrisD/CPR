@@ -21,6 +21,8 @@ div {
 
 .description p {
     font-size: 22px;
+    color: black;
+    font-weight: 50;
 }
 
 
@@ -30,82 +32,75 @@ div {
 }
 
 .content-img {
-    margin-top: 30px;
     margin-left: 5%;
     margin-right: 5%;
-    display: flex;
     align-items: center;
 }
 
 .img-container {
     text-align: left;
+    margin-bottom: 30%;
 }
 
 .img-caption {
-    margin-top: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #585f12;
+    font-size: 18px;
     font-family: 'Rubik Regular', sans-serif;
 }
 
 .content-img img {
-    width: 10%;
+    width: 200px;
+    height: 200px;
+    margin-right: 80px;
     object-fit: cover;
-    border-radius: 0 40px 0 0;
-}
-
-.content-img img:first-child {
-    width: 400px;
-    height: 400px;
-    /* Establecer el ancho de la primera imagen al 35% */
-    margin-right: 50px;
-}
-
-.content-img img:last-child {
-    width: 400px;
-    height: 400px;
-    /* Establecer el ancho de la segunda imagen al 65% */
+    border-radius: 0 20px 0 0;
 }
 
 @media screen and (max-width: 600px) {
-
-    .description {
-        margin-bottom: 50px;
+    .titulo {
+        margin-top: 15px;
+        font-size: 15px;
     }
 
     .description p {
         font-size: 12px;
     }
 
-    .content-img {
-        margin-top: 5px;
-        margin-left: 5%;
-        margin-right: 5%;
-        display: flex;
-        align-items: center;
+    .container {
+        flex-direction: column;
     }
 
+    .content-text {
+        margin-right: 5%;
+        margin-top: 0px;
+    }
+
+    .content-img {
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+        margin-top: 0px;
+    }
 
     .content-img img {
-        width: 60%;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 0 20px 0 0;
+        margin-top: 0px;
+        width: 95%;
+        height: auto;
+    }
+
+    /* Estilo para alinear las imágenes una al lado de la otra */
+    .content-img {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-container {
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Ajuste para que las imágenes ocupen el ancho disponible */
     }
 
     .img-caption {
-        margin-top: 10px;
-        font-size: 13px;
-        font-weight: bold;
-        color: #585f12;
-        font-family: 'Rubik Regular', sans-serif;
+        text-align: center;
+        font-size: 12px;
     }
-
-    .content-img img:first-child {
-        width: 130px;
-        height: 130px;
-        margin-right: 10px;
-    }
-
 }
