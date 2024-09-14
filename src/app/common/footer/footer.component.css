@@ -1,15 +1,16 @@
 .fondoClaro {
     background-color: #333333;
     padding-left: 5%;
-    padding-right: 15%;
+    padding-right: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .fondoOscuro {
     background-color: #221f1f;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
