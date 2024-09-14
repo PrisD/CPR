@@ -55,6 +55,12 @@ input#anioNacimiento {
   width: 21%;
 }
 
+#diagnostico, input#nombre{
+    margin-bottom: 2%;
+    margin-top: 1%
+
+}
+
 @media screen and (max-width: 600px) {
   .submit-button {
     font-size: 12px;

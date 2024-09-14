@@ -8,7 +8,7 @@ div {
 }
 
 .content {
-    background: linear-gradient(to bottom, #a7a01cb0, rgba(255, 255, 255, 0.5) 25%);
+    background: linear-gradient(to bottom, #a7a01cb0, rgba(255, 255, 255, 0.5) 7%);
     padding-top: 10px;
     font-family: 'Rubik Regular', sans-serif;
 }
