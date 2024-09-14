@@ -54,6 +54,7 @@ import { NewsHomeComponent } from "./common/home/news-home/news-home.component";
 import { BackgroundComponent } from "./common/home/background/background.component";
 import { NewsComponent } from './screens/news/news.component';
 import { WhatsappButtonComponent } from "./common/whatsapp-button/whatsapp-button.component";
+import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { WhatsappButtonComponent } from "./common/whatsapp-button/whatsapp-butto
     TitleCardComponent,
     PsychologyComponent,
     DiagnosticImagingComponent,
+    EquipmentComponent,
     RadiotherapyComponent,
     OurCenterComponent,
     HDRProstateBrachytherapyComponent,

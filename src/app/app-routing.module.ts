@@ -30,6 +30,7 @@ import { CertificationsComponent } from './screens/the-center/certifications/cer
 import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
 import { ContactComponent } from './screens/contact/contact.component';
 import { NewsComponent } from './screens/news/news.component';
+import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -61,7 +62,8 @@ const routes: Routes = [
   { path: 'certifications', component: CertificationsComponent},
   { path: 'turn-foot', component: TurnFootComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'news', component: NewsComponent}
+  { path: 'news', component: NewsComponent },
+  { path: 'equipment', component: EquipmentComponent }
 
 ];
 

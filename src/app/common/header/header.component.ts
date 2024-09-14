@@ -114,7 +114,7 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'Equipamiento',
-                routerLink: '/equipamiento'
+                routerLink: '/equipment'
             },
             {
                 label: 'Novedades',

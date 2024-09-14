@@ -1,0 +1,44 @@
+div {
+    font-family: 'Rubik Regular', sans-serif
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 25%);
+    padding-top: 10px;
+    font-family: 'Rubik Regular';
+}
+
+.content-text {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titulo {
+    font-size: 28px !important;
+    font-family: 'Rubik Regular';
+    color: #616c10;
+}
+
+p {
+    font-size: large;
+}
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        margin-bottom: -10px;
+    }
+}
