@@ -73,4 +73,7 @@ input#anioNacimiento {
     flex-wrap: wrap;
     gap: 0 !important;
   }
+  div{
+    font-size: 18px;
+  }
 }
