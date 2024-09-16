@@ -31,13 +31,14 @@ import { TurnFootComponent } from './screens/turn-foot/turn-foot.component';
 import { ContactComponent } from './screens/contact/contact.component';
 import { NewsComponent } from './screens/news/news.component';
 import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
+import { SoftwareComponent } from './screens/all-equipment/software/software.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'radiotherapy', component: RadiotherapyComponent},
-  { path: 'psychology', component: PsychologyComponent},
-  { path: 'diagnostic-imaging', component: DiagnosticImagingComponent},
-  { path: 'our-center', component: OurCenterComponent},
+  { path: 'radiotherapy', component: RadiotherapyComponent },
+  { path: 'psychology', component: PsychologyComponent },
+  { path: 'diagnostic-imaging', component: DiagnosticImagingComponent },
+  { path: 'our-center', component: OurCenterComponent },
   { path: 'hdr-prostate-brachytherapy', component: HDRProstateBrachytherapyComponent },
   { path: 'hdr-skin-brachytherapy', component: HDRSkinBrachytherapyComponent },
   { path: 'hybridarc-volumetric-dynamic-therapy', component: HybridarcVolumetricDynamicTherapyComponent },
@@ -48,22 +49,23 @@ const routes: Routes = [
   { path: 'r3-d-three-dimensional-conformal-radiotherapy', component: R3DThreeDimensionalConformalRadiotherapyComponent },
   { path: 'sbrt-exactrac-body-stereotaxic-radiosurgery', component: SBRTExactracBodyStereotaxicRadiosurgeryComponent },
   { path: 'srs-exactrac-cranial-stereotaxic-radiosurgery', component: SRSExactracCranialStereotaxicRadiosurgeryComponent },
-  { path: 'mindfulness-workshop', component: MindfulnessWorkshopComponent},
-  { path: 'psycho-oncology', component: PsychoOncologyComponent},
-  { path: 'what-is-mindfulness', component: WhatIsMindfulnessComponent},
-  { path: 'shifts-options', component: ShiftsOptionsComponent},
-  { path: 'gynecological-hdr-brachytherapy', component: GynecologicalHDRBrachytherapyComponent},
-  { path: 'shifts-diagnosis-by-imaging', component: ShiftsDiagnosisByImagingComponent},
-  { path: 'shifts-start-radiotherapy', component: ShiftsStartRadiotherapyComponent},
-  { path: 'shifts-psychology', component: ShiftsPsychologyComponent},
-  { path: 'shift-form', component: ShiftFormComponent},
-  { path: 'our-history', component: OurHistoryComponent},
-  { path: 'atention', component: AtentionComponent},
-  { path: 'certifications', component: CertificationsComponent},
-  { path: 'turn-foot', component: TurnFootComponent},
-  { path: 'contact', component: ContactComponent},
+  { path: 'mindfulness-workshop', component: MindfulnessWorkshopComponent },
+  { path: 'psycho-oncology', component: PsychoOncologyComponent },
+  { path: 'what-is-mindfulness', component: WhatIsMindfulnessComponent },
+  { path: 'shifts-options', component: ShiftsOptionsComponent },
+  { path: 'gynecological-hdr-brachytherapy', component: GynecologicalHDRBrachytherapyComponent },
+  { path: 'shifts-diagnosis-by-imaging', component: ShiftsDiagnosisByImagingComponent },
+  { path: 'shifts-start-radiotherapy', component: ShiftsStartRadiotherapyComponent },
+  { path: 'shifts-psychology', component: ShiftsPsychologyComponent },
+  { path: 'shift-form', component: ShiftFormComponent },
+  { path: 'our-history', component: OurHistoryComponent },
+  { path: 'atention', component: AtentionComponent },
+  { path: 'certifications', component: CertificationsComponent },
+  { path: 'turn-foot', component: TurnFootComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'news', component: NewsComponent },
-  { path: 'equipment', component: EquipmentComponent }
+  { path: 'equipment', component: EquipmentComponent },
+  { path: 'software', component: SoftwareComponent }
 
 ];
 

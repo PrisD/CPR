@@ -55,6 +55,7 @@ import { BackgroundComponent } from "./common/home/background/background.compone
 import { NewsComponent } from './screens/news/news.component';
 import { WhatsappButtonComponent } from "./common/whatsapp-button/whatsapp-button.component";
 import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
+import { SoftwareComponent } from './screens/all-equipment/software/software.component';
 
 
 @NgModule({
@@ -98,7 +99,8 @@ import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.
     NewsHomeComponent,
     BackgroundComponent,
     NewsComponent,
-    WhatsappButtonComponent
+    WhatsappButtonComponent,
+    SoftwareComponent
   ],
   imports: [
     BrowserModule,
@@ -116,7 +118,7 @@ import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.
     InputTextModule,
     FormsModule,
     HttpClientModule
-],
+  ],
   providers: [AddressService],
   bootstrap: [AppComponent]
 })

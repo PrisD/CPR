@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
     sidebarVisible: boolean = false;
     expandedIndex: number = -1;
     animatingOut: boolean = false;
-    
+
     constructor(private router: Router) { }
 
     ngOnInit() {
@@ -114,7 +114,17 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'Equipamiento',
-                routerLink: '/equipment'
+                routerLink: '/equipment',
+                items: [
+                    {
+                        label: 'Equipamiento principal',
+                        routerLink: '/equipment'
+                    },
+                    {
+                        label: 'Software de Planificación',
+                        routerLink: '/software'
+                    }
+                ]
             },
             {
                 label: 'Novedades',
@@ -130,9 +140,9 @@ export class HeaderComponent implements OnInit {
         window.location.href = "/";
     }
 
-    goToShifts(){
+    goToShifts() {
         this.router.navigate(['\shifts-options']);
-      }
+    }
     toggleItem(index: number): void {
         if (this.expandedIndex === index) {
             this.expandedIndex = -1;
@@ -143,7 +153,7 @@ export class HeaderComponent implements OnInit {
 
     isItemExpanded(index: number): boolean {
         return this.expandedIndex === index;
-    }   
+    }
     toggleSidebar() {
         this.sidebarVisible = !this.sidebarVisible;
         if (this.sidebarVisible) {
