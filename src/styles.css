@@ -73,6 +73,7 @@ p,
 .p-component {
     font-family: 'Rubik Regular', sans-serif;
     font-size: small;
+    line-height: 1.5;
 }
 
 span {

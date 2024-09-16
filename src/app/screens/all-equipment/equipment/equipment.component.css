@@ -2,6 +2,17 @@ div {
     font-family: 'Rubik Regular', sans-serif
 }
 
+img {
+    width: 357px;
+    height: 390px;
+    background-color: #e8e7e7;
+    border-radius: 0 5% 0 0;
+}
+
+.symbol {
+    margin: 2%;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -26,6 +37,16 @@ div {
 
 p {
     font-size: large;
+}
+
+.size {
+    min-width: 47%;
+    max-width: 47%;
+}
+
+.size2 {
+    min-width: 124.4%;
+    max-width: 47%;
 }
 
 @media screen and (max-width: 600px) {
