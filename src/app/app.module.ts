@@ -11,6 +11,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { ButtonModule } from 'primeng/button';
+import { StaffComponent } from './screens/staff/staff.component';
 import { ToastModule } from 'primeng/toast';
 import { MenuModule } from 'primeng/menu';
 import { DividerModule } from 'primeng/divider';
@@ -67,6 +68,7 @@ import { SoftwareComponent } from './screens/all-equipment/software/software.com
     FooterComponent,
     MiniCardComponent,
     ContactComponent,
+    StaffComponent,
     TitleCardComponent,
     PsychologyComponent,
     DiagnosticImagingComponent,

@@ -32,6 +32,7 @@ import { ContactComponent } from './screens/contact/contact.component';
 import { NewsComponent } from './screens/news/news.component';
 import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
 import { SoftwareComponent } from './screens/all-equipment/software/software.component';
+import { StaffComponent } from './screens/staff/staff.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -65,7 +66,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'news', component: NewsComponent },
   { path: 'equipment', component: EquipmentComponent },
-  { path: 'software', component: SoftwareComponent }
+  { path: 'software', component: SoftwareComponent },
+  { path: 'staff', component: StaffComponent}
 
 ];
 

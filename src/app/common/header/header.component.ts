@@ -110,7 +110,7 @@ export class HeaderComponent implements OnInit {
             },
             {
                 label: 'Staff',
-                routerLink: '/staff-profesionales'
+                routerLink: '/staff'
             },
             {
                 label: 'Equipamiento',
