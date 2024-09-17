@@ -10,8 +10,6 @@ div {
 .titulo p {
     color: #757a3a;
     margin-top: 40px;
-    margin-right: 9%;
-    margin-left: 9%;
 }
 
 .container {
@@ -26,15 +24,11 @@ div {
 }
 
 .content-text {
-    margin-top: 40px;
-    margin-right: 9%;
-    margin-left: 9%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.content-text-2 {
-    margin-right: 9%;
-    margin-left: 6.5%;
-}
 
 .description p {
     font-size: 22px;
@@ -46,7 +40,6 @@ div {
 
 .content-img {
     margin-top: 40px;
-    margin-left: 5%;
     margin-right: 5%;
     align-items: center;
 }
@@ -60,22 +53,6 @@ div {
     border-radius: 0 40px 0 0;
 }
 
-.content-img-2 {
-    margin-top: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.content-img-2 img {
-    margin-top: 0px;
-    width: 380px;
-    height: 350px;
-    margin-right: 80px;
-    object-fit: cover;
-    border-radius: 0 40px 0 0;
-}
 
 .content-img img:last-child {
     margin-bottom: 10%;
