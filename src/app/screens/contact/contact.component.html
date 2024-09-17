@@ -1,57 +1,60 @@
-<app-title-card
-    title="CONTACTO"
-    subtitle="Todas las vías de comunicación disponibles de nuestro Centro, para
-    brindarle un servicio rápido y efectivo."
-    [titleFontSize]="45"
-    [titleFontSizeScreen]="20"
-    imageUrl="..\assets\images\CPR_fachada.jpg"
-></app-title-card>
-<div class="content">
-    <div class="content-text">
-        <div>
-            <p id="principal" class="titulo">Nuestro Centro está ubicado en una de las calles 
-                 principales <br>de la
-                Ciudad de Río Cuarto, provincia de Córdoba, Argentina.</p>
+<div class="conteiner">
+    <app-title-card
+        title="CONTACTO"
+        subtitle="Todas las vías de comunicación disponibles de nuestro Centro, para
+        brindarle un servicio rápido y efectivo."
+        [titleFontSize]="45"
+        [titleFontSizeScreen]="20"
+        imageUrl="..\assets\images\CPR_fachada.jpg"
+    ></app-title-card>
+    
+    <div class="content">
+        <div class="content-text">
+            <div>
+                <p id="principal" class="titulo">Nuestro Centro está ubicado en una de las calles 
+                    principales <br>de la
+                    Ciudad de Río Cuarto, provincia de Córdoba, Argentina.</p>
+            </div>
+
+            <div class="mt-4 mb-8">
+                <app-leaflet-map></app-leaflet-map>
+            </div>
+
+            <div>
+                <p class="titulo">CONTÁCTESE CON NOSOTROS</p>
+                
+                <div class="subtitulo flex flex-row align-center">
+                    <img src="../../assets/images/marcador-de-posicion.png" alt="icono de ubicación"/>
+                    <p>Gral. Paz 1556 (5800) Río Cuarto, Córdoba</p>
+                </div>
+                
+                <div class="subtitulo flex flex-row">
+                    <img src="..\assets\images\telefono.png"/>
+                    <p>(0358) 46 48062 / 46 51645 / 49 02093 / 49 02095</p>
+                </div>
+                <div class="subtitulo mb-8 flex flex-row">
+                    <img src="..\assets\images\correo-electronico.png"/>
+                    <p>info_radioterapia-rio4.com.ar</p>
+                </div>
+
+                <p-divider></p-divider>
+
+                <p class="titulo mt-8">NUESTRAS REDES SOCIALES</p>
+                
+                <div class="subtitulo flex flex-row">
+                    <img src="..\assets\images\red-mundial.png"/>
+                    <p>radioterapia-rio4.com.ar</p>
+                </div>
+                <div class="subtitulo flex flex-row">
+                    <img src="..\assets\images\logotipo-de-instagram.png"/>
+                    <p>centroradioterapiariocuarto</p>
+                </div>
+                <div class="subtitulo flex flex-row mb-8">
+                    <img src="..\assets\images\youtube.png"/>
+                    <p>Centro Privado de Radioterapia Rio Cuarto</p>
+                </div>
+
+            </div>
         </div>
-
-        <div class="mt-4 mb-5">
-            <app-leaflet-map></app-leaflet-map>
-        </div>
-
-        <div>
-            <p class="titulo">CONTÁCTESE CON NOSOTROS</p>
-            
-            <div class="subtitulo flex flex-row align-center">
-                <img src="../../assets/images/marcador-de-posicion.png" alt="icono de ubicación"/>
-                <p>Gral. Paz 1556 (5800) Río Cuarto, Córdoba</p>
-            </div>
-            
-            <div class="subtitulo flex flex-row">
-                <img src="..\assets\images\telefono.png"/>
-                <p>(0358) 46 48062 / 46 51645 / 49 02093 / 49 02095</p>
-            </div>
-            <div class="subtitulo flex flex-row">
-                <img src="..\assets\images\correo-electronico.png"/>
-                <p>info_radioterapia-rio4.com.ar</p>
-            </div>
-
-            <p-divider></p-divider>
-
-            <p class="titulo">NUESTRAS REDES SOCIALES</p>
-            
-            <div class="subtitulo flex flex-row">
-                <img src="..\assets\images\red-mundial.png"/>
-                <p>radioterapia-rio4.com.ar</p>
-            </div>
-            <div class="subtitulo flex flex-row">
-                <img src="..\assets\images\logotipo-de-instagram.png"/>
-                <p>centroradioterapiariocuarto</p>
-            </div>
-            <div class="subtitulo flex flex-row mb-5">
-                <img src="..\assets\images\youtube.png"/>
-                <p>Centro Privado de Radioterapia Rio Cuarto</p>
-            </div>
-
-        </div>
-    </div>
-</div>        
+    </div>        
+</div>
