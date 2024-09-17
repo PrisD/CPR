@@ -48,8 +48,15 @@ p {
     min-width: 124.4%;
     max-width: 47%;
 }
+.linea{
+    width: 50%;
+}
 
 @media screen and (max-width: 600px) {
+    p {
+        font-size: 17px;
+    }
+
     .titulo {
         font-size: 12px;
     }
@@ -61,5 +68,25 @@ p {
     .subtitle {
         font-size: 12px;
         margin-bottom: -10px;
+    }
+
+    .content-text {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .size {
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    .size2 {
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    img {
+        width: 319px;
+        height: 335px;
     }
 }
