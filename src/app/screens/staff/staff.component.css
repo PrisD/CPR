@@ -89,3 +89,74 @@ div {
     width: 70%;
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .content-text {
+        margin-top: 0%;
+        margin-right: 20%;
+    }
+    .content {
+        background: linear-gradient(to bottom, rgba(158, 174, 38, 0.365), rgba(255, 255, 255, 0.7) 5%);
+        padding-top: 0px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .titulo {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .descripcion {
+        font-size: 13px;
+        margin-bottom: 3% !important;        
+        text-align: left;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr; 
+        grid-auto-rows: auto;
+        gap: 20px;
+        justify-items: left; 
+        align-items: left;
+        margin-left: 35%;
+        
+    }
+    
+    .column {
+        margin-top: 0; 
+        width: 100%; 
+        flex-direction: column;
+        align-items: left; 
+        text-align: left !important;
+    }
+
+    
+    .subtitle{
+        font-size: 14px;
+        text-align: left !important;
+    }
+
+
+    .nombre {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .cv {
+        font-size: 10px;
+        margin-bottom: 3% !important;
+    }
+
+    .column img {
+        max-width: 200px;
+    }
+
+
+
+    .p-divider {
+        width: 40%;
+    }
+
+}
