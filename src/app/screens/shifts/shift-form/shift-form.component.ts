@@ -27,6 +27,7 @@ export class ShiftFormComponent implements OnInit {
   anioNacimiento: string = '';
   otro: string = '';
   opcion: string = '';
+  mostrarModal = false;
 
   constructor(public addressService: AddressService) {
 
@@ -66,5 +67,17 @@ export class ShiftFormComponent implements OnInit {
   clear() {
     this.provincia = '';
     this.localidad = '';
+  }
+
+
+  onSubmit() {
+    if (this.nombre && this.dni && this.celular && this.diaNacimiento &&
+      this.mesNacimiento && this.anioNacimiento && this.pais && this.email &&
+      (this.pais !== 'Otro' || this.otro) &&
+      (this.pais !== 'Argentina' || (this.provincia && this.localidad))) {
+      this.mostrarModal = true;
+    } else {
+      alert('Por favor completa todos los campos.');
+    }
   }
 }

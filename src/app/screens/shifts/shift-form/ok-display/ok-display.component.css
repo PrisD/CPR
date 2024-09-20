@@ -1,0 +1,44 @@
+h1,p{
+    color: white;
+    font-family: 'Rubik Light', sans-serif;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #93a445;
+    margin: 5% auto;
+    padding: 100px 10px 100px 10px;
+    border: 1px solid #888;
+    width: 35%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -100px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+::ng-deep .confirmar .p-button {
+    background-color: #ffffff00;
+    border: none;
+    color: #7c8851;
+}
+
+@media screen and (max-width: 600px) {
+.modal-content {
+        width: 75%;
+    }
+}

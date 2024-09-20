@@ -1,5 +1,5 @@
 <div class="formulario">
-    <form>
+    <form (ngSubmit)="onSubmit()" #formulario="ngForm">
         <div>
             <div>
                 <div>
@@ -107,3 +107,5 @@
         </div>
     </form>
 </div>
+
+<app-ok-display [mostrar]="mostrarModal"></app-ok-display>

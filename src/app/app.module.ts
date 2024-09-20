@@ -57,6 +57,7 @@ import { NewsComponent } from './screens/news/news.component';
 import { WhatsappButtonComponent } from "./common/whatsapp-button/whatsapp-button.component";
 import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
 import { SoftwareComponent } from './screens/all-equipment/software/software.component';
+import { OkDisplayComponent } from './screens/shifts/shift-form/ok-display/ok-display.component';
 
 
 @NgModule({
@@ -102,7 +103,8 @@ import { SoftwareComponent } from './screens/all-equipment/software/software.com
     BackgroundComponent,
     NewsComponent,
     WhatsappButtonComponent,
-    SoftwareComponent
+    SoftwareComponent,
+    OkDisplayComponent
   ],
   imports: [
     BrowserModule,
