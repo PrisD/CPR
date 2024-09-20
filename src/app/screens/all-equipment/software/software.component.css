@@ -87,5 +87,7 @@ li {
     img {
         width: 319px;
         height: 335px;
+        position: relative;
+        margin-top: 0;
     }
 }
