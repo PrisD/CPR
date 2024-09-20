@@ -35,8 +35,10 @@ img {
     color: #616c10;
 }
 
-p {
+p,
+li {
     font-size: large;
+    color: #3b3b3b;
 }
 
 .size {
@@ -48,8 +50,21 @@ p {
     min-width: 124.4%;
     max-width: 47%;
 }
-.linea{
+
+.linea {
     width: 50%;
+}
+
+
+ul {
+    list-style-type: '>   ';
+    margin-left: 24px;
+    padding: 0;
+    margin-top: -15px;
+}
+
+::marker {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
