@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class SearchService {
 
-  private apiKey = 'AIzaSyA0JcUXzgaZxhEQaucF__9UMncJUo9f1EE';
+  private apiKey = '';
   private cx = '017576662512468239146:omuauf_lfve';
   private apiUrl = 'https://www.googleapis.com/customsearch/v1';
 
