@@ -58,6 +58,7 @@ import { WhatsappButtonComponent } from "./common/whatsapp-button/whatsapp-butto
 import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
 import { SoftwareComponent } from './screens/all-equipment/software/software.component';
 import { OkDisplayComponent } from './screens/shifts/shift-form/ok-display/ok-display.component';
+import { SearchComponent } from './common/home/search/search.component';
 
 
 @NgModule({
@@ -104,7 +105,8 @@ import { OkDisplayComponent } from './screens/shifts/shift-form/ok-display/ok-di
     NewsComponent,
     WhatsappButtonComponent,
     SoftwareComponent,
-    OkDisplayComponent
+    OkDisplayComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

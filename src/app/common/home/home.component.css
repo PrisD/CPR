@@ -12,39 +12,7 @@
 .especialidades {
     background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 15%);
 }
-#roundedInput {
-    border-radius: 30px;
-    padding: 2.4%;
-    border: 1px solid #ccc;
-    width: 100%;
-}
 
-#roundedInput:focus,
-#roundedInput:focus-visible {
-    border-color: #919747;
-    box-shadow: 0 0 1px 1px #919747;
-    outline: #919747;
-}
-
-input#roundedInput,
-#roundedInput::placeholder {
-    color: #919747;
-}
-.input-container {
-    position: relative;
-    width: 50%;
-}
-
-.search-button {
-    border-radius: 0 30px 30px 0 ;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0 0.5rem;
-    cursor: pointer;
-    outline: none;
-}
 .logo{
     width: 25%;
 }
@@ -54,6 +22,10 @@ input#roundedInput,
 }
 .sinEspacio{
     margin-bottom: -5%;
+}
+app-search {
+    width: inherit;
+    display: contents;
 }
 /* Resposive */
 
@@ -66,19 +38,11 @@ input#roundedInput,
         font-size: 14px;
     }
 
-    input#roundedInput,
-    #roundedInput::placeholder {
-        font-size: 0.5rem;
-    }
-
     #roundedInput {
         padding: 4%;
     }
     .logo{
         width: 40%;
-    }
-    .input-container{
-            width: 90%;
     }
     .fondoVerde{
         width: auto;
