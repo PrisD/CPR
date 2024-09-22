@@ -33,6 +33,7 @@ import { NewsComponent } from './screens/news/news.component';
 import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.component';
 import { SoftwareComponent } from './screens/all-equipment/software/software.component';
 import { StaffComponent } from './screens/staff/staff.component';
+import { SearchResultComponent } from './screens/search-result/search-result.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -67,7 +68,8 @@ const routes: Routes = [
   { path: 'news', component: NewsComponent },
   { path: 'equipment', component: EquipmentComponent },
   { path: 'software', component: SoftwareComponent },
-  { path: 'staff', component: StaffComponent}
+  { path: 'staff', component: StaffComponent },
+  { path: 'search-result', component: SearchResultComponent }
 
 ];
 

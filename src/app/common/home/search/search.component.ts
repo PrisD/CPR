@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SearchService } from 'src/app/services/search.service';
 
 @Component({
   selector: 'app-search',
@@ -8,15 +7,7 @@ import { SearchService } from 'src/app/services/search.service';
 })
 export class SearchComponent {
 
-  searchQuery: string = '';
 
-  constructor(private searchService: SearchService) { }
+  constructor() { }
 
-  onSearch(): void {
-    if (this.searchQuery.trim()) {
-      this.searchService.search(this.searchQuery).subscribe((response) => {
-        console.log('Resultados de la búsqueda:', response);
-      });
-    }
-  }
 }

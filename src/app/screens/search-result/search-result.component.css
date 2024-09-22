@@ -1,0 +1,12 @@
+.buscador{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alineacion{
+    margin: 5%;
+}
+.gsc-control-cse {
+    font-family: 'Rubik regular';
+}

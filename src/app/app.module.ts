@@ -59,6 +59,7 @@ import { EquipmentComponent } from './screens/all-equipment/equipment/equipment.
 import { SoftwareComponent } from './screens/all-equipment/software/software.component';
 import { OkDisplayComponent } from './screens/shifts/shift-form/ok-display/ok-display.component';
 import { SearchComponent } from './common/home/search/search.component';
+import { SearchResultComponent } from './screens/search-result/search-result.component';
 
 
 @NgModule({
@@ -106,7 +107,8 @@ import { SearchComponent } from './common/home/search/search.component';
     WhatsappButtonComponent,
     SoftwareComponent,
     OkDisplayComponent,
-    SearchComponent
+    SearchComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
