@@ -9,10 +9,8 @@
                 <p class="titulo texto p-0 text-center">Lanzamos un nuevo <br>
                     GRUPO DE DIFUSIÓN a través<br>
                     de Whatsapp</p>
-                <a href="/news#noticia1">
-                    <p-button label="LEER MÁS" [style]="{'border-radius': '20px'}"></p-button>
-                </a>
-            </div>
+                    <p-button label="LEER MÁS" (click)="navigateToNewsWithFragment('noticia1')" [style]="{'border-radius': '20px'}"></p-button>
+                </div>
         </div>
         <div class="card">
             <div class="imagen-contenedor flex justify-content-center align-items-center">
@@ -22,9 +20,7 @@
                 <p class="titulo texto p-0 text-center">Renovamos las instalaciones <br>
                     del Centro, para brindarle una <br>
                     mayor comodidad</p>
-                <a href="/news#noticia2">
-                    <p-button label="LEER MÁS" [style]="{'border-radius': '20px'}"></p-button>
-               </a>
+                <p-button label="LEER MÁS" (click)="navigateToNewsWithFragment('noticia2')" [style]="{'border-radius': '20px'}"></p-button>
             </div>
         </div>
         <div class="card">
@@ -35,14 +31,12 @@
                 <p class="titulo texto p-0 text-center">Optimizamos nuestro <br>
                     sistema de Turnos para <br>
                     una mejor atención</p>
-                <a href="/news#noticia3">
-                    <p-button label="LEER MÁS" [style]="{'border-radius': '20px'}"></p-button>
-                </a>
+                <p-button label="LEER MÁS" (click)="navigateToNewsWithFragment('noticia3')" [style]="{'border-radius': '20px'}"></p-button>
             </div>
         </div>
     </div>
     <div class="espacio">
-        <a href="/news">
+        <a  class="cursor-pointer" (click)="navigateTo('/news')">
             <h4 class="footerText">VER TODAS LAS NOTAS</h4>
         </a>
     </div>
