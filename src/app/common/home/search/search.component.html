@@ -1,6 +1,6 @@
 <div class="input-container">
-    <input id="roundedInput" type="text"
-        placeholder="TURNOS, TRATAMIENTOS, ESPECIALIDADES, PROFESIONALES..." />
-    <button type="button" pButton icon="pi pi-search"
-        class="p-button-warning search-button"></button>
+    <input id="roundedInput" type="text" placeholder="TURNOS, TRATAMIENTOS, ESPECIALIDADES, PROFESIONALES..."
+        [(ngModel)]="query" (keyup.enter)="buscar()" /> 
+    <button type="button" pButton icon="pi pi-search" class="p-button-warning search-button"
+        (click)="buscar()"></button>
 </div>

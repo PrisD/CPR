@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './search.component.css'
 })
 export class SearchComponent {
+  query: string = ''; 
 
-
-  constructor() { }
-
+  buscar() {
+    if (this.query.trim()) {
+      window.location.href = `/search-result?q=${encodeURIComponent(this.query)}`;
+    }
+  }
 }
