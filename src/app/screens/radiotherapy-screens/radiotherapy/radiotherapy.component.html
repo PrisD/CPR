@@ -2,7 +2,7 @@
     title="RADIOTERAPIA"
     [titleFontSize]="45"
     [titleFontSizeScreen]="20"
-    imageUrl="../assets/images/bg-radioterapia.jpeg"
+    imageUrl="assets/images/bg-radioterapia.jpeg"
     objectPosition="50% 20%"
  ></app-title-card>
 
@@ -15,7 +15,7 @@
             <p class="description"> Estos son los tratamientos de Radioterapia<span class="hide-on-mobile"><br></span> que se realizan en nuestro Centro.</p>
             <div class="description">
                 <div class="block flex flex-row" *ngFor="let treatment of treatments">
-                    <img src="../assets/images/isologo.png"/>
+                    <img src="assets/images/isologo.png"/>
                     <a [routerLink]="treatment.link">{{treatment.name}}</a>
                 </div>
             </div>

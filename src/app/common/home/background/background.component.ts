@@ -7,11 +7,11 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class BackgroundComponent implements OnInit, OnDestroy {
   imagenes = [
-    { src: '../assets/slides/bg-hero1.jpg' },
-    { src: '../assets/slides/bg-hero3.jpg' },
-    { src: '../assets/slides/bg-hero4.jpg' },
-    { src: '../assets/slides/bg-hero5.jpg' },
-    { src: '../assets/slides/bg-hero6.jpg' }
+    { src: 'assets/slides/bg-hero1.jpg' },
+    { src: 'assets/slides/bg-hero3.jpg' },
+    { src: 'assets/slides/bg-hero4.jpg' },
+    { src: 'assets/slides/bg-hero5.jpg' },
+    { src: 'assets/slides/bg-hero6.jpg' }
   ];
   private headerBackgrounds: NodeListOf<Element> | undefined;
   imageIndex: number = 0;
