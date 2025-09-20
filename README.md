@@ -13,6 +13,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To build for Enviroment production: 
+`ng build --configuration production --base-href /prueba/dist/cpr/`
+This make a folder with all necessary files to compile insite de FTP server
+To put images in this project, respect this format:
+`<img id="logo" src="assets/images/CPR-logo-green.svg" alt="">`
+
 
 ## Running unit tests
 
