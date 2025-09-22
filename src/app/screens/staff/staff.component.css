@@ -5,8 +5,7 @@ div {
 .titulo {
     font-size: 28px;
     font-family: 'Rubik Regular', sans-serif;
-    color: #585f12;
-    margin-top: 40px;
+    color:  #585f12;
 }
 
 .container {
@@ -15,9 +14,9 @@ div {
 }
 
 .content {
-    background: linear-gradient(to bottom, rgba(137, 151, 33, 0.466), rgba(255, 255, 255, 0.5) 25%);
-    padding-top: 10px;
+    background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 15%);
     font-family: 'Rubik Regular', sans-serif;
+
 }
 
 .content-text {
