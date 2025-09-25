@@ -31,6 +31,6 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }} 
           local-dir: ./dist/cpr/  # Update with your actual build output directory
-          server-dir: /htdocs/prueba/dist/cpr  # Update with the path on your FTP server
+          server-dir: /htdocs/prueba/dist/cpr/  # Update with the path on your FTP server
           protocol: ftp 
           dangerous-clean-slate: true
