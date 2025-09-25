@@ -19,52 +19,52 @@
 /* FUENTES */
 @font-face {
     font-family: 'Rubik Black';
-    src: url('assets/fonts/Rubik-black.ttf') format('truetype');
+    src: url('/assets/fonts/Rubik-black.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Black Italic';
-    src: url('assets/fonts/Rubik-BlackItalic.ttf') format('truetype');
+    src: url('/assets/fonts/Rubik-BlackItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Bold';
-    src: url('assets/fonts/Rubik-Bold.ttf') format('truetype');
+    src: url('/assets/fonts/Rubik-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Bold Italic';
-    src: url('assets/fonts/Rubik-BoldItalic.ttf') format('truetype');
+    src: url('/assets/fonts/Rubik-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Italic';
-    src: url('assets/fonts/Rubik-Italic.ttf') format('truetype');
+    src: url('/assets/fonts/Rubik-Italic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Light';
-    src: url('assets/fonts/Rubik-Light.ttf') format('truetype');
+    src: url('/assets/fonts/Rubik-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Light Italic';
-    src: url('assets/fonts/Rubik-LightItalic.ttf') format('truetype');
+    src: url('/assets/fonts/Rubik-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Medium';
-    src: url('assets/fonts/Rubik-Medium.ttf');
+    src: url('/assets/fonts/Rubik-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Medium Italic';
-    src: url('assets/fonts/Rubik-MediumItalic.ttf');
+    src: url('/assets/fonts/Rubik-MediumItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Rubik Regular';
-    src: url('assets/fonts/Rubik-Regular.ttf');
+    src: url('/assets/fonts/Rubik-Regular.ttf') format('truetype');
 }
 
 /* FUENTES DEFINIDAS SEGÚN EL TEXTO */
