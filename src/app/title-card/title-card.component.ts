@@ -11,7 +11,7 @@ export class TitleCardComponent implements OnInit{
   @Input() titleFontSizeScreen: number = 0;
   @Input() subtitle: string= '';
   @Input() imageUrl: string = '';
-  @Input() objectPosition: string = '50% 50%';
+  @Input() objectPosition: string = '50% 20%';
   @Input() height: number = 550;
 
 
