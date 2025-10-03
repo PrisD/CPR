@@ -18,6 +18,7 @@ div {
     background: linear-gradient(to bottom, rgba(137, 151, 33, 0.466), rgba(255, 255, 255, 0.5) 25%);
     padding-top: 10px;
     font-family: 'Rubik Regular', sans-serif;
+    margin-bottom: 12%;
 }
 
 .content-text {
