@@ -46,7 +46,26 @@ div {
     margin-top: 5%;
 }
 
+p {
+    font-size: 22px;
+}
+.description span {
+    font-size: 1.5rem;
+}
 
+
+.checks {
+    width: 60%;
+}
+
+.check {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.check span {
+    margin-right: 15px;
+}
 @media screen and (max-width: 600px) {
     .titulo {
         font-size: 12px;

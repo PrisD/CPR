@@ -91,7 +91,7 @@ export class HeaderComponent implements OnInit {
                 routerLink: '/shifts-options'
             },
             {
-                label: 'Nuestro centro',
+                label: 'Nuestro Centro',
                 routerLink: '/our-center',
                 items: [
                     {
@@ -99,7 +99,7 @@ export class HeaderComponent implements OnInit {
                         routerLink: '/our-history'
                     },
                     {
-                        label: 'Atención local y externa',
+                        label: 'Pacientes fuera de la provincia e internacionales',
                         routerLink: '/atention'
                     },
                     {
