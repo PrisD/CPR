@@ -53,21 +53,6 @@ div {
     border-radius: 0 40px 0 0;
 }
 
-.checks {
-    width: 60%;
-    margin-top: -12%;
-    margin-bottom: 12%;
-}
-
-.check {
-    margin-top: -20px;
-    margin-bottom: -20px;
-}
-
-.check span {
-    margin-right: 15px;
-}
-
 
 @media screen and (max-width: 600px) {
 
@@ -108,12 +93,6 @@ div {
     .content-img img:first-child {
         margin-right: 10px;
         margin-bottom: 0%;
-    }
-
-    .checks {
-        margin-top: 10px;
-        width: 100%;
-        margin-bottom: 20%;
     }
 
 
