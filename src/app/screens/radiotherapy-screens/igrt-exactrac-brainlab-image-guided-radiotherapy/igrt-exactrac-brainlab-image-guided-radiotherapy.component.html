@@ -1,46 +1,64 @@
 <div class="conteiner">
-    <app-title-card
-        title="IGRT EXACTRAC – BRAINLAB – RADIOTERAPIA GUIADA POR IMÁGENES"
-        [titleFontSize]="35"
-        [titleFontSizeScreen]="15"
-        imageUrl="assets/images/CPR_tratamientoIGRT.jpg"
-    ></app-title-card>
+  <app-title-card
+    title="IGRT EXACTRAC – BRAINLAB – RADIOTERAPIA GUIADA POR IMÁGENES"
+    [titleFontSize]="35"
+    [titleFontSizeScreen]="15"
+    imageUrl="assets/images/CPR_tratamientoIGRT.jpg"
+  ></app-title-card>
 
-    
-    <div class="content">
-        <!-- Primera sección de texto e imágenes -->
-        <div class="flex container">
-            <!-- Texto de introducción -->
-            <div class="content-text">
-                <div>
-                    <p class="titulo">La IGRT es una técnica de tratamiento en la cual se utilizan imágenes de
-                        diagnóstico modernas para mejorar la precisión y la exactitud en la
-                        administración de la radioterapia.</p>
-                </div>
-                <div class="description">
-                    <p>ExacTrac es un sistema de revisión basado en rayos x e infrarrojos que permite <strong>la
-                        posición del paciente en tiempo real y detectar movimientos intrafracción del tumor
-                        durante la aplicación del tratamiento.</strong></p>
-            
-                    <p>Durante la aplicación se graba en forma digital la posición exacta del paciente verificando, de
-                        manera permanente, los movimientos involuntarios durante Ia administración del mismo. </p>
-            
-                    <p>Una vez detectado un error se interrumpe la irradiación y se corrige automáticamente la posición
-                        del paciente para completar la fracción diaria.
-                    </p>  
-                </div>
-            </div>   
+  <div class="content">
+    <div class="flex container">
+      <div class="content-text">
+        <div>
+          <p class="titulo">La IGRT es una técnica de tratamiento en la cual se utilizan imágenes de
+            diagnóstico modernas para mejorar la precisión y la exactitud en la
+            administración de la radioterapia.</p>
+        </div>
+        <div class="description">
+          <p>ExacTrac es un sistema de revisión basado en rayos x e infrarrojos que permite <strong>la
+            posición del paciente en tiempo real y detectar movimientos intrafracción del tumor
+            durante la aplicación del tratamiento.</strong></p>
 
-            <!-- Imágenes -->
-            <div class="content-img">
-                <img src="assets/images/CPR_IGRT.jpeg"/>
-                <img src="assets/images/CPR_tratamiento1.jpg"/>
-            </div>
-        </div>    
+          <p>Durante la aplicación se graba en forma digital la posición exacta del paciente verificando, de
+            manera permanente, los movimientos involuntarios durante Ia administración del mismo. </p>
+
+          <p>Una vez detectado un error se interrumpe la irradiación y se corrige automáticamente la posición
+            del paciente para completar la fracción diaria.
+          </p>
+
+          <p class="titulo-ventajas">Ventajas</p>
+
+          <div class="check">
+            <span class="pi pi-angle-right"></span>
+            <p>Supervisión del paciente en tiempo real.</p>
+          </div>
+
+          <div class="check">
+            <span class="pi pi-angle-right"></span>
+            <p>Precisión y exactitud</p>
+          </div>
+
+          <div class="check">
+            <span class="pi pi-angle-right"></span>
+            <p>Complementariedad de imágenes del marco óseo y del tejido blando</p>
+          </div>
+
+          <div class="check">
+            <span class="pi pi-angle-right"></span>
+            <p>Compensación del movimiento de la respiración</p>
+          </div>
+
+          <div class="check">
+            <span class="pi pi-angle-right"></span>
+            <p>Corrección de errores de posicionamiento debido a movimientos del paciente o desplazamientos anatómicos internos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-img">
+        <img src="assets/images/CPR_IGRT.jpg"/>
+        <img src="assets/images/CPR_tratamiento1.jpg"/>
+      </div>
     </div>
+  </div>
 </div>
-
-<app-turn-foot 
-    title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
-    direccion="/shifts-start-radiotherapy"
-></app-turn-foot>

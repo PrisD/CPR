@@ -54,6 +54,35 @@ div {
     border-radius: 0 40px 0 0;
 }
 
+.titulo-ventajas {
+  font-size: 28px !important;
+  color: #919747;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.check {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.check span {
+  color: #000;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.check p {
+  margin: 0 !important;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #000;
+}
+
 @media screen and (max-width: 600px) {
     .titulo {
         margin-top: 15px;
@@ -93,4 +122,18 @@ div {
         margin-right: 10px;
         margin-bottom: 0%;
     }
+  .titulo-ventajas {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .check p {
+    font-size: 12px;
+  }
+
+  .check span {
+    font-size: 0.9rem;
+    margin-right: 10px;
+    padding-top: 2px;
+  }
 }
