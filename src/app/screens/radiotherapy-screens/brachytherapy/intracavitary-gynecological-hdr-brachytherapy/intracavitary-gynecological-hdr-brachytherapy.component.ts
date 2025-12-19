@@ -10,7 +10,7 @@ export class IntracavitaryGynecologicalHDRBrachytherapyComponent {
 
   constructor(private router: Router) { }
 
-  goToBraquiIntracavitary(){
+  goToBraquiInterstitial(){
     this.router.navigate(['\interstitial-gynecological-hdr-brachytherapy']);
   }
 
