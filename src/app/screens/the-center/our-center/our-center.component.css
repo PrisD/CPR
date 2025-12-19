@@ -34,9 +34,10 @@ div {
 }
 
 .description {
-    margin-top: 20px;
-    font-size: 22px;
-    display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  display: block;
 }
 
 .description-items {
@@ -76,36 +77,38 @@ div {
     font-weight: 800;
 }
 .row {
-    display: flex;
-    margin-top: 20px;
-    align-items: stretch; /* Las columnas tendrán la misma altura */
+  display: flex;
+  margin-top: 20px;
+  align-items: stretch;
 }
 
 .col {
-    flex-basis: 40%;
-    max-width: 27%;
-    flex-grow: 0;
-    margin-right: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-basis: 40%;
+  max-width: 27%;
+  flex-grow: 0;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
 }
 
 .divider {
-    width: 100%;
-    margin-top: auto; /* Alinea el divider al final de la columna */
-    margin-bottom: 20px;
-    border: 1.5px solid #585f12;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border: 1.5px solid #585f12;
 }
-
 .divider-bottom {
     width: 56%;
     border: 1.5px solid #585f12;
     margin-top: 40px;
-    margin-left: 0; 
+    margin-left: 0;
     margin-bottom: 12%;
 }
-
+.divider-end {
+  margin-top: auto !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 600px) {
     .titulo {
@@ -141,7 +144,7 @@ div {
         margin-right: 10px;
     }
 
-    
+
 
     .description-text {
         font-size: 10px;
@@ -151,7 +154,7 @@ div {
     .col {
         max-width: 50%;
     }
-    
+
 .divider-bottom {
     width: 80%;
 }
