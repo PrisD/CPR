@@ -7,15 +7,12 @@
   </app-title-card>
 
   <div class="content">
-    <div class="container-flex">
+    <div class="container-flex top-section">
       <div class="content-text first-text">
         <div class="description">
           <p>Este tratamiento consiste en irradiar selectivamente el tejido tumoral mediante la inserción de fuentes radioactivas en el organismo, que son controladas de forma precisa y exacta por un sistema robótico.</p>
-
           <p>Bajo anestesia raquídea se colocan una serie de catéteres o tubos en la zona a irradiar (el lecho tumoral, o el propio tumor), a través de los cuales la fuente radiactiva administra el tratamiento a esa zona y un margen próximo.</p>
-
           <p>Esta técnica se utiliza por varias razones:</p>
-
           <div class="check-list">
             <div class="check">
               <span class="pi pi-angle-right"></span>
@@ -34,31 +31,30 @@
               <p>El tumor no se puede alcanzar con los aplicadores intracavitarios.</p>
             </div>
           </div>
-
           <p class="mt-4">La <strong>Braquiterapia Intersticial</strong> es una técnica específica para las necesidades de cada paciente.</p>
-
-          <div class="equipo-section">
-            <hr class="divider">
-            <p class="titulo-equipo">Contamos con un moderno equipo de Braquiterapia de Alta Tasa SAGINOVA de la marca BEBIG que permite:</p>
-
-            <p class="equipo-texto">Planificación personalizada a cada paciente mediante el sistema SAGIPLAN que hace el procedimiento más rápido, flexible y preciso.</p>
-
-            <p class="equipo-texto">Tratamiento guiado por fusión de imágenes como tomografías y ecografías, para lograr mayor precisión.</p>
-
-            <p class="equipo-texto">La carga remota de forma automática que posiciona la fuente radioactiva de acuerdo al programa diseñado para cada caso clínico.</p>
-
-            <p class="equipo-texto">Control electrónico con monitoreo continuo para suministrar la dosis terapéutica con mínimo compromiso de los tejidos sanos.</p>
-
-            <hr class="divider">
-          </div>
         </div>
       </div>
-
       <div class="content-img">
         <img src="assets/images/CPR_CancerUtero2.jpeg"/>
         <img src="assets/images/CPR_braqui-aparato-det.jpeg"/>
-        <div class="img-full-container">
-          <img src="assets/images/im_braqui-SAGINOVA.jpg" class="img-saginova"/>
+      </div>
+    </div>
+
+    <div class="equipo-wrapper">
+      <div class="container-flex equipo-row">
+        <div class="equipo-text-col">
+          <hr class="divider-align">
+          <div class="equipo-inner-content">
+            <p class="titulo-equipo">Contamos con un moderno equipo de Braquiterapia de Alta Tasa SAGINOVA de la marca BEBIG que permite:</p>
+            <p class="equipo-texto">Planificación personalizada a cada paciente mediante el sistema SAGIPLAN que hace el procedimiento más rápido, flexible y preciso.</p>
+            <p class="equipo-texto">Tratamiento guiado por fusión de imágenes como tomografías y ecografías, para lograr mayor precisión.</p>
+            <p class="equipo-texto">La carga remota de forma automática que posiciona la fuente radioactiva de acuerdo al programa diseñado para cada caso clínico.</p>
+            <p class="equipo-texto">Control electrónico con monitoreo continuo para suministrar la dosis terapéutica con mínimo compromiso de los tejidos sanos.</p>
+          </div>
+          <hr class="divider-align">
+        </div>
+        <div class="equipo-img-col">
+          <img src="assets/images/im_braqui-SAGINOVA.jpg" class="img-saginova-full"/>
         </div>
       </div>
     </div>
@@ -66,7 +62,7 @@
     <div class="content-text second-text">
       <div class="botones">
         <div class="description">
-          <p class="botones-text">Te puede interesar: </p>
+          <p class="botones-text">Te puede interesar:</p>
           <div class="flex mb-4 gap-4">
             <p-button class="bra-button" label="BRAQUITERAPIA INTRACAVITARIA"
                       (click)="goToBraquiIntracavitary()" [style]="{'border-radius': '15px'}"></p-button>
@@ -78,6 +74,6 @@
 </div>
 
 <app-turn-foot
-  title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+  title1="Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
   direccion="/shifts-start-radiotherapy">
 </app-turn-foot>
