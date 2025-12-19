@@ -1,83 +1,60 @@
 <div class="conteiner">
-    <app-title-card
-        title="TALLER DE MINDFULNESS "
-        [titleFontSize]="35"
-        [titleFontSizeScreen]="15"
-        imageUrl="assets/images/CPR_meditacion.jpeg"
-    ></app-title-card>
+  <app-title-card
+    title="TALLER DE MINDFULNESS"
+    [titleFontSize]="35"
+    [titleFontSizeScreen]="15"
+    imageUrl="assets/images/CPR_meditacion.jpeg">
+  </app-title-card>
 
+  <div class="content">
+    <div class="container-flex">
+      <div class="content-text first-text">
+        <p class="titulo-principal">Procedimiento corto, efectivo y con muy buena tolerancia.</p>
+        <div class="description">
+          <p class="titulo">Dos veces a la semana, nuestro Centro ofrece el Taller de Mindfulness como parte del tratamiento de los pacientes, y lo hace extensivo a sus familiares.</p>
 
-    <div class="content">
-        <!-- Primera sección de texto e imágenes -->
-        <div class="flex container">
-            <!-- Texto de introducción -->
-            <div class="content-text first-text">
-                <p class="titulo">Procedimiento corto, efectivo y con muy buena tolerancia.</p>
-                <div class="description">
-                    <p class="titulo">Dos veces a la semana, nuestro Centro ofrece el Taller de Mindfulness
-                            como parte del tratamiento de los pacientes, y lo hace extensivo a sus
-                            familiares.</p>
+          <p>La práctica del Mindfulness supone la generación de una actitud de <strong>no juzgar</strong>, desarrollar la <strong>paciencia, la aceptación, la apertura y la no reactividad.</strong></p>
 
-                    <div class="description">
-                        <p>La práctica del Mindfulness supone la generación de una actitud de <strong>no juzgar</strong>, desarrollar la
-                            <strong>paciencia, la aceptación, la apertura y la no reactividad.</strong></p>
-            
-                        <p>Esta actitud se puede desarrollar a través de un entrenamiento sistemático en el que la
-                            principal herramienta es la meditación</p>
-            
-                        <p>Es una técnica de meditación que busca entrenar la mente para centrar la atención y
-                            redireccionar los pensamientos. </p>
-            
-                        <p>Suele practicarse para reducir el estrés, mejorar la concentración o incrementar el bienestar
-                            emocional.</p>    
-                          
-                        <div class="mt-4 flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                            <p>El taller de Mindfulness para pacientes y familiares se realiza dos veces por semana, los
-                                <strong style="color: rgb(123, 130, 14)">martes y viernes a las 13 hs.</strong></p>
-                        </div>
+          <p>Esta actitud se puede desarrollar a través de un entrenamiento sistemático en el que la principal herramienta es la meditación.</p>
 
-                        <p-divider></p-divider>
-            
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                            <p>El <strong style="color: rgb(123, 130, 14)">Lic. Juan Pablo Montanelli</strong>, psicólogo e instructor de Mindfulness, desarrolla ambas 
-                                actividades en nuestro Centro.</p>
-                        </div>
+          <p>Es una técnica de meditación que busca entrenar la mente para centrar la atención y redireccionar los pensamientos.</p>
 
-                        <p-divider></p-divider>
-            
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                            <p>Las prácticas tienen una duración de <strong style="color: rgb(123, 130, 14)">30 minutos</strong>.</p>
-                        </div>
+          <p>Suele practicarse para reducir el estrés, mejorar la concentración o incrementar el bienestar emocional.</p>
 
-                        <p-divider></p-divider>
-            
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                            <p>Son GRATUITAS para <strong style="color: rgb(123, 130, 14)">pacientes y familiares del Centro.</strong></p>
-                        </div>
+          <div class="check">
+            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span>
+            <p>El <strong style="color: rgb(123, 130, 14)">Lic. Juan Pablo Montanelli</strong>, psicólogo e instructor de Mindfulness, desarrolla ambas actividades en nuestro Centro.</p>
+          </div>
 
-                        <p-divider></p-divider>
-            
-                        <div class="flex align-items-center check">
-                            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span> 
-                            <p>La <strong style="color: rgb(123, 130, 14)">constancia y compromiso</strong> en la práctica hará que los resultados de bienestar sean
-                                visibles en poco tiempo y se prolonguen en el tiempo.</p>
-                        </div>
-                            
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Imágenes -->
-            <div class="content-img">
-                <a [routerLink]="['/psycho-oncology']"><img src="assets/images/banner-psico1.svg"/></a>
-                <a [routerLink]="['/what-is-mindfulness']"><img src="assets/images/banner-psico2.svg"/></a>
-            </div>
-        </div>        
+          <p-divider></p-divider>
+
+          <div class="check">
+            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span>
+            <p>Las prácticas tienen una duración de <strong style="color: rgb(123, 130, 14)">30 minutos</strong>.</p>
+          </div>
+
+          <p-divider></p-divider>
+
+          <div class="check">
+            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span>
+            <p>Son GRATUITAS para <strong style="color: rgb(123, 130, 14)">pacientes y familiares del Centro.</strong></p>
+          </div>
+
+          <p-divider></p-divider>
+
+          <div class="check">
+            <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span>
+            <p>La <strong style="color: rgb(123, 130, 14)">constancia y compromiso</strong> en la práctica hará que los resultados de bienestar sean visibles en poco tiempo y se prolonguen en el tiempo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-img">
+        <a [routerLink]="['/psycho-oncology']"><img src="assets/images/banner-psico1.svg"/></a>
+        <a [routerLink]="['/what-is-mindfulness']"><img src="assets/images/banner-psico2.svg"/></a>
+      </div>
     </div>
+  </div>
 </div>
 
 <app-turn-foot></app-turn-foot>

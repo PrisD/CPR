@@ -1,84 +1,44 @@
 <div class="conteiner">
-    <app-title-card
-        title="PSICOLOGÍA"
-        [titleFontSize]="45"
-        [titleFontSizeScreen]="20"
-        imageUrl="assets/images/CPR_psicologia.jpg"
-        objectPosition="50% 20%"
-    ></app-title-card>
+  <app-title-card
+    title="PSICOLOGÍA"
+    [titleFontSize]="45"
+    [titleFontSizeScreen]="20"
+    imageUrl="assets/images/CPR_psicologia.jpg"
+    objectPosition="50% 20%">
+  </app-title-card>
 
-
-    <div class="content">
-         <!-- Primera sección de texto e imágenes -->
-        <div class="flex container justify-content-around">
-            <!-- Texto de introducción -->
-            <div class="content-text first-text w-5 justify-content-between">
-                <p class="titulo" >El Servicio de Psicología de nuestro
-                  Centro es desarrollado por el
-                  Lic. Juan Pablo Montanelli,
-                  psicólogo e instructor de
-                  Mindfulness ofreciendo Psicoterapia
-                  clásica y convencional o el Taller de
-                  Mindfulness de forma individual
-                  o grupal.</p>
-                <div class="description">
-                    <p>Ofrecemos un servicio de calidad
-                      en un espacio amable, seguro y
-                      confidencial basado en el diálogo
-                      sincero, objetivo y neutral como así
-                      también en las prácticas
-                      contemplativas que mejoran y
-                      acompañan el proceso de cura,
-                      reduciendo el estrés, mejorando la
-                      concentración e incrementando el
-                      bienestar emocional.</p>
-                    <!--<p>Como su base fundamental es el <strong>diálogo</strong>, proporciona un ambiente de apoyo que le permite
-                        hablar abiertamente con alguien objetivo, neutral e imparcial.</p>
-                    <p>La psicología trata de entender el comportamiento de las personas en diferentes situaciones.
-                        Por tanto, un especialista de la salud mental aplica evaluaciones que sirven para analizar
-                        cómo piensan o se sienten las personas consigo mismas, sus familias, amistades o ambientes de trabajo.</p>-->
-                </div>
-
-                <!--<div class="description">
-
-                    <div class="flex align-items-center mt-2 check">
-                        <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span>
-                        <p>Hablar ayuda a sanar. Un espacio terapéutico es un ámbito absolutamente privado y confidencial.</p>
-                    </div>
-
-                    <p-divider></p-divider>
-
-                    <div class="flex align-items-center check">
-                        <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span>
-                        <p>Entre los trastornos o problemas más comunes que atienden en terapia se encuentran:
-                            trastornos del estado de ánimo, como la ansiedad y la depresión, timidez, fobias,
-                            conflictos personales directos o indirectos, miedos, traumas, adicciones o cualquier
-                            situación adversa o dificultosa con la que la persona no está pudiendo lidiar.</p>
-                    </div>
-
-                    <p-divider></p-divider>
-
-                    <div class="flex align-items-center check">
-                        <span class="pi pi-angle-right" style="color: rgb(201, 221, 44)"></span>
-                        <p>El Lic. Juan Pablo Montanelli, psicólogo e instructor de Mindfulness, desarrolla ambas
-                            actividades en nuestro Centro.</p>
-                    </div>
-
-                    <p-divider></p-divider>
-                </div>-->
-            </div>
-
-            <!-- Imágenes -->
-            <div class="content-img flex flex-column">
-                <a [routerLink]="['/psycho-oncology']"><img src="assets/images/banner-psico1.svg"/></a>
-                <a [routerLink]="['/what-is-mindfulness']"><img src="assets/images/banner-psico2.svg"/></a>
-                <a [routerLink]="['/mindfulness-workshop']"><img src="assets/images/banner-psico3.svg"/></a>
-            </div>
+  <div class="content">
+    <div class="container-flex">
+      <div class="content-text first-text">
+        <p class="titulo">El Servicio de Psicología de nuestro
+          Centro es desarrollado por el
+          Lic. Juan Pablo Montanelli,
+          psicólogo e instructor de
+          Mindfulness ofreciendo Psicoterapia
+          clásica y convencional o el Taller de
+          Mindfulness de forma individual
+          o grupal.</p>
+        <div class="description">
+          <p>Ofrecemos un servicio de calidad
+            en un espacio amable, seguro y
+            confidencial basado en el diálogo
+            sincero, objetivo y neutral como así
+            también en las prácticas
+            contemplativas que mejoran y
+            acompañan el proceso de cura,
+            reduciendo el estrés, mejorando la
+            concentración e incrementando el
+            bienestar emocional.</p>
         </div>
+      </div>
+
+      <div class="content-img">
+        <a [routerLink]="['/psycho-oncology']"><img src="assets/images/banner-psico1.svg"/></a>
+        <a [routerLink]="['/what-is-mindfulness']"><img src="assets/images/banner-psico2.svg"/></a>
+        <a [routerLink]="['/mindfulness-workshop']"><img src="assets/images/banner-psico3.svg"/></a>
+      </div>
     </div>
+  </div>
 </div>
 
-
 <app-turn-foot></app-turn-foot>
-
-
