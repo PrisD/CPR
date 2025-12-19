@@ -7,34 +7,34 @@
   </app-title-card>
 
   <div class="content">
-    <div class="container-flex">
+    <div class="container-flex top-section">
       <div class="content-text first-text">
         <div class="description">
           <p>Este tratamiento consiste en irradiar selectivamente el tejido tumoral mediante la inserción de fuentes radioactivas en el organismo, que son controladas de forma precisa y exacta por un sistema robótico.</p>
-
           <p>La <strong>Braquiterapia Ginecológica de Alta Tasa</strong> brinda a la paciente la ventaja de poder suministrar altas dosis terapéuticas al tumor conservando la integridad de los tejidos sanos y órganos vecinos. Es un tratamiento seguro e indoloro, con un desarrollo más corto y confortable que otros métodos y es totalmente ambulatorio. Esto aumenta considerablemente la calidad de vida del paciente.</p>
-
-          <div class="equipo-section">
-            <hr class="divider">
-            <p class="titulo-equipo">Contamos con un moderno equipo de Braquiterapia de Alta Tasa SAGINOVA de la marca BEBIG que permite:</p>
-
-            <p class="equipo-texto">Planificación personalizada a cada paciente mediante el sistema SAGIPLAN que hace el procedimiento más rápido, flexible y preciso.</p>
-
-            <p class="equipo-texto">Tratamiento guiado por fusión de imágenes como tomografías y ecografías, para lograr mayor precisión.</p>
-
-            <p class="equipo-texto">La carga remota de forma automática que posiciona la fuente radioactiva de acuerdo al programa diseñado para cada caso clínico.</p>
-
-            <p class="equipo-texto">Control electrónico con monitoreo continuo para suministrar la dosis terapéutica con mínimo compromiso de los tejidos sanos.</p>
-            <hr class="divider">
-          </div>
         </div>
       </div>
-
       <div class="content-img">
         <img src="assets/images/CPR_braqui-det1.jpeg"/>
         <img src="assets/images/CPR_braqui-aparato-det.jpg"/>
-        <div class="img-full-container">
-          <img src="assets/images/im_braqui-SAGINOVA.jpg" class="img-saginova"/>
+      </div>
+    </div>
+
+    <div class="equipo-wrapper">
+      <div class="container-flex equipo-row">
+        <div class="equipo-text-col">
+          <hr class="divider-align">
+          <div class="equipo-inner-content">
+            <p class="titulo-equipo">Contamos con un moderno equipo de Braquiterapia de Alta Tasa SAGINOVA de la marca BEBIG que permite:</p>
+            <p class="equipo-texto">Planificación personalizada a cada paciente mediante el sistema SAGIPLAN que hace el procedimiento más rápido, flexible y preciso.</p>
+            <p class="equipo-texto">Tratamiento guiado por fusión de imágenes como tomografías y ecografías, para lograr mayor precisión.</p>
+            <p class="equipo-texto">La carga remota de forma automática que posiciona la fuente radioactiva de acuerdo al programa diseñado para cada caso clínico.</p>
+            <p class="equipo-texto">Control electrónico con monitoreo continuo para suministrar la dosis terapéutica con mínimo compromiso de los tejidos sanos.</p>
+          </div>
+          <hr class="divider-align">
+        </div>
+        <div class="equipo-img-col">
+          <img src="assets/images/im_braqui-SAGINOVA.jpg" class="img-saginova-full"/>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="content-text second-text">
       <div class="botones">
         <div class="description">
-          <p class="botones-text">Te puede interesar: </p>
+          <p class="botones-text">Te puede interesar:</p>
           <div class="flex mb-4 gap-4">
             <p-button class="bra-button" label="BRAQUITERAPIA INTERSTICIAL"
                       (click)="goToBraquiInterstitial()" [style]="{'border-radius': '15px'}"></p-button>
@@ -54,6 +54,6 @@
 </div>
 
 <app-turn-foot
-  title1= "Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
+  title1="Contactanos y solicitá de manera simple tu <strong> primer turno <strong>"
   direccion="/shifts-start-radiotherapy">
 </app-turn-foot>
