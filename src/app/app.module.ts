@@ -40,8 +40,8 @@ import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is
 import { ShiftsOptionsComponent } from './screens/shifts/shifts-options/shifts-options.component';
 import { GynecologicalHDRBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/gynecological-hdr-brachytherapy/gynecological-hdr-brachytherapy.component';
 import { ShiftsDiagnosisByImagingComponent } from './screens/shifts/shifts-diagnosis-by-imaging/shifts-diagnosis-by-imaging.component';
-import { ShiftsPsychologyComponent } from './screens/shifts/shifts-psychology/shifts-psychology.component';
-import { ShiftsStartRadiotherapyComponent } from './screens/shifts/shifts-start-radiotherapy/shifts-start-radiotherapy.component';
+import { ShiftsOffsideCordobaComponent } from './screens/shifts/shifts-offside-cordoba/shifts-offside-cordoba.component';
+import { ShiftsInsideCordobaComponent } from './screens/shifts/shifts-inside-cordoba/shifts-inside-cordoba.component';
 import { ShiftFormComponent } from './screens/shifts/shift-form/shift-form.component';
 import { FormsModule } from '@angular/forms';
 import { OurHistoryComponent } from './screens/the-center/our-history/our-history.component';
@@ -94,8 +94,8 @@ import { SearchResultComponent } from './screens/search-result/search-result.com
     ShiftsOptionsComponent,
     GynecologicalHDRBrachytherapyComponent,
     ShiftsDiagnosisByImagingComponent,
-    ShiftsPsychologyComponent,
-    ShiftsStartRadiotherapyComponent,
+    ShiftsOffsideCordobaComponent,
+    ShiftsInsideCordobaComponent,
     ShiftFormComponent,
     OurHistoryComponent,
     AtentionComponent,

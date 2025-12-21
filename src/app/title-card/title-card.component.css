@@ -4,7 +4,7 @@
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
-    
+
 }
 
 .article-card img {
@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    z-index: 2; 
+    z-index: 2;
     margin-left: 5%;
 }
 
@@ -41,7 +41,31 @@
     text-align: left;
 }
 
+.article-card {
+  position: relative; /* Asegura el posicionamiento de los hijos */
+  /* ... tus otros estilos ... */
+}
 
+.specialty-badge {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 30px;
+  position: absolute;
+  z-index: 2;
+}
 .title {
     font-family: 'Rubik Light';
     font-weight: 500;
@@ -82,7 +106,7 @@ img {
         border-radius: 0 30px 0 0;
         height: 35%;
         width: 60%;
-        
+
     }
 
 

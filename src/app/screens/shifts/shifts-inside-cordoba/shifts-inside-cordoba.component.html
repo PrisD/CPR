@@ -1,4 +1,6 @@
-<app-title-card title="PRIMER TURNO PARA INICIAR TRATAMIENTO" [titleFontSize]="48" [titleFontSizeScreen]="18"
+<app-title-card title="TURNOS PARA PACIENTES
+DE LA PROVINCIA DE CÓRDOBA" [specialtyText]="'RADIOTERAPIA'"
+                [specialtyColor]="'#919747'" [titleFontSize]="40" [titleFontSizeScreen]="18"
     imageUrl="assets/images/CPR-primer-Turno.jpg"></app-title-card>
 
 <div class="content mb-8">
@@ -6,21 +8,21 @@
         <div class="">
             <p class="titulo"> Gestione aquí su primer turno <br>para Radioterapia</p>
             <p class="mt-4">
-                Si tiene 
+                Si tiene
                 <strong>alguna duda o consulta</strong>
                 acerca de este servicio o del estudio
-                que <br> debe realizarse, 
-                <strong>consúltenos vía Whatsapp</strong> 
+                que <br> debe realizarse,
+                <strong>consúltenos vía Whatsapp</strong>
                 en el contacto que tiene
                 en la <br> parte inferior derecha de la página.
             </p>
             <p class="mt-4 mb-6">
-                Si sólo necesita solicitar un turno, complete el formulario y nos 
+                Si sólo necesita solicitar un turno, complete el formulario y nos
                 comunicaremos <br> a la brevedad con Ud.
             </p>
         </div>
 
-        <app-shift-form></app-shift-form>
+          <app-shift-form [isCordobaOnly]="true"></app-shift-form>
 
     </div>
 </div>

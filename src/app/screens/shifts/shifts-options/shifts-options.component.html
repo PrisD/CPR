@@ -1,38 +1,39 @@
 <div class="background-image sinEspacio">
 
-    <app-title-card
-        title="TURNOS"
-        [titleFontSize]="45"
-        [titleFontSizeScreen]="20"
-        subtitle="Para una atención más ágil y específica, nuestro Centro le ofrece distintos canales de
-        comunicación para obtener turnos con nuestros profesionales o evacuar dudas acerca
-        de los tratamientos."
-        [height]="350"
-    ></app-title-card>
+  <div class="header">
+    <p class="header-title">Turnos</p>
+    <p>Para una atención ágil y específica, <br>elija la opción de turnos que necesite gestionar.</p>
+  </div>
 
-    <div class="banners">
+  <div class="banners">
+    <a routerLink="/shifts-inside-cordoba" class="shift-card shadow-6">
+      <div class="image-container">
+        <img src="assets/images/Turno-Radiot-Cordoba.jpg" alt="Radioterapia" />
+      </div>
+      <div class="content" style="background-color: #83993b;">
+        <span class="category">RADIOTERAPIA</span>
+        <h3 class="title">Pacientes de la prov. de Córdoba</h3>
+      </div>
+    </a>
 
-        <a routerLink="/shifts-start-radiotherapy" class="shift-card shadow-6">
-            <div class="content" style="background-color: #919747;">
-                <h3 class="ml-3 m-0 text-white title">Primer turno</h3>
-            </div>
-            <img src="assets/images/CPR-primer-Turno.jpg" alt="article-cover" />
-        </a>
+    <a routerLink="/shifts-offside-cordoba" class="shift-card shadow-6">
+      <div class="image-container">
+        <img src="assets/images/Turno-Radiot-No-Cordoba.jpg" alt="Radioterapia Resto" />
+      </div>
+      <div class="content" style="background-color: #c5c13a;">
+        <span class="category">RADIOTERAPIA</span>
+        <h3 class="title">Pacientes del resto del país y exterior</h3>
+      </div>
+    </a>
 
-        <a routerLink="/shifts-psychology" class="shift-card shadow-6">
-            <div class="content" style="background-color: #a7a11c;">
-                <h3 class="ml-3 m-0 text-white title">Psicología</h3>
-            </div>
-            <img src="assets/images/CPR_psico-oncologia.jpg" alt="article-cover" />
-        </a>
-        
-        <a routerLink="/shifts-diagnosis-by-imaging" class="shift-card shadow-6">
-            <div class="content" style="background-color: #d78a00;">
-                <h3 class="ml-3 m-0 text-white title">Diagnóstico por imágenes</h3>
-            </div>
-            <img src="assets/images/bg-diagnostico.jpg" alt="article-cover" />
-        </a>
-
-    </div>
-
+    <a routerLink="/shifts-diagnosis-by-imaging" class="shift-card shadow-6">
+      <div class="image-container">
+        <img src="assets/images/Turno-Diag-Psico.jpg" alt="Diagnóstico" />
+      </div>
+      <div class="content" style="background-color: #e68a22;">
+        <h3 class="title pb-3">Diagnóstico por Imágenes</h3>
+        <h3 class="title">Psicología</h3>
+      </div>
+    </a>
+  </div>
 </div>

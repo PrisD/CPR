@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShiftsPsychologyComponent } from './shifts-psychology.component';
+import { ShiftsOffsideCordobaComponent } from './shifts-offside-cordoba.component';
 
 describe('ShiftsPsychologyComponent', () => {
-  let component: ShiftsPsychologyComponent;
-  let fixture: ComponentFixture<ShiftsPsychologyComponent>;
+  let component: ShiftsOffsideCordobaComponent;
+  let fixture: ComponentFixture<ShiftsOffsideCordobaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ShiftsPsychologyComponent]
+      imports: [ShiftsOffsideCordobaComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(ShiftsPsychologyComponent);
+
+    fixture = TestBed.createComponent(ShiftsOffsideCordobaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

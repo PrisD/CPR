@@ -39,40 +39,40 @@
                 </div>
             </div>
             <div class="flex flex-column w-full">
+              <div *ngIf="!isCordobaOnly">
+                <div>País</div>
                 <div>
-                    <div>País</div>
-                    <div>
-                        <select class="w-full" (change)="clear()" [(ngModel)]="pais" id="pais" name="pais" required>
-                            <option *ngFor="let pais of paises" [value]="pais">{{ pais }}
-                            </option>
-                        </select>
-                    </div>
+                  <select class="w-full" (change)="clear()" [(ngModel)]="pais" id="pais" name="pais" required>
+                    <option *ngFor="let pais of paises" [value]="pais">{{ pais }}</option>
+                  </select>
                 </div>
-                <div *ngIf="pais =='Otro'">
-                    <div>Otro pais</div>
-                    <div>
-                        <input class="w-full" type="text" pInputText [(ngModel)]="otro" id="otro" name="otro" required>
-                    </div>
+              </div>
+
+              <div *ngIf="pais =='Otro' && !isCordobaOnly">
+                <div>Otro pais</div>
+                <div>
+                  <input class="w-full" type="text" pInputText [(ngModel)]="otro" id="otro" name="otro" required>
                 </div>
-                <div *ngIf="pais =='Argentina'">
-                    <div>Provincia</div>
-                    <div>
-                        <select class="w-full" (change)="getLocalities(provincia)" [(ngModel)]="provincia"
-                            id="provincia" name="provincia" required>
-                            <option *ngFor="let provincia of provinciasOptions" [value]="provincia">{{ provincia }}
-                            </option>
-                        </select>
-                    </div>
+              </div>
+
+              <div *ngIf="pais =='Argentina' && !isCordobaOnly">
+                <div>Provincia</div>
+                <div>
+                  <select class="w-full" (change)="getLocalities(provincia)" [(ngModel)]="provincia"
+                          id="provincia" name="provincia" required>
+                    <option *ngFor="let provincia of provinciasOptions" [value]="provincia">{{ provincia }}</option>
+                  </select>
                 </div>
-                <div *ngIf="provincia && pais =='Argentina'">
-                    <div>Localidad</div>
-                    <div>
-                        <select class="w-full" [(ngModel)]="localidad" id="localidad" name="localidad" required>
-                            <option *ngFor="let localidad of localidades" [value]="localidad">{{ localidad }}
-                            </option>
-                        </select>
-                    </div>
+              </div>
+
+              <div *ngIf="(provincia && pais =='Argentina') || isCordobaOnly">
+                <div>Localidad</div>
+                <div>
+                  <select class="w-full" [(ngModel)]="localidad" id="localidad" name="localidad" required>
+                    <option *ngFor="let localidad of localidades" [value]="localidad">{{ localidad }}</option>
+                  </select>
                 </div>
+              </div>
                 <div>
                     <div>Email</div>
                     <div>
@@ -94,10 +94,10 @@
         </div>
         <div>
             <div>
-                <div>Diagnóstico</div>
+                <div>Su Consulta</div>
                 <div style="position: relative; width: 100%;">
-                    <textarea class="w-full" pInputText [(ngModel)]="diagnostico" id="diagnostico" name="diagnostico"
-                        required rows="3" style="resize: vertical; padding-right: 30px;"></textarea>
+                    <textarea class="w-full" pInputText [(ngModel)]="consulta" id="consulta" name="consulta"
+                              required rows="3" style="resize: vertical; padding-right: 30px;"></textarea>
                 </div>
 
             </div>

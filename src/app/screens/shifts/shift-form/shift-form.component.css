@@ -39,7 +39,7 @@ input#anioNacimiento {
   width: 50%;
 }
 
-#diagnostico {
+#consulta {
   height: 130px;
 }
 
@@ -55,7 +55,7 @@ input#anioNacimiento {
   width: 21%;
 }
 
-#diagnostico, input#nombre{
+#consulta, input#nombre{
     margin-bottom: 2%;
     margin-top: 1%
 

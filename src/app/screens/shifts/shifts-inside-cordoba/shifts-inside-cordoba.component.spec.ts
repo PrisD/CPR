@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShiftsStartRadiotherapyComponent } from './shifts-start-radiotherapy.component';
+import { ShiftsInsideCordobaComponent } from './shifts-inside-cordoba.component';
 
 describe('ShiftsStartRadiotherapyComponent', () => {
-  let component: ShiftsStartRadiotherapyComponent;
-  let fixture: ComponentFixture<ShiftsStartRadiotherapyComponent>;
+  let component: ShiftsInsideCordobaComponent;
+  let fixture: ComponentFixture<ShiftsInsideCordobaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ShiftsStartRadiotherapyComponent]
+      imports: [ShiftsInsideCordobaComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(ShiftsStartRadiotherapyComponent);
+
+    fixture = TestBed.createComponent(ShiftsInsideCordobaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

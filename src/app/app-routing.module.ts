@@ -21,8 +21,8 @@ import { WhatIsMindfulnessComponent } from './screens/psychology-screens/what-is
 import { ShiftsOptionsComponent } from './screens/shifts/shifts-options/shifts-options.component';
 import { GynecologicalHDRBrachytherapyComponent } from './screens/radiotherapy-screens/brachytherapy/gynecological-hdr-brachytherapy/gynecological-hdr-brachytherapy.component';
 import { ShiftsDiagnosisByImagingComponent } from './screens/shifts/shifts-diagnosis-by-imaging/shifts-diagnosis-by-imaging.component';
-import { ShiftsPsychologyComponent } from './screens/shifts/shifts-psychology/shifts-psychology.component';
-import { ShiftsStartRadiotherapyComponent } from './screens/shifts/shifts-start-radiotherapy/shifts-start-radiotherapy.component';
+import { ShiftsOffsideCordobaComponent } from './screens/shifts/shifts-offside-cordoba/shifts-offside-cordoba.component';
+import { ShiftsInsideCordobaComponent } from './screens/shifts/shifts-inside-cordoba/shifts-inside-cordoba.component';
 import { ShiftFormComponent } from './screens/shifts/shift-form/shift-form.component';
 import { OurHistoryComponent } from './screens/the-center/our-history/our-history.component';
 import { AtentionComponent } from './screens/the-center/atention/atention.component';
@@ -57,8 +57,8 @@ const routes: Routes = [
   { path: 'shifts-options', component: ShiftsOptionsComponent },
   { path: 'gynecological-hdr-brachytherapy', component: GynecologicalHDRBrachytherapyComponent },
   { path: 'shifts-diagnosis-by-imaging', component: ShiftsDiagnosisByImagingComponent },
-  { path: 'shifts-start-radiotherapy', component: ShiftsStartRadiotherapyComponent },
-  { path: 'shifts-psychology', component: ShiftsPsychologyComponent },
+  { path: 'shifts-inside-cordoba', component: ShiftsInsideCordobaComponent },
+  { path: 'shifts-offside-cordoba', component: ShiftsOffsideCordobaComponent },
   { path: 'shift-form', component: ShiftFormComponent },
   { path: 'our-history', component: OurHistoryComponent },
   { path: 'atention', component: AtentionComponent },

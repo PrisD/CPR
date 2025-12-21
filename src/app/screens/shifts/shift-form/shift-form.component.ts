@@ -7,7 +7,8 @@ import { AddressService } from 'src/app/services/address.service';
   styleUrl: './shift-form.component.css'
 })
 export class ShiftFormComponent implements OnInit {
-  @Input() psycho: boolean = false; 
+  @Input() psycho: boolean = false;
+  @Input() isCordobaOnly: boolean = false;
   provinciasOptions: string[] = [];
   nombreCompleto: string = '';
   nombre: string = '';
@@ -21,7 +22,7 @@ export class ShiftFormComponent implements OnInit {
   pais: string = '';
   paises: string[] = []
   email: string = '';
-  diagnostico: string = '';
+  consulta: string = '';
   diaNacimiento: string = '';
   mesNacimiento: string = '';
   anioNacimiento: string = '';
@@ -37,6 +38,11 @@ export class ShiftFormComponent implements OnInit {
   ngOnInit() {
     this.paises = this.addressService.getCountries();
     this.getProvincias();
+    if (this.isCordobaOnly) {
+      this.pais = 'Argentina';
+      this.provincia = 'Córdoba';
+      this.getLocalities('Córdoba');
+    }
 
   }
   getProvincias() {

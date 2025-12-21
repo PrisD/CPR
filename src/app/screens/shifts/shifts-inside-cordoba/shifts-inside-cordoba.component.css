@@ -7,6 +7,10 @@ div {
     width: 100%;
 }
 
+app-title-card ::ng-deep .article-card .img {
+  filter: brightness(0.6) !important;
+}
+
 .content {
     background:linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 7%);
     padding-top: 10px;
@@ -22,7 +26,7 @@ div {
 .titulo {
     font-size: 28px !important;
     font-family: 'Rubik Regular';
-    color: #616c10; 
+    color: #616c10;
 }
 
 p{
