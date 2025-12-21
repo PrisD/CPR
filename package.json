@@ -20,6 +20,7 @@
     "@angular/router": "17.3.7",
     "@types/leaflet": "^1.9.12",
     "leaflet": "^1.9.4",
+    "ng-recaptcha": "^13.2.1",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primeng": "^17.12.0",

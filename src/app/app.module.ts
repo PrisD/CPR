@@ -60,6 +60,7 @@ import { SoftwareComponent } from './screens/all-equipment/software/software.com
 import { OkDisplayComponent } from './screens/shifts/shift-form/ok-display/ok-display.component';
 import { SearchComponent } from './common/home/search/search.component';
 import { SearchResultComponent } from './screens/search-result/search-result.component';
+import {RecaptchaModule} from "ng-recaptcha";
 
 
 @NgModule({
@@ -125,7 +126,8 @@ import { SearchResultComponent } from './screens/search-result/search-result.com
     CardModule,
     InputTextModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RecaptchaModule
   ],
   providers: [AddressService],
   bootstrap: [AppComponent]

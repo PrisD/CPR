@@ -108,6 +108,9 @@ img {
         width: 60%;
 
     }
-
+  .specialty-badge {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
 
 }
