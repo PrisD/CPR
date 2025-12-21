@@ -25,9 +25,12 @@ div {
     margin-bottom: 5%;
 }
 
+app-title-card ::ng-deep .article-card .img {
+  filter: brightness(0.6) !important;
+}
 
-.titulo p {
-    color: #717637;
+p{
+  font-size: large;
 }
 
 @media screen and (max-width: 600px) {
