@@ -127,3 +127,43 @@ h6 {
 html {
     scroll-behavior: smooth;
 }
+
+
+@media screen and (max-width: 600px){
+  .titulo , .titulo-principal {
+    font-size: 20px !important;
+  }
+  .description {
+    font-size: 18px !important;
+  }
+  .description p {
+    font-size: 18px !important;
+  }
+  .block {
+    font-size: 16px !important;
+  }
+  .w-6 , .w-7 {
+    width: 80% !important;
+  }
+  .turnos {
+    padding: 40px;
+  }
+  .turn-button .p-button-label {
+    font-size: 20px !important;
+  }
+  .turn-button {
+    width: 140px !important;
+  }
+  .content-img {
+    width: 85% !important;
+  }
+  .titulo-equipo , p {
+    font-size: 19px !important;
+  }
+  .equipo-texto {
+    font-size: 18px !important;
+  }
+  br {
+    display: none !important;
+  }
+}

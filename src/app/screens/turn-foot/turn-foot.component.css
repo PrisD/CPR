@@ -1,52 +1,61 @@
 /*TURNOS*/
 .turnos {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 65px;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 65px;
 }
 
 .turn {
-    font-size: 24px; /* Tamaño de fuente más grande */
-    color: rgb(104, 114, 27);
-    font-weight: bold;
-    font-weight: 550;
+  font-size: 24px;
+  color: rgb(104, 114, 27);
+  font-weight: bold;
+  font-weight: 550;
 }
 
-.sub p{
-    font-size: 18px; /* Tamaño de fuente más pequeño */
-    color: #abaaaa; /* Color más claro */
-    margin-bottom: -10px; /* Espacio entre el título y el texto */
+.sub p {
+  font-size: 18px;
+  color: #abaaaa;
+  margin-bottom: -10px;
 }
 
 .turn-button {
-    margin-top: 40px; /* Espacio entre el texto y el botón */
+  margin-top: 40px;
 }
 
+/* ESTILOS DEL BOTÓN (Escritorio) */
 ::ng-deep .turn-button .p-button {
-    background-color: #c5b90f;
-    border :1px #c5b90f solid;
-    font-weight: 700;
+  background-color: #c5b90f;
+  border: 1px #c5b90f solid;
+  font-weight: 700;
+  /* AQUÍ AUMENTAMOS EL COLOR DE RELLENO */
+  padding: 15px 50px !important; /* 15px arriba/abajo, 50px izquierda/derecha */
 }
 
 @media screen and (max-width: 600px) {
- 
-    .turn {
-        font-size: 16px;
-    }
-    
-    .sub p{
-        font-size: 12px;
-    }
 
-    .turn-button{
-        width: 78px;
-        height: 25px;
-    }
+  .turn {
+    font-size: 23px;
+  }
 
-    ::ng-deep .turn-button .p-button-label {
-        font-size: 10px;      
-    }
-    
-    
+  .sub p {
+    font-size: 15px;
+  }
+
+  /* ESTILOS DEL BOTÓN (Móvil) */
+  .turn-button {
+    /* Quitamos el width/height fijo tan pequeño para dejar que el padding actúe */
+    width: auto !important;
+    height: auto !important;
+  }
+
+  ::ng-deep .turn-button .p-button {
+    /* Padding generoso también en móvil */
+    padding: 12px 40px !important;
+  }
+
+  ::ng-deep .turn-button .p-button-label {
+    /* Aumenté un poco la letra (estaba en 10px) para que se vea mejor con el botón grande */
+    font-size: 14px !important;
+  }
 }

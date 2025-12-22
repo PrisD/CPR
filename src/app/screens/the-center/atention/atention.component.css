@@ -1,84 +1,130 @@
 div {
-    font-family: 'Rubik Regular', sans-serif
+  font-family: 'Rubik Regular', sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .content {
-    background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 15%);
-    padding-top: 5%;
-    font-family: 'Rubik Regular', sans-serif;
-
+  background: linear-gradient(to bottom, rgba(158, 174, 38, 0.502), rgba(255, 255, 255, 0.5) 15%);
+  padding-top: 5%;
+  font-family: 'Rubik Regular', sans-serif;
+  padding-bottom: 50px;
 }
 
 .content-text {
-    margin-left: 5%;
-    margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .titulo {
-    font-size: 28px;
-    font-family: 'Rubik Regular', sans-serif;
-    color: #585f12;
+  font-size: 28px;
+  font-family: 'Rubik Regular', sans-serif;
+  color: #585f12;
+  line-height: 1.3;
 }
-
 
 .description {
-    margin-bottom: 5%;
-    font-size: 22px;
+  margin-bottom: 5%;
+  font-size: 22px;
 }
-
 
 .description strong {
-    font-weight: bold;
-    font-weight: 800;
+  font-weight: 800;
 }
 
-
 .img-container img {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 12%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 12%;
+  border-radius: 0 40px 0 0; /* Agregado estético opcional para coincidir con tus otros estilos */
 }
 
 p {
-    font-size: 22px;
-}
-.description span {
-    font-size: 1.5rem;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
+.description span {
+  font-size: 1.5rem;
+}
 
 .checks {
-    width: 60%;
+  width: 60%;
 }
 
 .check {
-    margin-top: -20px;
-    margin-bottom: -20px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  display: flex; /* Asegura alineación */
+  align-items: flex-start;
 }
 
 .check span {
-    margin-right: 15px;
+  margin-right: 15px;
+  margin-top: 5px; /* Ajuste fino para alinear la flecha con el texto */
+  flex-shrink: 0;
 }
-@media screen and (max-width: 600px) {
-    .titulo {
-        font-size: 12px;
-    }
 
-    .description {
-        font-size: 10px;
-    }
+.check p {
+  margin: 0;
+  line-height: 1.5;
+}
 
-    .img-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        margin-bottom: 30px;
-    }
+/* --- RESPONSIVIDAD --- */
+@media screen and (max-width: 900px) {
+  /* Cambia la dirección del contenedor principal a columna */
+  .responsive-wrapper {
+    flex-direction: column !important;
+  }
 
+  /* Oculta los <br> para que el texto ocupe todo el ancho */
+  .titulo br,
+  .check br {
+    display: none;
+  }
 
+  /* Ajuste de fuentes para legibilidad */
+  .titulo {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  p, .description {
+    font-size: 16px; /* Mejor que 10px */
+  }
+
+  .description span {
+    font-size: 1.2rem;
+  }
+
+  /* Hace que los contenedores ocupen el 100% del ancho */
+  .checks,
+  .w-7,
+  .w-3,
+  .img-container {
+    width: 100% !important;
+  }
+
+  /* Ajustes específicos de la imagen */
+  .img-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-container img {
+    width: 100%;
+    max-width: 500px; /* Evita que sea gigante en tablets */
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .check {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
