@@ -80,6 +80,7 @@ div {
   display: flex;
   margin-top: 20px;
   align-items: stretch;
+  margin-bottom: 90px;
 }
 
 .col {
