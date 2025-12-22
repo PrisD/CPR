@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 div {
   font-family: 'Rubik Regular', sans-serif;
-  box-sizing: border-box; /* Agregado para evitar desbordes */
 }
 
 .container {
@@ -30,6 +33,8 @@ div {
   font-family: 'Rubik Regular', sans-serif;
   margin-bottom: 0px;
   color: #585f12;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .description {
@@ -37,12 +42,13 @@ div {
   margin-bottom: 20px;
   font-size: 22px;
   display: block;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .description-items {
   margin-top: 20px;
   margin-bottom: 40px;
-  /* En escritorio mantenemos tu grid original */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
@@ -69,7 +75,7 @@ div {
 .block img {
   width: 30px;
   height: 30px;
-  margin-right: 10px; /* Corregido '1 px' a '10px' por sintaxis */
+  margin-right: 10px;
 }
 
 .description strong {
@@ -90,6 +96,7 @@ div {
   margin-right: 2%;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .divider {
@@ -97,6 +104,8 @@ div {
   margin-top: 0;
   margin-bottom: 20px;
   border: 1.5px solid #585f12;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .divider-bottom {
@@ -113,38 +122,47 @@ div {
   margin-top: 20px;
 }
 
-/* --- AJUSTES RESPONSIVOS (MÓVIL) --- */
 @media screen and (max-width: 600px) {
-  /* 1. Cambiamos la dirección de la fila a columna para apilar elementos */
   .row {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
-  /* 2. Hacemos que las columnas ocupen todo el ancho */
   .col {
     max-width: 100%;
+    width: 100%;
     flex-basis: auto;
-    margin: 0 !important; /* Espacio entre Misión y Visión al apilarse */
+    margin: 0 !important;
+    padding: 0;
   }
 
-  /* 3. Forzamos que los items de descripción sean una sola columna */
-  .description-items {
-    display: flex; /* Sobrescribimos el grid */
-    flex-direction: column;
+  .col:last-child .divider:first-of-type {
+    display: none;
   }
 
-  /* Ajustes de texto originales */
+  .col .divider-end {
+    margin-bottom: 30px;
+  }
+
   .titulo {
-    font-size: 14px; /* Un poco más grande para legibilidad */
+    font-size: 18px;
+    line-height: 1.3;
   }
 
   .description {
-    margin-top: 10px;
-    font-size: 12px;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
   }
 
   .subtitle {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .description-items {
+    display: flex;
+    flex-direction: column;
   }
 
   .description span {
@@ -154,9 +172,10 @@ div {
   }
 
   .block {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     margin-bottom: 10px;
+    align-items: center;
   }
 
   .block img {
@@ -166,13 +185,18 @@ div {
   }
 
   .description-text {
-    font-size: 19px;
+    font-size: 16px;
     margin-bottom: 0;
   }
 
   .divider-bottom {
     width: 100%;
   }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
   .w-7 {
     width: 100% !important;
   }
