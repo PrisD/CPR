@@ -29,6 +29,7 @@ export class ShiftFormComponent implements OnInit {
   otro: string = '';
   opcion: string = '';
   mostrarModal = false;
+  loadingLocalidades: boolean = false;
 
   constructor(public addressService: AddressService) {
 
@@ -55,15 +56,20 @@ export class ShiftFormComponent implements OnInit {
       }
     );
   }
-  getLocalities(provincia: string) {
+  getLocalities(provinciaSeleccionada: string) {
+    if (!provinciaSeleccionada) return;
+
     this.localidad = '';
     this.localidades = [];
-    this.addressService.getLocalitiesByProvincia(provincia.toLowerCase()).subscribe(
+    this.loadingLocalidades = true;
+    this.addressService.getLocalitiesByProvincia(provinciaSeleccionada.toLowerCase()).subscribe(
       response => {
         this.localidades = this.sortStringsAlphabetically(response.localidades.map((local: { nombre: any; }) => local.nombre));
+        this.loadingLocalidades = false;
       },
       error => {
         console.error('Error al obtener localidades', error);
+        this.loadingLocalidades = false;
       }
     )
   }
@@ -73,6 +79,7 @@ export class ShiftFormComponent implements OnInit {
   clear() {
     this.provincia = '';
     this.localidad = '';
+    this.localidades = [];
   }
 
 

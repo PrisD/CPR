@@ -58,7 +58,7 @@
               <div *ngIf="pais =='Argentina' && !isCordobaOnly">
                 <div>Provincia</div>
                 <div>
-                  <select class="w-full" (change)="getLocalities(provincia)" [(ngModel)]="provincia"
+                  <select class="w-full" (ngModelChange)="getLocalities($event)" [(ngModel)]="provincia"
                           id="provincia" name="provincia" required>
                     <option *ngFor="let provincia of provinciasOptions" [value]="provincia">{{ provincia }}</option>
                   </select>
@@ -68,8 +68,9 @@
               <div *ngIf="(provincia && pais =='Argentina') || isCordobaOnly">
                 <div>Localidad</div>
                 <div>
-                  <select class="w-full" [(ngModel)]="localidad" id="localidad" name="localidad" required>
-                    <option *ngFor="let localidad of localidades" [value]="localidad">{{ localidad }}</option>
+                  <select class="w-full" [(ngModel)]="localidad" id="localidad" name="localidad" required [disabled]="loadingLocalidades">
+                    <option value="" disabled selected *ngIf="loadingLocalidades">Cargando localidades...</option>
+                    <option *ngFor="let loc of localidades" [value]="loc">{{ loc }}</option>
                   </select>
                 </div>
               </div>

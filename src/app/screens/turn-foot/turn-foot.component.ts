@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
   styleUrl: './turn-foot.component.css'
 })
 export class TurnFootComponent implements OnInit{
-  @Input() title1: any = 'Contactanos y solicitá de manera simple tu turno'; 
-  @Input() title2: string = 'en cualquiera de nuestras especialidades y tratamientos'; 
+  @Input() title1: any = 'Contactanos y solicitá de manera simple tu turno';
+  @Input() title2: string = 'en cualquiera de nuestras especialidades y tratamientos';
   @Input() direccion: string = '\shifts-options'
   constructor(private router: Router) { }
 
@@ -17,7 +17,9 @@ export class TurnFootComponent implements OnInit{
   }
 
   goToShifts(){
-    this.router.navigate([this.direccion]);
+    this.router.navigate([this.direccion]).then(() => {
+      window.scrollTo(0, 0); // Esto lleva el scroll arriba de todo
+    });
   }
 
 }

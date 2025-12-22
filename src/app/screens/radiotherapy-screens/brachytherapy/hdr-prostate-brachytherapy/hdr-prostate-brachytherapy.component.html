@@ -8,6 +8,7 @@
 
   <div class="content">
     <div class="container-flex top-section justify-content-between">
+
       <div class="content-text first-text w-6">
         <p class="titulo-principal">Procedimiento corto, efectivo y con muy buena tolerancia.</p>
         <div class="description mt-4">
@@ -21,16 +22,12 @@
             <span class="pi pi-check"></span>
             <p><strong>Pacientes de bajo riesgo:</strong> como terapia única.</p>
           </div>
-
           <p-divider></p-divider>
-
           <div class="check">
             <span class="pi pi-check"></span>
             <p><strong>Pacientes de riesgo intermedio desfavorable o riesgo alto:</strong> como tratamiento previo a la radioterapia externa, como boost o refuerzo y se utiliza para aumentar la dosis de radiación en la zona tumoral.</p>
           </div>
-
           <p-divider></p-divider>
-
           <div class="check">
             <span class="pi pi-check"></span>
             <p><strong>Pacientes con recaídas locales:</strong> como tratamiento indicado para este tipo de casos.</p>
@@ -42,69 +39,55 @@
             {{ showMoreInfo ? 'Leer menos' : 'Leer más' }}
           </button>
         </div>
+
+        <div class="extra-info-section" *ngIf="showMoreInfo">
+          <p class="titulo">La Braquiterapia HDR consiste en los siguientes pasos:</p>
+          <div class="description grid-steps">
+            <div class="check">
+              <span class="pi pi-check"></span>
+              <p><strong>Pre Planificación:</strong> Se realiza una resonancia magnética nuclear multi-paramétrica de próstata. Estas imágenes son utilizadas en el Sistema de Planificación para ubicar las zonas de interés a tratar y las zonas a proteger. De esta forma se obtiene el mapa de ubicación de cada una de las agujas para tener una distribución de dosis de acuerdo con los objetivos terapéuticos planteados.</p>
+            </div>
+            <p-divider></p-divider>
+            <div class="check">
+              <span class="pi pi-check"></span>
+              <p><strong>Implante:</strong> Se colocan en el periné unas agujas que están conectadas a unos tubos flexibles que llevarán luego la radiación a la próstata. Este procedimiento se realiza bajo anestesia peridural con control ecográfico en tiempo real para la localización del objetivo a tratar.</p>
+            </div>
+            <p-divider></p-divider>
+            <div class="check">
+              <span class="pi pi-check"></span>
+              <p><strong>Planificación:</strong> Se realiza una tomografía computada para obtener imágenes que luego se fusionan con la RMN pre tratamiento y la ecografía transrectal obtenida durante la práctica.</p>
+            </div>
+            <p-divider></p-divider>
+            <div class="check">
+              <span class="pi pi-check"></span>
+              <p><strong>Transmisión de Fuente:</strong> El paciente es conectado al equipo que transmitirá la fuente a través de los tubos flexibles. El mismo tiene una duración aproximada de entre 20 y 40 minutos.</p>
+            </div>
+            <p-divider></p-divider>
+            <div class="check">
+              <span class="pi pi-check"></span>
+              <p><strong>Finalización del Tratamiento:</strong> Se retira el instrumental y el paciente está listo para volver a casa.</p>
+            </div>
+          </div>
+
+          <div class="sagiplan-card">
+            <p class="titulo-card">Este Tratamiento se realiza con un Sistema de Planificación llamado SagiPlan, de la marca BEBIG que incluye:</p>
+            <ul class="sagiplan-list">
+              <li>Importación y exportación DICOM.</li>
+              <li>Contorneado manual y automático.</li>
+              <li>Registro de imágenes.</li>
+              <li>Reconstrucción manual y automática de aplicadores.</li>
+              <li>Optimización inversa.</li>
+              <li>Herramientas completas de evaluación de planes.</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="content-img">
         <img src="assets/images/CPR_braqui1.jpg"/>
         <img src="assets/images/CPR_braqui2.jpeg"/>
       </div>
-    </div>
 
-    <div class="extra-info-section" *ngIf="showMoreInfo">
-      <div class="content-text w-6">
-        <p class="titulo">La Braquiterapia HDR consiste en los siguientes pasos:</p>
-        <div class="description grid-steps">
-          <div class="check">
-            <span class="pi pi-check"></span>
-            <p><strong>Pre Planificación:</strong> Se realiza una resonancia magnética nuclear multi-
-              paramétrica de próstata. Estas imágenes son utilizadas en el Sistema de
-              Planificación para ubicar las zonas de interés a tratar y las zonas a pro-
-              teger. De esta forma se obtiene el mapa de ubicación de cada una de las
-              agujas para tener una distribución de dosis de acuerdo con los objetivos
-              terapéuticos planteados.</p>
-          </div>
-          <p-divider></p-divider>
-          <div class="check">
-            <span class="pi pi-check"></span>
-            <p><strong>Implante:</strong> Se colocan en el periné unas agujas que están conectadas a
-              unos tubos flexibles que llevarán luego la radiación a la próstata. Este
-              procedimiento se realiza bajo anestesia periduralcon control ecográfico
-              en tiempo real para la localiza ción del objetivo a tratar.</p>
-          </div>
-          <p-divider></p-divider>
-          <div class="check">
-            <span class="pi pi-check"></span>
-            <p><strong>Planificación:</strong> Se realiza una tomografía computada para obtener imá-
-              genes que luego se fusionan con la RMN pre tratamiento y la ecografía
-              transrectal obtenida durante la práctica.</p>
-          </div>
-          <p-divider></p-divider>
-          <div class="check">
-            <span class="pi pi-check"></span>
-            <p><strong>Transmisión de Fuente:</strong> El paciente es conectado al equipo que trans-
-              mitirá la fuente a través de los tubos flexibles. El mismo tiene una dura-
-              ción aproximada de entre 20 y 40 minutos.</p>
-          </div>
-          <p-divider></p-divider>
-          <div class="check">
-            <span class="pi pi-check"></span>
-            <p><strong>Finalización del Tratamiento:</strong> Se retira el instrumental y el paciente
-              está listo para volver a casa.</p>
-          </div>
-        </div>
-
-        <div class="sagiplan-card">
-          <p class="titulo-card">Este Tratamiento se realiza con un Sistema de Planificación llamado SagiPlan, de la marca BEBIG que incluye:</p>
-          <ul class="sagiplan-list">
-            <li>Importación y exportación DICOM.</li>
-            <li>Contorneado manual y automático.</li>
-            <li>Registro de imágenes.</li>
-            <li>Reconstrucción manual y automática de aplicadores.</li>
-            <li>Optimización inversa.</li>
-            <li>Herramientas completas de evaluación de planes.</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </div>
