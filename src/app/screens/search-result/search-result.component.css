@@ -1,12 +1,28 @@
-.buscador{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.buscador {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.alineacion{
-    margin: 5%;
+
+.alineacion {
+  margin: 7%;
 }
+
 .gsc-control-cse {
-    font-family: 'Rubik regular';
+  font-family: 'Rubik regular', sans-serif;
+}
+
+.titulo-resultados {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.linea-separadora {
+  height: 1px;
+  background-color: #ddd;
+  width: 40%;
+  margin: 0 auto 40px auto;
 }
