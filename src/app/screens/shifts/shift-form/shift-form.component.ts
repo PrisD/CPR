@@ -129,9 +129,8 @@ export class ShiftFormComponent implements OnInit {
         isCordobaOnly: this.isCordobaOnly
       };
 
-      const testEmail = 'prisciladellavecchia@gmail.com';
 
-      this.emailService.sendShiftEmail(formData, testEmail).subscribe(
+      this.emailService.sendShiftEmail(formData).subscribe(
         response => {
           console.log('Email enviado exitosamente', response);
           this.mostrarModal = true;

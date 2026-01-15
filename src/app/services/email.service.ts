@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 })
 export class EmailService {
 
-  private serviceID = 'service_io22ceg';
+  private serviceID = 'service_48fikqi';
   private templateID = 'template_g8edjuo';
   private publicKey = '-u_qhDyBAXVas-Wpo';
 
@@ -21,13 +21,13 @@ export class EmailService {
     emailjs.init(this.publicKey);
   }
 
-  sendShiftEmail(formData: any, testEmail?: string): Observable<any> {
+  sendShiftEmail(formData: any): Observable<any> {
 
     const destinatarioReal = this.determinarDestinatario(formData);
 
     const templateParams = {
       ...formData,
-      to_email: testEmail || destinatarioReal,
+      to_email: destinatarioReal,
       fecha_completa: `${formData.diaNacimiento}/${formData.mesNacimiento}/${formData.anioNacimiento}`
     };
 
