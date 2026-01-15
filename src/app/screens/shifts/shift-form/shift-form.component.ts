@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AddressService } from 'src/app/services/address.service';
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'app-shift-form',
@@ -7,7 +8,7 @@ import { AddressService } from 'src/app/services/address.service';
   styleUrl: './shift-form.component.css'
 })
 export class ShiftFormComponent implements OnInit {
-  @Input() psycho: boolean = false;
+  @Input() notCordoba: boolean = false;
   @Input() isCordobaOnly: boolean = false;
   provinciasOptions: string[] = [];
   nombreCompleto: string = '';
@@ -30,8 +31,12 @@ export class ShiftFormComponent implements OnInit {
   opcion: string = '';
   mostrarModal = false;
   loadingLocalidades: boolean = false;
+  enviandoEmail: boolean = false;
 
-  constructor(public addressService: AddressService) {
+  constructor(
+    public addressService: AddressService,
+    private emailService: EmailService
+  ) {
 
   }
 
@@ -62,16 +67,30 @@ export class ShiftFormComponent implements OnInit {
     this.localidad = '';
     this.localidades = [];
     this.loadingLocalidades = true;
-    this.addressService.getLocalitiesByProvincia(provinciaSeleccionada.toLowerCase()).subscribe(
+
+    const provinciaLimpia = this.normalizeString(provinciaSeleccionada);
+
+    this.addressService.getLocalitiesByProvincia(provinciaLimpia).subscribe(
       response => {
-        this.localidades = this.sortStringsAlphabetically(response.localidades.map((local: { nombre: any; }) => local.nombre));
+        if (response && response.localidades) {
+          this.localidades = this.sortStringsAlphabetically(
+            response.localidades.map((local: { nombre: any; }) => local.nombre)
+          );
+        }
         this.loadingLocalidades = false;
       },
       error => {
         console.error('Error al obtener localidades', error);
         this.loadingLocalidades = false;
       }
-    )
+    );
+  }
+
+  normalizeString(str: string): string {
+    return str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
   }
   sortStringsAlphabetically(strings: string[]): string[] {
     return strings.sort((a, b) => a.localeCompare(b));
@@ -88,9 +107,62 @@ export class ShiftFormComponent implements OnInit {
       this.mesNacimiento && this.anioNacimiento && this.pais && this.email &&
       (this.pais !== 'Otro' || this.otro) &&
       (this.pais !== 'Argentina' || (this.provincia && this.localidad))) {
-      this.mostrarModal = true;
+
+      // Enviar email
+      this.enviandoEmail = true;
+
+      const formData = {
+        nombre: this.nombre,
+        dni: this.dni,
+        celular: this.celular,
+        diaNacimiento: this.diaNacimiento,
+        mesNacimiento: this.mesNacimiento,
+        anioNacimiento: this.anioNacimiento,
+        pais: this.pais,
+        provincia: this.provincia,
+        localidad: this.localidad,
+        otro: this.otro,
+        email: this.email,
+        opcion: this.opcion,
+        consulta: this.consulta,
+        psycho: this.notCordoba,
+        isCordobaOnly: this.isCordobaOnly
+      };
+
+      const testEmail = 'prisciladellavecchia@gmail.com';
+
+      this.emailService.sendShiftEmail(formData, testEmail).subscribe(
+        response => {
+          console.log('Email enviado exitosamente', response);
+          this.mostrarModal = true;
+          this.enviandoEmail = false;
+          this.limpiarFormulario();
+        },
+        error => {
+          console.error('Error al enviar email', error);
+          this.enviandoEmail = false;
+          alert('Error al procesar tu solicitud. Por favor intenta de nuevo.');
+        }
+      );
     } else {
       alert('Por favor completa todos los campos.');
     }
+  }
+
+  limpiarFormulario() {
+    this.nombre = '';
+    this.dni = '';
+    this.celular = '';
+    this.diaNacimiento = '';
+    this.mesNacimiento = '';
+    this.anioNacimiento = '';
+    this.pais = '';
+    this.provincia = '';
+    this.localidad = '';
+    this.otro = '';
+    this.email = '';
+    this.opcion = '';
+    this.consulta = '';
+    this.localidades = [];
   }
 }
