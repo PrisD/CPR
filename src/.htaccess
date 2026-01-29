@@ -6,4 +6,9 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
   RewriteRule ^ /index.html [L]
+  Redirect 301 /nuestro-staff/ /staff
+  Redirect 301 /tratamientos/ /radiotherapy
+  Redirect 301 /contacto/ /contact
+  Redirect 301 /quienes-somos/ /our-center
+  Redirect 301 /braquiterapia-ginecologica/ /gynecological-hdr-brachytherapy
 </IfModule>
