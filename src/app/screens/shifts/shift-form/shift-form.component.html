@@ -69,7 +69,10 @@
                 <div>Localidad</div>
                 <div>
                   <select class="w-full" [(ngModel)]="localidad" id="localidad" name="localidad" required [disabled]="loadingLocalidades">
-                    <option value="" disabled selected *ngIf="loadingLocalidades">Cargando localidades...</option>
+                    <option value="" disabled selected>
+                      {{ loadingLocalidades ? 'Cargando localidades...' : ' ' }}
+                    </option>
+
                     <option *ngFor="let loc of localidades" [value]="loc">{{ loc }}</option>
                   </select>
                 </div>
@@ -79,16 +82,6 @@
                     <div>
                         <input class="w-full" type="email" pInputText [(ngModel)]="email" id="email" name="email"
                             required>
-                    </div>
-                </div>
-                <div *ngIf="notCordoba == true">
-                    <div>Tipo de turno</div>
-                    <div>
-                        <select class="w-full" [(ngModel)]="opcion" id="opcion" name="opcion" required>
-                            <option value="Psico-oncología">Psico-oncología</option>
-                            <option value="Psicología">Psicología</option>
-                            <option value="Taller de Mindfulness">Taller de Mindfulness</option>
-                        </select>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,6 @@ export class ShiftFormComponent implements OnInit {
   mesNacimiento: string = '';
   anioNacimiento: string = '';
   otro: string = '';
-  opcion: string = '';
   mostrarModal = false;
   loadingLocalidades: boolean = false;
   enviandoEmail: boolean = false;
@@ -78,10 +77,12 @@ export class ShiftFormComponent implements OnInit {
           );
         }
         this.loadingLocalidades = false;
+        this.localidad = '';
       },
       error => {
         console.error('Error al obtener localidades', error);
         this.loadingLocalidades = false;
+        this.localidad = '';
       }
     );
   }
@@ -123,7 +124,6 @@ export class ShiftFormComponent implements OnInit {
         localidad: this.localidad,
         otro: this.otro,
         email: this.email,
-        opcion: this.opcion,
         consulta: this.consulta,
         psycho: this.notCordoba,
         isCordobaOnly: this.isCordobaOnly
@@ -160,7 +160,6 @@ export class ShiftFormComponent implements OnInit {
     this.localidad = '';
     this.otro = '';
     this.email = '';
-    this.opcion = '';
     this.consulta = '';
     this.localidades = [];
   }
