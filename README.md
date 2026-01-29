@@ -1,36 +1,55 @@
-# APMNew
+# CPR - Radioterapia Río Cuarto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Official web application for the Radioterapia Río Cuarto medical center. This Single Page Application (SPA) provides patient information and institutional services using a modern technical stack.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* **Framework**: Angular 17.3.7.
+* **UI Components**: PrimeNG 17.12.0 with PrimeFlex and PrimeIcons.
+* **Maps Integration**: Leaflet 1.9.4 for location services.
+* **Contact Services**: EmailJS Browser 4.4.1.
+* **Security**: Integrated reCAPTCHA support.
+* **Automation**: CI/CD pipeline via GitHub Actions for FTP deployment.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development and Local Setup
 
-## Build
+1. **Clone the repository**:
+`git clone https://github.com/your-username/cpr.git`
+2. **Install dependencies**:
+`npm install`.
+3. **Run development server**:
+`ng serve --open`
+The application will be available at `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-To build for Enviroment production:
-`ng build --configuration production --base-href /prueba/dist/cpr/`
-This make a folder with all necessary files to compile insite de FTP server
-To put images in this project, respect this format:
-`<img id="logo" src="assets/images/CPR-logo-green.svg" alt="">`
+---
 
-## Running unit tests
+## Production and Deployment
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project uses an automated deployment workflow. Any push to the `main` branch triggers the build and upload process to the production server.
 
-## Running end-to-end tests
+### Deployment Configuration
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* **Base Href**: The production build is configured to run from the root directory.
+* **Build Command**: `ng build --configuration production --base-href /`
+* **Output Directory**: The build artifacts are stored in `dist/cpr`.
 
-## Further help
+### Assets Management
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To maintain consistency, images should be referenced using the following format:
 
-## Run the APP
+```html
+<img id="logo" src="assets/images/CPR-logo-green.svg" alt="CPR Logo">
 
-ng serve --open
+```
+
+---
+
+## Technical Maintenance
+
+* **Server Routing**: Since this is an SPA, server-side routing is handled by the `.htaccess` file in the root directory to prevent 404 errors on page refresh.
+* **Asset Registration**: All static files like `.htaccess`, `sitemap.xml`, and `robots.txt` are registered in `angular.json` to be included in every production build.
+* **FTP Secrets**: Deployment credentials (server, username, and password) are managed as GitHub Repository Secrets for security.
+
+---
