@@ -1,239 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/radiotherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/radiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/psychology</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/psychology</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/diagnostic-imaging</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/diagnostic-imaging</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/our-center</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/our-center</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/hdr-prostate-brachytherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/hdr-prostate-brachytherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/hdr-skin-brachytherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/hdr-skin-brachytherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/hybridarc-volumetric-dynamic-therapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/hybridarc-volumetric-dynamic-therapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/igrt-exactrac-brainlab-image-guided-radiotherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/igrt-exactrac-brainlab-image-guided-radiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/imrt-intensity-modulated-radiotherapy-with-multileaf</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/imrt-intensity-modulated-radiotherapy-with-multileaf</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/interstitial-gynecological-hdr-brachytherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/interstitial-gynecological-hdr-brachytherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/intracavitary-gynecological-hdr-brachytherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/intracavitary-gynecological-hdr-brachytherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/r3-d-three-dimensional-conformal-radiotherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/r3-d-three-dimensional-conformal-radiotherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/sbrt-exactrac-body-stereotaxic-radiosurgery</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/sbrt-exactrac-body-stereotaxic-radiosurgery</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/srs-exactrac-cranial-stereotaxic-radiosurgery</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/srs-exactrac-cranial-stereotaxic-radiosurgery</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/gynecological-hdr-brachytherapy</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/gynecological-hdr-brachytherapy</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/mindfulness-workshop</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/mindfulness-workshop</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/psycho-oncology</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/psycho-oncology</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/what-is-mindfulness</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/what-is-mindfulness</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/shifts-options</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/shifts-options</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/shifts-diagnosis-by-imaging</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/shifts-diagnosis-by-imaging</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/shifts-inside-cordoba</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/shifts-inside-cordoba</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/shifts-offside-cordoba</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/shifts-offside-cordoba</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/shift-form</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/our-history</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/our-history</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/atention</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/atention</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/certifications</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/certifications</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/turn-foot</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/contact</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/contact</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/news</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/news</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/equipment</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/equipment</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/software</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/software</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/staff</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/staff</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://radioterapia-rio4.com.ar/prueba/dist/cpr/search-result</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://radioterapia-rio4.com.ar/search-result</loc>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>

@@ -10,7 +10,7 @@ Disallow: /private/
 Disallow: /temp/
 
 # Sitemap location
-Sitemap: https://radioterapia-rio4.com.ar/prueba/dist/cpr/sitemap.xml
+Sitemap: https://radioterapia-rio4.com.ar/sitemap.xml
 
 # Crawl delay (optional, adjust as needed)
 Crawl-delay: 1
@@ -36,4 +36,3 @@ Disallow: /
 
 User-agent: SemrushBot
 Disallow: /
-
