@@ -22,15 +22,15 @@ jobs:
         run: npm install
 
       - name: Build Angular project
-        run: npm run build  
-      
+        run: npm run build
+
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with: 
+        with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }} 
-          local-dir: ./dist/cpr/  # Update with your actual build output directory
-          server-dir: /htdocs/prueba/dist/cpr/  # Update with the path on your FTP server
-          protocol: ftp 
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/cpr/
+          server-dir: /htdocs/
+          protocol: ftp
           dangerous-clean-slate: true
