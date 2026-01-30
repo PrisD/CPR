@@ -125,7 +125,7 @@ export class ShiftFormComponent implements OnInit {
         otro: this.otro,
         email: this.email,
         consulta: this.consulta,
-        psycho: this.notCordoba,
+        notCordoba: this.notCordoba,
         isCordobaOnly: this.isCordobaOnly
       };
 
